@@ -1,6 +1,6 @@
-# Index
+<h1>Index</h1>
 
-    <h1>The Odin Project Index</h1>
+<h2>The Odin Project Index</h2>
 
 | Course | 
 | ------ |
