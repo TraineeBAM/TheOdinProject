@@ -117,13 +117,58 @@
 ></ol>
 ***
 
+<h3>Command Line Basics</h3>
 
+***
+<h4>What is the CLI?</h4>
 
+> CLI = "Command Line Interface"<br>
+> The CLI is a text-based user interface for a computer.<br>
 
+***
+<h4>How do you open the command line on your computer?</h4>
 
+> In my virtual machine I use "CTRL+ALT+T" to open the CLI.
 
+***
+<h4>How can you navigate to a particular directory?</h4>
 
+> It would depend on if I knew where this directory sat on my computer.<br>
+> If I knew this I would use the "cd" command followed by the directory path.<br>
+> If I needed to find a directory I would use "find -name *file_name*".<br>
+> Once located I could then use the "cd" command to navigate to that directory (e.g. "cd ./documents/work_project/Sprint4")
 
+***
+<h4>Where will "cd" and "cd .." navigate you to?</h4>
+
+> "cd" would take you to your home directory.<br>
+> "cd .." brings you up one directory.
+
+***
+<h4>How do you display the name of the directory you are currently in?</h4>
+
+> You would use the "pwd" (print working directory) command.
+
+***
+<h4>How do you display the contents of the directory you are currently in?</h4>
+
+> You would use the "ls" (short for "list") command.
+
+***
+<h4>How do you create a new directory and a new file?</h4>
+
+> To create a new directory use the "mkdir" command followed by the directory name (e.g. "mkdir projects").<br>
+> To create a new file use the "touch" command followed by the file name and extension (e.g. "touch index.html").
+
+***
+<h4>How do you destroy and rename a directory or file?</h4>
+
+> To destroy a directory or file use the "rm -r" command followed by the directory or file name (e.g. "rm -r projects").<br>
+> It should be noted that "rm -r" can delete a directory and all contents irreversibly.<br>
+> <br>
+> In order to rename a directory or file use the "mv" command followed by the current name and the new file (e.g. "mv old_projects new_projects"
+
+***
 
 
 
