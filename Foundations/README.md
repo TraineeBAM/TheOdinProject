@@ -136,7 +136,7 @@
 > It would depend on if I knew where this directory sat on my computer.<br>
 > If I knew this I would use the "cd" command followed by the directory path.<br>
 > If I needed to find a directory I would use "find -name *file_name*".<br>
-> Once located I could then use the "cd" command to navigate to that directory (e.g. "cd ./documents/work_project/Sprint4")
+> Once located I could then use the "cd" command to navigate to that directory (e.g. "cd ./documents/work_project/Sprint4").
 
 ***
 <h4>Where will "cd" and "cd .." navigate you to?</h4>
@@ -166,19 +166,44 @@
 > To destroy a directory or file use the "rm -r" command followed by the directory or file name (e.g. "rm -r projects").<br>
 > It should be noted that "rm -r" can delete a directory and all contents irreversibly.<br>
 > <br>
-> In order to rename a directory or file use the "mv" command followed by the current name and the new file (e.g. "mv old_projects new_projects"
+> In order to rename a directory or file use the "mv" command followed by the current name and the new file (e.g. "mv old_projects new_projects").
 
 ***
 
+<h3>Introduction to Git</h3>
 
+***
+<h4>What kind of program is Git?</h4>
 
+> Git is a version control system and acts like an <b>epic</b> save button.
 
+***
+<h4>What are the differences between Git and a text editor in terms of what they save and their record keeping?</h4>
 
+> When you save a file in a text editor you are capturing its current state in a single file.<br>
+> A save in Git on the other hand will record the differences in the files and folders as well as keeping a historical record of each save.<br>
 
+***
+<h4>Does Git work at a local or remote level?</h4>
 
+> Git works at the local level (on your device).
 
+***
+<h4>Does GitHub work at a local or remote level?</h4>
 
+> GitHub works at the remote level and acts as a storage facility for projects.
 
+***
+<h4>Why is Git useful for developers?</h4>
+
+> The main benefit of Git for developers is that it makes it possible to restore past iterations of files.
+
+***
+<h4>Why are Git and GitHub useful for a team of developers?</h4>
+
+> They facilitate collaboration of software developers and allow for streamlined product/service development.
+
+***
 
 
 
