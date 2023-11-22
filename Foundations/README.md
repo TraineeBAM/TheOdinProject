@@ -110,10 +110,10 @@
 <h4>Describe the process that takes place when you look up a web address</h4>
 
 ><ol>
->        <li>The browser uses the DNS server to determine the websites server address.</li>
+>       <li>The browser uses the DNS server to determine the websites server address.</li>
 >       <li>A HTTP request is sent from the browser to this server requesting the website for the client.</li>
->        <li>If this request is approved then a "200 OK" message is sent to the client from the server, followed by data packets containing the websites files.</li>
->        <li>The browser assembles these data packets and displays a complete web page.</li>
+>       <li>If this request is approved then a "200 OK" message is sent to the client from the server, followed by data packets containing the websites files.</li>
+>       <li>The browser assembles these data packets and displays a complete web page.</li>
 ></ol>
 ***
 
