@@ -205,7 +205,68 @@
 
 ***
 
+<h3>Git Basics</h3>
 
+***
+
+<h3>How do you create a new repository on GitHub?</h3>
+
+> Go to your GitHub homepage and click on "create new repository".
+
+***
+<h3>How do you copy a repository onto your local machine from GitHub?</h3>
+
+> Click on the green "<> Code" button and under the "SSH" option copy the address to your clipboard<br>
+> Use the "git clone" command followed by the copied address to connect your GitHub repository with your local machine.
+
+***
+<h3>What is the default name of your remote connection?</h3>
+
+> "origin".
+
+***
+<h3>Explain what origin is in "git push origin main".</h3>
+
+> The name used for your remote repository.
+> This command will push all branches to the main branch.
+
+***
+<h3>Explain what main is in "git push origin main".</h3>
+
+> The name of the branch that will be pushed to.
+
+***
+<h3>Explain the two-stage system that Git uses to save files.</h3>
+
+> Stage One: The command "git add ." (or "git add FILENAME") is used to add the edited file to a staging area.
+> Stage Two: The command "git commit" is used to commit these changes.
+
+***
+<h3>How do you check the status of your current repository?</h3>
+
+> "git status".
+
+***
+<h3>How do you add files to the staging area in git?</h3>
+
+> "git add .".
+
+***
+<h3>How do you commit the files in the staging area and add a descriptive message?</h3>
+
+> "git commit -m "DESCRIPTIVE MESSAGE GOES HERE" ".
+
+***
+<h3>How do you push your changes to your repository on GitHub?</h3>
+
+> "git push" or "git push origin main"
+
+***
+<h3>How do you look at the history of your previous commits?</h3>
+
+> "git log"
+
+***
 
 
 
