@@ -1,6 +1,6 @@
 # Index
 
-    The Odin Project Index
+    <h1>The Odin Project Index</h1>
 
 | Course | 
 | ------ |
