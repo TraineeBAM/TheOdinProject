@@ -238,7 +238,7 @@
 ***
 <h3>Explain the two-stage system that Git uses to save files.</h3>
 
-> Stage One: The command "git add ." (or "git add FILENAME") is used to add the edited file to a staging area.
+> Stage One: The command "git add ." (or "git add FILENAME") is used to add the edited file to a staging area.<br>
 > Stage Two: The command "git commit" is used to commit these changes.
 
 ***
@@ -268,9 +268,72 @@
 
 ***
 
+<h3>Intro to HTML and CSS</h3>
 
+***
 
+<h3>What do HTML and CSS stand for?</h3>
 
+> HTML = "HyperText Markup Language"<br>
+> CSS  = "Cascading Style Sheets"
+
+***
+<h3>Between HTML and CSS, which would you use for putting paragraphs of text on a webpage?</h3>
+
+> You would use HTML for this as we use HTML defines the content & layout of a webpage.
+
+***
+<h3>Between HTML and CSS, which would you use for changing the font and background color of a button?</h3>
+
+> You would use CSS for this as CSS is responsible for styling the webpage.
+
+***
+<h3>What is the difference between HTML, CSS and JavaScript?</h3>
+
+> HTML determines the content & layout of a webpage. <br>
+> CSS determines how a HTML document is styled (colors, fonts, etc.).<br>
+> JavaScript is used to enhance the interactivity of a website.<br>
+
+***
+<h3>What is a HTML tag?</h3>
+
+> A tag is used to indicate the beginning and end of a HTML element.<br>
+> e.g. When inside "<>" "p" is an opening paragraph tag and "/p" is a closing tag.
+
+***
+<h3>What are the three parts of an HTML element?</h3>
+
+> <ol>
+>       <li>An opening tag</li>
+>       <li>The content</li>
+>       <li>A closing tag</li>
+
+***
+
+<h3><b>HTML Boilderplate</b></h3>
+
+***
+<h3>What is the purpose of the doctype declaration?</h3>
+
+> Tells the browser what version of HTML it needs to use to render the document.
+
+***
+<h3>What is the HTML element?</h3>
+
+> The root element of the document. All other elements will be descendants of the HTML document.
+
+***
+<h3>What is the purpose of the head element?</h3>
+
+> Contains important meta-information about the webpage and tells the browswer how to render content properly.
+
+***
+<h3>What is the purpose of the body element?</h3>
+
+> Gives the webpage a readable title that is displayed in the browsers tab.<br>
+> This will default to the file name if not specified (e.g. index.html).
+
+***
 
 
 
