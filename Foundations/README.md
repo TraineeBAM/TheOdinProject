@@ -1,10 +1,10 @@
 ***
 
-# Foundations Course
+<h1>Foundations Course</h1>
 
 ***
 
-# Assignments
+<h2>Assignments</h2>
 
         Below you will find my solutions to the various assignments in TOP Foundations.
 
@@ -14,34 +14,34 @@
 
 ***
 
-# Knowledge Check
+<h2>Knowledge Check</h2>
 
         Please see below for my answers to the various knowledge checks in TOP Foundations.
 
 ***
 
-# How does the Web Work?
+<h3>How does the Web Work?</h3>
 
 ***
 
-### What is a web server?
+<h4>What is a web server?</h4>
 
 > A computer that hosts one of more websites. <br>
 > In this context, "hosts" refers to the fact that all web pages and their supporting files are available on that computer.
 
 ***
-### What is a network?
+<h4>What is a network?</h4>
 
 > A set of computers that are linked in order to share resources. <br>
 > This can occur either physically or wirelessly.
 
 ***
-### What is the internet?
+<h4>What is the internet?</h4>
 
 > At its core, the internet is a global network of computers.
 
 ***
-### What is an IP address?
+<h4>What is an IP address?</h4>
 
 > IP = "Internet Protocol"<br>
 > A unique address that identifies a computer.<br>
@@ -51,65 +51,71 @@
 > Fun Fact: To check your current IP address in the Linux terminal you can use either "hostname -I" or "ip a".
 
 ***
-### What is a router?
+<h4>What is a router?</h4>
 
 > A router is a device that connects computer networks.<br>
 > It's primary function is to ensure that a message sent from a given computer arrives at the target computer.
 
 ***
-### What is an ISP?
+<h4>What is an ISP?</h4>
 
 > ISP = "Internet Service Provider" <br>
 > An ISP provides services that enable interaction with the internet.
 
 ***
-### What are packets and how are they used to transfer data?
+<h4>What are packets and how are they used to transfer data?</h4>
 
 > When data is transmitted across the internet it is broken up and sent in thousands of small chunks. These small chunks are what are referred to as "packets".<br>
 > The advantage of this is that if any of these packets are corrupted or dropped, it is a lot easier to replace them. <br>
 > Additionally, by sending data in packets it can be sent to the client along different paths, which results in faster exchanges and improved accessibility.
 
 ***
-### What is a client?
+<h4>What is a client?</h4>
 
 > Clients are the devices and software that connect to the internet from the users side.
 
 ***
-### What is a server?
+<h4>What is a server?</h4>
 
 > A server is a computer that provides functionality for clients through the provision of things such as resources, data, services or programs.
 
 ***
-### What is a web page?
+<h4>What is a web page?</h4>
 
 > A web page is a document that can be displayed by a web browser.
 
 ***
-### What is a web browser?
+<h4>What is a web browser?</h4>
 
 > A web browser is an application that is used to access websites (e.g. Google Chrome and Firefox).
 
 ***
-### What is a search engine?
+<h4>What is a search engine?</h4>
 
 > A search engine is a web service that assists with finding web pages (e.g. Google and Bing).
 
 ***
-### What is a DNS request?
+<h4>What is a DNS request?</h4>
 
 > DNS = "Domain Name System". This is essentially an address book for websites.<br>
 > A DNS request is a request for information sent from the client to the server. <br>
 > Usually this request is to determine the IP address associated with a domain name.
 
 ***
-### What browser are you currently using?
+<h4>What browser are you currently using?</h4>
 
 > As is recommended by The Odin Project, I am using Google Chrome.
 
 ***
-### Describe the process that takes place when you initiate a search on google.com
+<h4>Describe the process that takes place when you look up a web address</h4>
 
-<
+><ol>
+>        <li>The browser uses the DNS server to determine the websites server address.</li>
+>       <li>A HTTP request is sent from the browser to this server requesting the website for the client.</li>
+>        <li>If this request is approved then a "200 OK" message is sent to the client from the server, followed by data packets containing the websites files.</li>
+>        <li>The browser assembles these data packets and displays a complete web page.</li>
+></ol>
+***
 
 
 
