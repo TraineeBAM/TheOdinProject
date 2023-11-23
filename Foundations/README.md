@@ -335,6 +335,46 @@
 
 ***
 
+<h3>Working with text in HTML</h3>
+
+***
+<h3>How do you create a paragraph in HTML?</h3>
+
+> You would use the "p" and "/p" tags to wrap your paragraph.
+
+***
+<h3>How do you create a heading in HTML?</h3>
+
+> You would use the "h" and "/h" tags to wrap your heading.<br>
+> After the "h" you would use numbers between 1 and 5 to signify the importance of the heading (with 1 being the most important).<br>
+> E.g. "h1" Super Important Heading "/h1".
+
+***
+<h3>What element should you use to make text bold and important?</h3>
+
+> To do this you would wrap the text in a "strong" and "/strong" tag.
+
+***
+<h3>What element should you use to make text italicized to add emphasis to it?</h3>
+
+> You would use the "em" and "/em" tags to wrap the text you'd like italicized and emphasised.
+
+***
+<h3>What relationship does an element have with any nested elements within it?</h3>
+
+> A parent / child relationship.
+
+***
+<h3>What relationship do two elements have if they are at the same level of nesting?</h3>
+
+> A sibling relationship.
+
+***
+<h3>How do you create HTML comments?
+
+> You wrap your comment in "< ! - - >" "< - - >" tags (remove spaces).
+
+***
 
 
 
