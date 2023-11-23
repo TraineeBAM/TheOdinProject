@@ -451,7 +451,45 @@
 
 ***
 
+<h3>Intro to CSS</h3>
 
+***
+<h4>What is the syntax for class and ID selectors?</h4>
+
+>Class selector is a full-stop "." followed by the value of the class attribute.<br>
+>ID selector is a hash "#" followed by the value of the ID selector.
+
+***
+<h4>How would you apply a single rule to two different selectors?</h4>
+
+>You would group the selectors together by separating them with a comma ",".
+
+***
+<h4>Given an element that has an id of title and a class of primary, how would you use both attributes for a single rule?</h4>
+
+>You would chain them together by writing them out with no spaces between them.<br>
+>E.g. ".primary#title"
+
+***
+<h4>What does the descendant combinator do?</h4>
+
+> Allows you to target a specific element based off its parent.<br>
+> This is done by writing out the parent and child element with a space in between.<br>
+>E.g. ".parent .child" would target only a .child element that is a descendant of a .parent.
+
+***
+<h4>What are the names of the three ways to add CSS to HTML?</h4>
+
+> These three ways are external, internal and inline.
+
+***
+<h4>What are the main differences between the three ways of adding CSS to HTML?</h4>
+
+> External: This is best practice and involves creating a separate .css file that your web pages will reference.<br>
+> Internal: The CSS style is defined in the header of the webpage. Can be useful for adding unique styles to a single webpage but is not usually recommended.<br>
+> Inline: This adds CSS directly to an element. This is not recommended, however it will override the other two methods which can be handy.
+
+***
 
 
 
