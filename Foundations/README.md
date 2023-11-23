@@ -209,60 +209,60 @@
 
 ***
 
-<h3>How do you create a new repository on GitHub?</h3>
+<h4>How do you create a new repository on GitHub?</h4>
 
 > Go to your GitHub homepage and click on "create new repository".
 
 ***
-<h3>How do you copy a repository onto your local machine from GitHub?</h3>
+<h4>How do you copy a repository onto your local machine from GitHub?</h4>
 
 > Click on the green "<> Code" button and under the "SSH" option copy the address to your clipboard<br>
 > Use the "git clone" command followed by the copied address to connect your GitHub repository with your local machine.
 
 ***
-<h3>What is the default name of your remote connection?</h3>
+<h4>What is the default name of your remote connection?</h4>
 
 > "origin".
 
 ***
-<h3>Explain what origin is in "git push origin main".</h3>
+<h4>Explain what origin is in "git push origin main".</h4>
 
 > The name used for your remote repository.
 > This command will push all branches to the main branch.
 
 ***
-<h3>Explain what main is in "git push origin main".</h3>
+<h4>Explain what main is in "git push origin main".</h4>
 
 > The name of the branch that will be pushed to.
 
 ***
-<h3>Explain the two-stage system that Git uses to save files.</h3>
+<h4>Explain the two-stage system that Git uses to save files.</h4>
 
 > Stage One: The command "git add ." (or "git add FILENAME") is used to add the edited file to a staging area.<br>
 > Stage Two: The command "git commit" is used to commit these changes.
 
 ***
-<h3>How do you check the status of your current repository?</h3>
+<h4>How do you check the status of your current repository?</h4>
 
 > "git status".
 
 ***
-<h3>How do you add files to the staging area in git?</h3>
+<h4>How do you add files to the staging area in git?</h4>
 
 > "git add .".
 
 ***
-<h3>How do you commit the files in the staging area and add a descriptive message?</h3>
+<h4>How do you commit the files in the staging area and add a descriptive message?</h4>
 
 > "git commit -m "DESCRIPTIVE MESSAGE GOES HERE" ".
 
 ***
-<h3>How do you push your changes to your repository on GitHub?</h3>
+<h4>How do you push your changes to your repository on GitHub?</h4>
 
 > "git push" or "git push origin main"
 
 ***
-<h3>How do you look at the history of your previous commits?</h3>
+<h4>How do you look at the history of your previous commits?</h4>
 
 > "git log"
 
@@ -272,36 +272,36 @@
 
 ***
 
-<h3>What do HTML and CSS stand for?</h3>
+<h4>What do HTML and CSS stand for?</h4>
 
 > HTML = "HyperText Markup Language"<br>
 > CSS  = "Cascading Style Sheets"
 
 ***
-<h3>Between HTML and CSS, which would you use for putting paragraphs of text on a webpage?</h3>
+<h4>Between HTML and CSS, which would you use for putting paragraphs of text on a webpage?</h4>
 
 > You would use HTML for this as we use HTML defines the content & layout of a webpage.
 
 ***
-<h3>Between HTML and CSS, which would you use for changing the font and background color of a button?</h3>
+<h4>Between HTML and CSS, which would you use for changing the font and background color of a button?</h4>
 
 > You would use CSS for this as CSS is responsible for styling the webpage.
 
 ***
-<h3>What is the difference between HTML, CSS and JavaScript?</h3>
+<h4>What is the difference between HTML, CSS and JavaScript?</h4>
 
 > HTML determines the content & layout of a webpage. <br>
 > CSS determines how a HTML document is styled (colors, fonts, etc.).<br>
 > JavaScript is used to enhance the interactivity of a website.<br>
 
 ***
-<h3>What is a HTML tag?</h3>
+<h4>What is a HTML tag?</h4>
 
 > A tag is used to indicate the beginning and end of a HTML element.<br>
 > e.g. When inside "<>" "p" is an opening paragraph tag and "/p" is a closing tag.
 
 ***
-<h3>What are the three parts of an HTML element?</h3>
+<h4>What are the three parts of an HTML element?</h4>
 
 > <ol>
 >       <li>An opening tag</li>
@@ -310,25 +310,25 @@
 
 ***
 
-<h3><b>HTML Boilderplate</b></h3>
+<h3>HTML Boilderplate</h3>
 
 ***
-<h3>What is the purpose of the doctype declaration?</h3>
+<h4>What is the purpose of the doctype declaration?</h4>
 
 > Tells the browser what version of HTML it needs to use to render the document.
 
 ***
-<h3>What is the HTML element?</h3>
+<h4>What is the HTML element?</h4>
 
 > The root element of the document. All other elements will be descendants of the HTML document.
 
 ***
-<h3>What is the purpose of the head element?</h3>
+<h4>What is the purpose of the head element?</h4>
 
 > Contains important meta-information about the webpage and tells the browswer how to render content properly.
 
 ***
-<h3>What is the purpose of the body element?</h3>
+<h4>What is the purpose of the body element?</h4>
 
 > Gives the webpage a readable title that is displayed in the browsers tab.<br>
 > This will default to the file name if not specified (e.g. index.html).
@@ -338,39 +338,39 @@
 <h3>Working with text in HTML</h3>
 
 ***
-<h3>How do you create a paragraph in HTML?</h3>
+<h4>How do you create a paragraph in HTML?</h4>
 
 > You would use the "p" and "/p" tags to wrap your paragraph.
 
 ***
-<h3>How do you create a heading in HTML?</h3>
+<h4>How do you create a heading in HTML?</h4>
 
 > You would use the "h" and "/h" tags to wrap your heading.<br>
 > After the "h" you would use numbers between 1 and 5 to signify the importance of the heading (with 1 being the most important).<br>
 > E.g. "h1" Super Important Heading "/h1".
 
 ***
-<h3>What element should you use to make text bold and important?</h3>
+<h4>What element should you use to make text bold and important?</h4>
 
 > To do this you would wrap the text in a "strong" and "/strong" tag.
 
 ***
-<h3>What element should you use to make text italicized to add emphasis to it?</h3>
+<h4>What element should you use to make text italicized to add emphasis to it?</h4>
 
 > You would use the "em" and "/em" tags to wrap the text you'd like italicized and emphasised.
 
 ***
-<h3>What relationship does an element have with any nested elements within it?</h3>
+<h4>What relationship does an element have with any nested elements within it?</h4>
 
 > A parent / child relationship.
 
 ***
-<h3>What relationship do two elements have if they are at the same level of nesting?</h3>
+<h4>What relationship do two elements have if they are at the same level of nesting?</h4>
 
 > A sibling relationship.
 
 ***
-<h3>How do you create HTML comments?</h3>
+<h4>How do you create HTML comments?</h4>
 
 > You wrap your comment in "< ! - - >" "< - - >" tags (remove spaces).
 
@@ -379,70 +379,70 @@
 <h3>HTML Lists</h3>
 
 ***
-<h3>What HTML element is used to create an unordered list?</h3>
+<h4>What HTML element is used to create an unordered list?</h4>
 
 > You would use the "< U L >" and "< / U L >" elements (without spaces).
 
 ***
-<h3>What HTML element is used to create an ordered list?</h3>
+<h4>What HTML element is used to create an ordered list?</h4>
 
 > You would use the "< O L >" and "< / O L >" elements (without spaces).
 
 ***
-<h3>What HTML element is used to create list items within both unordered and ordered lists?</h3>
+<h4>What HTML element is used to create list items within both unordered and ordered lists?</h4>
 
 > For both unordered and ordered lists you need to wrap each list item with the "< l i >" and "< / l i >" tags (without spaces).
 
 ***
 
-<h3>Links and Images</h3>
+<h4>Links and Images</h4>
 
 ***
-<h3>What element is used to create a link?</h3>
+<h4>What element is used to create a link?</h4>
 
 > An anchor element (the "< a >" tag).
 
 ***
-<h3>What is an attribute?</h3>
+<h4>What is an attribute?</h4>
 
 > An attribute gives additional information to the element and is generally made up of both a name and a value.
 
 ***
-<h3>What attribute tells links where to go to?</h3>
+<h4>What attribute tells links where to go to?</h4>
 
 > The "href" attribute followed by the destination.
 
 ***
-<h3>What security considerations must be taken if you wish to use the target attribute to open links in a new tab/window?</h3>
+<h4>What security considerations must be taken if you wish to use the target attribute to open links in a new tab/window?</h4>
 
 > It is considered best practice to use: rel="noopener noreferrer"<br>
 > This prevents the opened link from gaining access and knowing what has referred traffic to it.
 
 ***
-<h3>What is the difference between an absolute and relative link?</h3>
+<h4>What is the difference between an absolute and relative link?</h4>
 
 > Absolute link: Links to pages on other websites.<br>
 > Relative links: Links to pages located on our own website.
 
 ***
-<h3>Which element is used to display an image?</h3>
+<h4>Which element is used to display an image?</h4>
 
 > The < i m g > element.
 > This element is self closing.
 
 ***
-<h3>What two attributes do images always need to have?</h3>
+<h4>What two attributes do images always need to have?</h4>
 
 > An "src" attribute which specifies the image source.<br>
 > An "alt" attribute which uses text to describe an image.
 
 ***
-<h3>How do you access a parent directory in a filepath?</h3>
+<h4>How do you access a parent directory in a filepath?</h4>
 
 > You would use two full-stops to go up to the parent directory.
 
 ***
-<h3>What are the four main image formats that you can use for images on the web?</h3>
+<h4>What are the four main image formats that you can use for images on the web?</h4>
 
 > JPG: Designed for handling large color paletts while maintaining a reasonable file size.<br>
 > GIF: Best option for simple animations. Should not be used for photos.<br>
