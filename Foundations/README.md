@@ -370,13 +370,86 @@
 > A sibling relationship.
 
 ***
-<h3>How do you create HTML comments?
+<h3>How do you create HTML comments?</h3>
 
 > You wrap your comment in "< ! - - >" "< - - >" tags (remove spaces).
 
 ***
 
+<h3>HTML Lists</h3>
 
+***
+<h3>What HTML element is used to create an unordered list?</h3>
+
+> You would use the "< U L >" and "< / U L >" elements (without spaces).
+
+***
+<h3>What HTML element is used to create an ordered list?</h3>
+
+> You would use the "< O L >" and "< / O L >" elements (without spaces).
+
+***
+<h3>What HTML element is used to create list items within both unordered and ordered lists?</h3>
+
+> For both unordered and ordered lists you need to wrap each list item with the "< l i >" and "< / l i >" tags (without spaces).
+
+***
+
+<h3>Links and Images</h3>
+
+***
+<h3>What element is used to create a link?</h3>
+
+> An anchor element (the "< a >" tag).
+
+***
+<h3>What is an attribute?</h3>
+
+> An attribute gives additional information to the element and is generally made up of both a name and a value.
+
+***
+<h3>What attribute tells links where to go to?</h3>
+
+> The "href" attribute followed by the destination.
+
+***
+<h3>What security considerations must be taken if you wish to use the target attribute to open links in a new tab/window?</h3>
+
+> It is considered best practice to use: rel="noopener noreferrer"<br>
+> This prevents the opened link from gaining access and knowing what has referred traffic to it.
+
+***
+<h3>What is the difference between an absolute and relative link?</h3>
+
+> Absolute link: Links to pages on other websites.<br>
+> Relative links: Links to pages located on our own website.
+
+***
+<h3>Which element is used to display an image?</h3>
+
+> The < i m g > element.
+> This element is self closing.
+
+***
+<h3>What two attributes do images always need to have?</h3>
+
+> An "src" attribute which specifies the image source.<br>
+> An "alt" attribute which uses text to describe an image.
+
+***
+<h3>How do you access a parent directory in a filepath?</h3>
+
+> You would use two full-stops to go up to the parent directory.
+
+***
+<h3>What are the four main image formats that you can use for images on the web?</h3>
+
+> JPG: Designed for handling large color paletts while maintaining a reasonable file size.<br>
+> GIF: Best option for simple animations. Should not be used for photos.<br>
+> PNG: Ideal for anything that isn't a photo or animated.<br>
+> SVC: A vector-based graphics format meaning it can scale up or down without loss of quality. Use SVC whenever possible.
+
+***
 
 
 
