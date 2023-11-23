@@ -10,7 +10,7 @@
 
 | Course | Assignment's Name | Link |
 | ------ | ------------ | ---- |
-| HTML Foundations | Recipes | Place link here inside () to the Recipes project.
+| HTML Foundations | Project:Recipes | https://github.com/TraineeBAM/TheOdinProject/tree/main/Foundations/odin-recipes
 
 ***
 
