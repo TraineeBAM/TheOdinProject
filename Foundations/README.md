@@ -10,7 +10,7 @@
 
 | Course | Assignment's Name | Link |
 | ------ | ------------ | ---- |
-| Foundations | HTML Foundations - Project: Recipes | Place link here inside () to the Recipes project.
+| HTML Foundations | Recipes | Place link here inside () to the Recipes project.
 
 ***
 
@@ -325,7 +325,7 @@
 ***
 <h4>What is the purpose of the head element?</h4>
 
-> Contains important meta-information about the webpage and tells the browswer how to render content properly.
+> Contains important meta-information about the webpage and tells the browser how to render content properly.
 
 ***
 <h4>What is the purpose of the body element?</h4>
@@ -444,7 +444,7 @@
 ***
 <h4>What are the four main image formats that you can use for images on the web?</h4>
 
-> JPG: Designed for handling large color paletts while maintaining a reasonable file size.<br>
+> JPG: Designed for handling large color pallets while maintaining a reasonable file size.<br>
 > GIF: Best option for simple animations. Should not be used for photos.<br>
 > PNG: Ideal for anything that isn't a photo or animated.<br>
 > SVC: A vector-based graphics format meaning it can scale up or down without loss of quality. Use SVC whenever possible.
