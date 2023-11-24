@@ -26,8 +26,8 @@
         Please see below for my answers to the various knowledge checks in TOP Foundations.
 
 ***
-
-<h3>How does the Web Work?</h3>
+<details>
+<summary><h3>How does the Web Work?</h3></summary>
 
 ***
 
@@ -122,9 +122,12 @@
 >       <li>If this request is approved then a "200 OK" message is sent to the client from the server, followed by data packets containing the websites files.</li>
 >       <li>The browser assembles these data packets and displays a complete web page.</li>
 ></ol>
+</details>
+
 ***
 
-<h3>Command Line Basics</h3>
+<details>
+<summary><h3>Command Line Basics</h3></summary>
 
 ***
 <h4>What is the CLI?</h4>
@@ -175,9 +178,12 @@
 > <br>
 > In order to rename a directory or file use the "mv" command followed by the current name and the new file (e.g. "mv old_projects new_projects").
 
+</details>
+
 ***
 
-<h3>Introduction to Git</h3>
+<details>
+<summary><h3>Introduction to Git</h3></summary>
 
 ***
 <h4>What kind of program is Git?</h4>
@@ -210,9 +216,12 @@
 
 > They facilitate collaboration of software developers and allow for streamlined product/service development.
 
+</details>
+
 ***
 
-<h3>Git Basics</h3>
+<details>
+<summary><h3>Git Basics</h3></summary>
 
 ***
 
@@ -273,9 +282,12 @@
 
 > "git log"
 
+</details>
+
 ***
 
-<h3>Intro to HTML and CSS</h3>
+<details>
+<summary><h3>Intro to HTML and CSS</h3></summary>
 
 ***
 
@@ -315,9 +327,12 @@
 >       <li>The content</li>
 >       <li>A closing tag</li>
 
+</details>
+
 ***
 
-<h3>HTML Boilderplate</h3>
+<details>
+<summary><h3>HTML Boilderplate</h3></summary>
 
 ***
 <h4>What is the purpose of the doctype declaration?</h4>
@@ -340,9 +355,12 @@
 > Gives the webpage a readable title that is displayed in the browsers tab.<br>
 > This will default to the file name if not specified (e.g. index.html).
 
+</details>
+
 ***
 
-<h3>Working with text in HTML</h3>
+<details>
+<summary><h3>Working with text in HTML</h3></summary>
 
 ***
 <h4>How do you create a paragraph in HTML?</h4>
@@ -381,9 +399,12 @@
 
 > You wrap your comment in "< ! - - >" "< - - >" tags (remove spaces).
 
+</details>
+
 ***
 
-<h3>HTML Lists</h3>
+<details>
+<summary><h3>HTML Lists</h3></summary>
 
 ***
 <h4>What HTML element is used to create an unordered list?</h4>
@@ -456,9 +477,12 @@
 > PNG: Ideal for anything that isn't a photo or animated.<br>
 > SVC: A vector-based graphics format meaning it can scale up or down without loss of quality. Use SVC whenever possible.
 
+</details>
+
 ***
 
-<h3>Intro to CSS</h3>
+<details>
+<summary><h3>Intro to CSS</h3></summary>
 
 ***
 <h4>What is the syntax for class and ID selectors?</h4>
@@ -502,9 +526,78 @@
 
 > The class selector will always take priority over any number of type selectors as it is more specific.
 
+</details>
+
 ***
 
+<details>
+<summary><h3>Inspecting HTML and CSS</h3></summary>
 
+***
+
+<h4>How do you select a specific element on your page with your browser’s developer tools?</h4>
+
+> You can click on your pages elements from the developers tool pane in order to select them.
+
+***
+<h4>What does a strikethrough in a CSS declaration mean in your browser’s developer tools?</h4>
+
+> It means that particular style is being overwritten.
+
+***
+<h4>How do you change CSS in real time on specific elements of a web page with your browser’s developer tools?</h4>
+
+> You can use the Styles pane and click on selectors or attributes to edit them.
+
+</details>
+
+***
+
+<details>
+<summary><h3>The Box Model</h3></summary>
+
+***
+<h4>From inside to outside, what is the order of box-model properties?</h4>
+
+> Margin - Border - Padding.
+
+***
+<h4>What does the box-sizing CSS property do?</h4>
+
+> Allows you to use the alternative box model for your elements.
+
+***
+<h4>What is the difference between the standard and alternative box model?</h4>
+
+> The standard box model will size your element by adding the margin, border and padding together.<br>
+> The alternative box model will size your element based on how it is defined and will account for the margin, border and padding size.
+
+***
+<h4>Would you use margin or padding to create more space between 2 elements?</h4>
+
+> Use the margin element for this.
+
+***
+<h4>Would you use margin or padding to create more space between the contents of an element and its border?</h4>
+
+> Use the padding element for this.
+
+***
+<h4>Would you use margin or padding if you wanted two elements to overlap each other?</h4>
+
+> You can set a negative margin to have elements overlap each other.
+
+***
+<h4>How do you set the alternative box model for all of your elements?</h4>
+
+> Set the "box-sizing" property on the "html" element and set all other elements to inherit that value with "box-sizing:inherit;"
+
+***
+<h4>How do you center an element horizontally?</h4>
+
+> You would first need to define the element width. Then you would use "margin: auto".
+
+***
 
 
 
