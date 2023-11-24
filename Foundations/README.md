@@ -640,8 +640,25 @@
 > "span" is an inline element in HTML.
 
 ***
+</details>
 
+***
 
+<details>
+<summary><h3>Flexbox</h3></summary>
+
+***
+<h4>What’s the difference between a flex container and a flex item?</h4>
+
+> Any element that has "display:flex" on it is a flex container.<br>
+> Any element that lives inside of a flex container is a flex item.
+
+***
+<h4>How do you create a flex item?</h4>
+
+> By placing the item inside a flex container.
+
+***
 
 
 
