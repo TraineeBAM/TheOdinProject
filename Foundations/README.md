@@ -17,8 +17,8 @@
 | CSS Foundations | Intro to CSS | [Chaining selectors](https://traineebam.github.io/TheOdinProject/Foundations/CSS_Intro/04-chaining-selectors)|
 | CSS Foundations | Intro to CSS | [Descendant combinator](https://traineebam.github.io/TheOdinProject/Foundations/CSS_Intro/05-descendant-combinator)|
 | CSS Foundations | The Cascade | [Cascade fix](https://traineebam.github.io/TheOdinProject/Foundations/CSS_Intro/06-cascade-fix)|
-| CSS Foundations | Margins and padding | [Exercise 1](https://traineebam.github.io/TheOdinProject/Foundations/CSS_Intro/margins-and-padding/01-margins-and-padding-1)
-| CSS Foundations | Margins and padding | [Exercise 2](https://traineebam.github.io/TheOdinProject/Foundations/CSS_Intro/margins-and-padding/02-margins-and-padding-2)
+| CSS Foundations | Block and Inline | [Exercise 1](https://traineebam.github.io/TheOdinProject/Foundations/CSS_Intro/margins-and-padding/01-margin-and-padding-1)
+| CSS Foundations | Block and Inline | [Exercise 2](https://traineebam.github.io/TheOdinProject/Foundations/CSS_Intro/margins-and-padding/02-margin-and-padding-2)
 
 
 ***
@@ -602,9 +602,44 @@
 ***
 </details>
 
+***
 
+<details>
+<summary><h3>Block and Inline</h3></summary>
 
+***
 
+<h4>What is the difference between a block element and an inline element?</h4>
+
+> Block elements will stack on-top of one another whereas an inline element will appear next to other elements.
+
+***
+<h4>What is the difference between an inline element and an inline-block element?</h4>
+
+> An "inline" element will not have its width and height respected and will overlap other lines.<br>
+> An "inline-block" element will have its width, height and padding respected.
+
+***
+<h4>Is an h1 block or inline?</h4>
+
+> "h1" is a block level element in HTML.
+
+***
+<h4>Is button block or inline?</h4>
+
+> "button" is an inline element in HTML.
+
+***
+<h4>Is div block or inline?</h4>
+
+> "div" is a block level element in HTML.
+
+***
+<h4>Is span block or inline?</h4>
+
+> "span" is an inline element in HTML.
+
+***
 
 
 
