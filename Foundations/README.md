@@ -10,7 +10,14 @@
 
 | Course | Assignment's Name | Link |
 | ------ | ------------ | ---- |
-| HTML Foundations | Project:Recipes | https://github.com/TraineeBAM/TheOdinProject/tree/main/Foundations/odin-recipes
+| HTML Foundations | Project:Recipes |[Odin Recipes](https://traineebam.github.io/TheOdinProject/Foundations/odin-recipes)|
+| CSS Foundations | Intro to CSS | [CSS Methods](https://traineebam.github.io/TheOdinProject/Foundations/CSS_Intro/01-css-methods)|
+| CSS Foundations | Intro to CSS | [Class ID selectors](https://traineebam.github.io/TheOdinProject/Foundations/CSS_Intro/02-class-id-selectors)|
+| CSS Foundations | Intro to CSS | [Grouping selectors](https://traineebam.github.io/TheOdinProject/Foundations/CSS_Intro/03-grouping-selectors)|
+| CSS Foundations | Intro to CSS | [Chaining selectors](https://traineebam.github.io/TheOdinProject/Foundations/CSS_Intro/04-chaining-selectors)|
+| CSS Foundations | Intro to CSS | [Descendant combinator](https://traineebam.github.io/TheOdinProject/Foundations/CSS_Intro/05-descendant-combinator)|
+| CSS Foundations | The Cascade | [Cascade fix](https://traineebam.github.io/TheOdinProject/Foundations/CSS_Intro/06-cascade-fix)|
+
 
 ***
 
