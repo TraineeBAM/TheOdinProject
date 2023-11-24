@@ -498,7 +498,11 @@
 
 ***
 
+<h4>Between a rule that uses one class selector and a rule that uses three type selectors, which rule has the higher specificity?</h4>
 
+> The class selector will always take priority over any number of type selectors as it is more specific.
+
+***
 
 
 
