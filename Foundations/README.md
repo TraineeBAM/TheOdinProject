@@ -598,6 +598,7 @@
 > You would first need to define the element width. Then you would use "margin: auto".
 
 ***
+</details>
 
 
 
