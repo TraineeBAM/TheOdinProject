@@ -19,6 +19,7 @@
 | CSS Foundations | The Cascade | [Cascade fix](https://traineebam.github.io/TheOdinProject/Foundations/CSS_Intro/06-cascade-fix)|
 | CSS Foundations | Block and Inline | [Exercise 1](https://traineebam.github.io/TheOdinProject/Foundations/CSS_Intro/margins-and-padding/01-margin-and-padding-1)
 | CSS Foundations | Block and Inline | [Exercise 2](https://traineebam.github.io/TheOdinProject/Foundations/CSS_Intro/margins-and-padding/02-margin-and-padding-2)
+| External Assignment | Flexbot Tutorial | [Internetingishard](https://traineebam.github.io/TheOdinProject/External_Assignments/internetingishard/flexbox)
 
 
 ***
