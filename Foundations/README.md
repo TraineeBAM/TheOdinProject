@@ -660,9 +660,37 @@
 > By placing the item inside a flex container.
 
 ***
+<h4>What are the 3 values defined in the shorthand flex property (e.g. flex: 1 1 auto)?</h4>
 
+> These values are: "flex-grow", "flex-shrink" and "flex-basis".
 
+***
+<h4>What are the 3 defined values for the flex shorthand "flex:auto"?
 
+> "flex:auto" is equivalent to "flex-grow:1", "flex-shrink:1" and "flex-basis:auto".
+
+***
+<h4>How do you make flex items arrange themselves vertically instead of horizontally?</h4>
+
+> You would use "flex-direction:column;".
+
+***
+<h4>In a column flex-container, what does flex-basis refer to?</h4>
+
+> It refers to height instead of width.
+
+***
+<h4>In a row flex-container, what does flex-basis refer to?</h4>
+
+> It refers to width.
+
+***
+<h4>Why do the previous two questions have different answers?</h4>
+
+> Both column and row flex-containers have different axes to one another.<br>
+> Column puts the main axis vertical, whereas row puts the main axis horizontally.
+
+***
 
 
 
