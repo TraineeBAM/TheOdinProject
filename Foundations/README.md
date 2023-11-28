@@ -665,7 +665,7 @@
 > These values are: "flex-grow", "flex-shrink" and "flex-basis".
 
 ***
-<h4>What are the 3 defined values for the flex shorthand "flex:auto"?
+<h4>What are the 3 defined values for the flex shorthand "flex:auto"?<h4>
 
 > "flex:auto" is equivalent to "flex-grow:1", "flex-shrink:1" and "flex-basis:auto".
 
