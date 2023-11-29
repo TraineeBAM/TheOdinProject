@@ -17,10 +17,16 @@
 | CSS Foundations | Intro to CSS | [Chaining selectors](https://traineebam.github.io/TheOdinProject/Foundations/CSS_Intro/04-chaining-selectors)|
 | CSS Foundations | Intro to CSS | [Descendant combinator](https://traineebam.github.io/TheOdinProject/Foundations/CSS_Intro/05-descendant-combinator)|
 | CSS Foundations | The Cascade | [Cascade fix](https://traineebam.github.io/TheOdinProject/Foundations/CSS_Intro/06-cascade-fix)|
-| CSS Foundations | Block and Inline | [Exercise 1](https://traineebam.github.io/TheOdinProject/Foundations/CSS_Intro/margins-and-padding/01-margin-and-padding-1)
-| CSS Foundations | Block and Inline | [Exercise 2](https://traineebam.github.io/TheOdinProject/Foundations/CSS_Intro/margins-and-padding/02-margin-and-padding-2)
-| External Assignment | Flexbox Tutorial | [Internetingishard](https://traineebam.github.io/TheOdinProject/External_Assignments/internetingishard/flexbox)
-
+| CSS Foundations | Block and Inline | [Exercise 1](https://traineebam.github.io/TheOdinProject/Foundations/CSS_Intro/margins-and-padding/01-margin-and-padding-1)|
+| CSS Foundations | Block and Inline | [Exercise 2](https://traineebam.github.io/TheOdinProject/Foundations/CSS_Intro/margins-and-padding/02-margin-and-padding-2)|
+| External Assignment | Flexbox Tutorial | [Internetingishard](https://traineebam.github.io/TheOdinProject/External_Assignments/internetingishard/flexbox)|
+| Flexbox | Alignment | [01-Flex-Center](https://traineebam.github.io/TheOdinProject/Foundations/Flexbox/01-flex-center)|
+| Flexbox | Alignment | [02-Flex-Header](https://traineebam.github.io/TheOdinProject/Foundations/Flexbox/02-flex-header)|
+| Flexbox | Alignment | [03-Flex-Header-2](https://traineebam.github.io/TheOdinProject/Foundations/Flexbox/03-flex-header-2)|
+| Flexbox | Alignment | [04-Flex-Information](https://traineebam.github.io/TheOdinProject/Foundations/Flexbox/04-flex-information)|
+| Flexbox | Alignment | [05-Flex-modal](https://traineebam.github.io/TheOdinProject/Foundations/Flexbox/05-flex-modal)|
+| Flexbox | Alignment | [06-Flex-Layout](https://traineebam.github.io/TheOdinProject/Foundations/Flexbox/06-flex-layout)|
+| Flexbox | Alignment | [07-Flex-Layout-2](https://traineebam.github.io/TheOdinProject/Foundations/Flexbox/07-flex-layout-2)|
 
 ***
 
