@@ -667,7 +667,7 @@
 ***
 <h4>What are the 3 defined values for the flex shorthand "flex:auto"?<h4>
 
-> "flex:auto" is equivalent to "flex-grow:1", "flex-shrink:1" and "flex-basis:auto".
+> 'flex:auto' is equivalent to 'flex-grow:1', 'flex-shrink:1' and 'flex-basis:auto'.
 
 ***
 <h4>How do you make flex items arrange themselves vertically instead of horizontally?</h4>
