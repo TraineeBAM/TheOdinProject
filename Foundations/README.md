@@ -697,6 +697,90 @@
 > Column puts the main axis vertical, whereas row puts the main axis horizontally.
 
 ***
+</details>
 
+***
+
+<details>
+<summary><h3>JavaScript Fundamentals - Part 1</h3></summary>
+
+***
+<h4>Name the three ways to declare a variable</h4>
+
+> "var", "let" and "const".
+
+***
+<h4>Which of the three variable declarations should you avoid and why?</h4>
+
+> "var" should generally be avoided as it is an old-style of declaring variables and can act in unexpected ways.
+
+***
+<h4>What rules should you follow when naming variables?</h4>
+
+> The name must only contain letters, digits, or the symbols "$" and "_".<br>
+> The first character must not be a digit.
+
+***
+<h4>What happens when you add numbers and strings together?</h4>
+
+> Then the number is merged with the string.<br>
+> E.g. If we said: let s = "hello" + 7 + "mother".<br>
+>Then 's' would output "hello7mother".
+
+***
+<h4>How does the Modulo (%), or Remainder, operator work?</h4>
+
+> It works by outputting the remainder of an equation.<br>
+> E.g. 8 % 3 would output 2.
+
+***
+<h4>Explain the difference between == and ===.</h4>
+
+> "==" requires two variables to have the same value to evaluate as true.<br>
+> "===" requires two variables to have the same value and the same type to evaluate as true.<br>
+> It is generally considered safest to use "===".
+
+***
+<h4>When would you receive a NaN result?</h4>
+
+> NaN = "Not a Number".<br>
+> If you try to do mathematical functions with a non-numeric string you will receive a NaN result.
+
+***
+<h4>How do you increment and decrement a number?</h4>
+
+> Increment = "++" this will increase a variable by 1.<br>
+> Decrement = "--" this will decrease a variable by 1.
+
+***
+<h4>Explain the difference between prefixing and postfixing increment/decrement operators.</h4>
+
+> Prefixing increment/decrement operators will change a value and output this new result.<br>
+> Postfixing increment/decrement operators will change a value but output its previous value.
+
+***
+<h4>What is operator precedence and how is it handled in JS?</h4>
+
+> The order in which an expression is executed is defined by operator precedence.<br>
+> In JavaScript operators are given a value and the higher this value the higher the operators precedence.<br>
+> Higher precedence operators are executed before lower precedence ones.
+
+***
+<h4>How do you access developer tools and the console?</h4>
+
+> You would right-click on the webpage and select "inspect"/"inspect element" to access developer tools.<br>
+> Once these tools are accessed you would select the "console" tab.
+
+***
+<h4>How do you log information to the console?</h4>
+
+> By using "console.log()".
+
+***
+<h4>What does unary plus operator do to string representations of integers? eg. +”10”</h4>
+
+> The unary plus operator converts them to numbers.
+
+***
 
 
