@@ -7,9 +7,22 @@
 </head>
 <body>
     <script>
-    // JavaScript goes in here!
-let s = "hello" + 7 + "mother";
-alert(s)
+let userName = prompt("Who dares disturb me?", '')
+if (userName === "Admin") {
+    let pass = prompt('What be thy password?', '');
+    if (pass === 'TheMaster') {
+        alert("Welcome Master!");
+    }   else if (pass === '' || pass === null) {
+    alert( 'cancelled' );
+    }   else {
+    alert ('You\'re password is incorrect' );
+    }
+} else if (userName === '' || userName === null){
+    alert( 'cancelled');
+} else {
+    alert("I don't know you!");
+}
+
     </script>
 </body>
 </html>
