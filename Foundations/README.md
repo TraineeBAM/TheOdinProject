@@ -782,5 +782,135 @@
 > The unary plus operator converts them to numbers.
 
 ***
+</details>
 
+***
 
+<details>
+<summary><h3>JavaScript Fundamentals - Part 2</h3></summary>
+
+***
+<h4>What are the eight data types in JavaScript?</h4>
+
+><ol>
+>       <li>number: For integer and floating point numbers. Limit is 2^53-1 or -2^53-1. </li>
+>       <li>bigInt: Used for for integers of length greater than 'number' can handle. Value is created by adding an 'n' after an integer.</li>
+>       <li>string: A string may have zero or more characters.</li>
+>       <li>boolean: For true/false values.</li>
+>       <li>null: For unknown values. A standalone type that has the single value of 'null'.</li>
+>       <li>undefined: For unassigned values. A standalone type that has the single value of 'undefined'.</li>
+>       <li>symbol: For unique identifiers.</li>
+>       <li>object: For more complex data structures.</li>
+></ol>
+
+***
+<h4>Which data type is NOT primitive?</h4>
+
+> Object is a non-primitive data type.
+
+***
+<h4>What is the relationship between null and undefined?</h4>
+
+> They are both stand-alone value types with only a single value of either 'null' or 'undefined'.<br>
+
+***
+<h4>What is the difference between single, double, and backtick quotes for strings?</h4>
+
+> Single and double quotes are both "simple" quotes and they are treated in the same way by JavaScript.<br>
+> Backtick quotes are "extended functionality" quotes that allow variables and expressions to be embedded into a string by wrapping them in "${..}".
+
+***
+<h4>What is the term for joining strings together?</h4>
+
+> Concatenation.
+
+***
+<h4>Which type of quote lets you embed variables/expressions in a string?</h4>
+
+> Backtick quotes (extended functionality quotes).
+
+***
+<h4>How do you embed variables/expressions in a string?</h4>
+
+> Inside a template literal (the name of a string declared with backticks), you wrap JavaScript variables/expressions inside "${..}".<br>
+> The result of this will be included in the string.
+
+***
+<h4>How do you use escape characters in a string?</h4>
+
+> You use the backslash "\" just before the character.
+
+***
+<h4>What is the difference between the slice/substring/substr string methods?</h4>
+
+><ul>
+>    <li>slice(start, end). Extracts a part of a string and returns the result in a new string.</li>
+>    <li>substring(start, end). Similar to above except start and end values less than 0 are treated as 0.</li>
+>    <li>substr(start, length). Second parameter here specifies length of the extracted part.</li>
+></ul>
+
+***
+<h4>What are the three logical operators, and what do they stand for?</h4>
+
+><ol>
+>    <li> OR = "||". Returns false if both operands are false and true otherwise.
+>    <li> AND = "&&". Returns true if both operands are truthy and false otherwise.
+>    <li> NOT = "!". The "!" is placed before an operand and converts it to a boolean type which is then inverted.
+></ol>
+
+***
+<h4>What are the comparison operators?</h4>
+
+><ol>
+>    <li> Greater ">" and Less "<" than
+>    <li> Greater than or equal to ">=" and Less than or equal to "<=".
+>    <li> Equals "=="
+>    <li> Not Equal "!="
+></ol>
+
+***
+<h4>What are truthy and falsy values?</h4>
+
+> Truthy values are true values and Falsy values are false values.
+
+***
+<h4>What are the falsy values in JavaScript?</h4>
+
+> Falsy values are "0", empty strings "", null, undefined and NaN as they are all false.
+
+***
+<h4>What are conditionals?</h4>
+
+> "if", "else" and "else if". These are used to perform different actions based on different conditions.
+
+***
+<h4>What is the syntax for an if/else conditional?</h4>
+
+> else if
+
+***
+<h4>What is the syntax for a switch statement?</h4>
+
+> switch(expression) {<br>
+>        case x:<br>
+>          // code block<br>
+>          break;<br>
+>        case y:<br>
+>          // code block<br>
+>          break;<br>
+>        default:<br>
+>          // code block<br>
+>}<br>
+
+***
+<h4>What is the syntax for a ternary operator?</h4>
+
+> A ternary operator tests a condition and returns one value/expression if true and another if false.<br>
+> The syntax looks like: condition ? run this code : run this code instead
+
+***
+<h4>What is nesting?</h4>
+
+> Nesting is placing an "if...else" statement inside another.
+
+***
