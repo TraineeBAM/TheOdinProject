@@ -914,3 +914,38 @@
 > Nesting is placing an "if...else" statement inside another.
 
 ***
+</details>
+
+***
+
+<details>
+<summary><h3>JavaScript Developer Tools</h3></summary>
+
+***
+<h4>How do you open developer tools?</h4>
+
+> The three main ways to open Chrome developer tools are:<br>
+><ol>
+><li>In the Chrome menu select "More Tools" then "Developer Tools".</li>
+><li>Right click on a the webpage and select "Inspect".</li>
+><li>Use the keyboard shortcuts being either "F12" or "CTRL + SHIFT + C".</li>
+></ol>
+
+***
+<h4>How do you change screen size of a website using developer tools?</h4>
+
+> You select the "Toggle Device Toolbar" option.<br>
+> Once this is enabled you can manually change the screen size or choose from a list of pre-configured devices.
+
+***
+<h4>What is a breakpoint?</h4>
+
+> A breakpoint lets you pause your code mid-execution and examine all current values.
+
+***
+<h4>How do you set a breakpoint?</h4>
+
+> There are numerous breakpoint types and all are set slightly differently.<br>
+> The simplest type is the "Line-of-code" breakpoint which can be set by clicking the line number from the "sources" tab in DevTools.
+
+***
