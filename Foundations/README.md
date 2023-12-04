@@ -998,36 +998,52 @@
 ***
 <h4>What are the three stages in the problem solving process?</h4>
 
->
+><ol>
+><li>Understanding the problem.</li>
+><li>Plan - utilise Pseudocode.</li>
+><li>Divide and conquer (implement).</li>
+></ol>
 
 ***
 <h4>Why is it important to clearly understand the problem first?</h4>
 
->
+> If you don't clearly understand the problem, you won't know when you've solved it.
 
 ***
 <h4>What can you do to help get a clearer understanding of the problem?</h4>
 
->
+><ul>
+><li>Write it down on paper.</li>
+><li>Reword the problem in plain english.</li>
+><li>Draw diagrams.</li>
+><li>Explain the problem to someone else</li>
+></ul>
 
 ***
 <h4>What are some of the things you should do in the planning stage of the problem solving process?</h4>
 
->
+><ul>
+><li>Identify if the program will have a user interface; if so, what does it look like and what function will it serve?</li>
+><li>What inputs are required? Will the user provide this or will it come from somewhere else?</li>
+><li>What is the desired output?</li>
+><li>Based on the inputs, what steps are required to achieve the desired output?</li>
+></ul>
 
 ***
 <h4>What is an algorithm?</h4>
 
->
+> A recipe for solving a particular problem.<br>
+> It defines the steps that the computer must take in order to solve the problem.
 
 ***
 <h4>What is pseudocode?</h4>
 
->
+> Programming logic written out in natural language inside of in code.
 
 ***
 <h4>What are the advantages of breaking a problem down and solving the smaller problems?</h4>
 
->
+> It results in reduced problem complexity which results in them being more approachable and easier to solve. <br>
+> Over time, once all of the smaller problems have been solved, the big problem will be too.
 
 ***
