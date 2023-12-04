@@ -949,3 +949,42 @@
 > The simplest type is the "Line-of-code" breakpoint which can be set by clicking the line number from the "sources" tab in DevTools.
 
 ***
+</details>
+
+***
+
+<details>
+<summary><h3>JavaScript Fundamentals - Part 3</h3></summary>
+
+***
+<h4>What are functions useful for?</h4>
+
+> Storing a piece of code that can be called upon later as often as required.
+
+***
+<h4>How do you invoke a function?</h4>
+
+> By stating the name of your function followed by parenthesis in your code.
+
+***
+<h4>What are anonymous functions?</h4>
+
+> A function that has no name. Often used when a function expects to receive another function as a parameter.
+
+***
+<h4>What is function scope?</h4>
+
+> The scope created within a function. Essentially the variables and other things defined in a function are only available to that particular function. 
+
+***
+<h4>What are return values?</h4>
+
+> The values that a function returns when it completes.
+
+***
+<h4>What are arrow functions?</h4>
+
+> A method of creating functions that is more simple and concise than using function expressions.<br>
+> They are called arrow functions because they are called using "=>".
+
+***
