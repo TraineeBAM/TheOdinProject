@@ -988,3 +988,46 @@
 > They are called arrow functions because they are called using "=>".
 
 ***
+</details>
+
+***
+
+<details>
+<summary><h3>JavaScript - Problem Solving</h3></summary>
+
+***
+<h4>What are the three stages in the problem solving process?</h4>
+
+>
+
+***
+<h4>Why is it important to clearly understand the problem first?</h4>
+
+>
+
+***
+<h4>What can you do to help get a clearer understanding of the problem?</h4>
+
+>
+
+***
+<h4>What are some of the things you should do in the planning stage of the problem solving process?</h4>
+
+>
+
+***
+<h4>What is an algorithm?</h4>
+
+>
+
+***
+<h4>What is pseudocode?</h4>
+
+>
+
+***
+<h4>What are the advantages of breaking a problem down and solving the smaller problems?</h4>
+
+>
+
+***
