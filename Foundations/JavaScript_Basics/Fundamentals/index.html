@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Title</title>
+</head>
+<body>
+    <script>
+//let userName = prompt("Who dares disturb me?", '')
+//if (userName === "Admin") {
+//    let pass = prompt('What be thy password?', '');
+//    if (pass === 'TheMaster') {
+//        alert("Welcome Master!");
+//    }   else if (pass === '' || pass === null) {
+//    alert( 'cancelled' );
+//    }   else {
+//    alert ('You\'re password is incorrect' );
+//    }
+//} else if (userName === '' || userName === null){
+//    alert( 'cancelled');
+//} else {
+//    alert("I don't know you!");
+//}
+
+
+// Assignment Questions:
+// 1. Write a function called "add7" that takes one number and returns that number +7.
+function add7(a){
+    console.log(a + 7)
+}
+
+add7(10) //console response = 17
+
+// 2. Write a function called "multiply" that takes two numbers and returns their product.
+function multiply(a,b){
+    console.log(a*b)
+}
+
+multiply(3,7) //console response = 21
+
+// 3. Write a function called "capitalize" that takes a string and returns that string with only the first letter capitalized. Make sure it can take strings that are lowercase, UPPERCASE or BoTh.
+function capitalize(string){
+    return string.charAt(0).toUpperCase() + string.slice(1).toLowerCase();
+}
+
+console.log(capitalize("this FINALLY works!")); //This took me longer than I would care to admit... :(
+
+// 4. Write a function called "lastLetter" that takes a string and returns the very last letter of that string: E.g. lastLetter("abcd") should return "d".
+function lastLetter(last){
+    return last.slice(-1);
+}
+
+console.log(lastLetter("abcd")) //This took me about 20sec :)
+
+
+    </script>
+</body>
+</html>
