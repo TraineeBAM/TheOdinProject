@@ -1047,3 +1047,30 @@
 > Over time, once all of the smaller problems have been solved, the big problem will be too.
 
 ***
+</details>
+
+***
+
+<details>
+<summary><h3>JavaScript - Understanding Errors</h3></summary>
+
+***
+<h4>What are three reasons why you may see a TypeError?</h4>
+
+><ol>
+><li>An operand or argument passed to a function is not compatible with the type expected.</li>
+><li>Attempting to modify a value that can't be changed.</li>
+><li>Attempting to use a value in an inappropriate way.</li>
+></ol>
+
+***
+<h4>What is the key difference between an error and a warning?</h4>
+
+>An error will stop program execution, whereas a warning will only provide some insight on a potential problem.
+
+***
+<h4>What is one method you can use to resolve an error?</h4>
+
+> Using the Devtools debugging feature to step through the code.
+
+***
