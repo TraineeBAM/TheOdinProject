@@ -11,9 +11,6 @@ function getComputerChoice() {
 
 function playRound(playerSelection, computerSelection){
     let userLower = playerSelection.toLowerCase();
-    if (userLower != "rock" || "paper" || "scissors"){
-        alert("Please enter either Rock, Paper or Scissors");
-    }
     console.log("You have chosen" + " " + userLower);
     let compLower = computerSelection.toLowerCase();
     console.log("Your opponent has chosen" + " " + compLower);
@@ -34,8 +31,12 @@ function playRound(playerSelection, computerSelection){
     }
 }
 
-const playerSelection = prompt("Make your selection by typing rock, paper or scissors");
+function game(){
+    for (let i = 0; i < 5; i++){
+        let playerSelection = prompt("Make your selection by typing rock, paper or scissors");
+        let computerSelection = getComputerChoice();
+        console.log(playRound(playerSelection, computerSelection));
+    }
+}
 
-let computerSelection = getComputerChoice();
-
-console.log(playRound(playerSelection, computerSelection));
+game()
