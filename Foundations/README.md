@@ -1074,3 +1074,34 @@
 > Using the Devtools debugging feature to step through the code.
 
 ***
+***
+</details>
+
+***
+
+<details>
+<summary><h3>JavaScript - Clean Code</h3></summary>
+
+***
+<h4>Why is it important to write clean code?</h4>
+
+>It improves the readability of your code which can help save a significant amount of time.
+
+***
+<h4>Name 5 clean code principles previously mentioned</h4>
+
+><ol>
+><li>Use correct indentation.</li>
+><li>Write explanatory comments (without abusing them).</li>
+><li>Avoid excessively large functions.</li>
+><li>Use naming standards for functions and variables.</li>
+><li>Clearly expose the page structure.</li>
+></ol>
+
+***
+<h4>What is the difference between good comments and bad comments?</h4>
+
+>A good comment will tell the <strong>why</strong>, while a bad comment will tell the how.<br>
+>Good comments explain the reasons behind a piece of code.
+
+***
