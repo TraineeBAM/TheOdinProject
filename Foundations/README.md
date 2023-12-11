@@ -1074,7 +1074,7 @@
 > Using the Devtools debugging feature to step through the code.
 
 ***
-***
+
 </details>
 
 ***
@@ -1103,5 +1103,65 @@
 
 >A good comment will tell the <strong>why</strong>, while a bad comment will tell the how.<br>
 >Good comments explain the reasons behind a piece of code.
+
+***
+
+</details>
+
+***
+
+<details>
+<summary><h3>JavaScript Fundamentals - Part 4</h3></summary>
+
+***
+<h4>What is an array?</h4>
+
+>A data structure that stores a collection of values.
+
+***
+<h4>What are arrays useful for?</h4>
+
+>Holding many different values under a single name.
+
+***
+<h4>How do you access an array element?</h4>
+
+>By referring to the index number of the element.<br>
+>Array indexes start with 0 (second element is 1, third is 2, etc).
+
+***
+<h4>How do you change an array element?</h4>
+
+>By calling the array and index element, followed by "=" then the new value.
+
+***
+<h4>What are some useful array properties?</h4>
+
+> 'length', 'constructor' and 'prototype'.
+
+***
+<h4>What are some useful array methods?</h4>
+
+> 'push', 'pop', 'splice', 'forEach', 'map', 'filter' and 'reduce'.
+
+***
+<h4>What are loops useful for?</h4>
+
+>Executing a set of instructions repeatedly based on a condition.
+
+***
+<h4>What is the break statement?</h4>
+
+>A statement that breaks a loop once its condition becomes true.
+
+***
+<h4>What is the continue statement?</h4>
+
+>A statement that skips to the next iteration of the loop once its condition becomes true.
+
+***
+<h4>What is the advantage of writing automated tests?</h4>
+
+>Systematically verifies code functionality to ensure consistent behavior by detecting errors early.
 
 ***
