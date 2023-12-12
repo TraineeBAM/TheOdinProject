@@ -35,3 +35,7 @@ div2.style.backgroundColor = 'pink';
 
 
 body.append(div2)
+
+btn.addEventListener('click', function (e) {
+    e.target.style.background = 'blue';
+  });

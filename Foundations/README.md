@@ -1165,3 +1165,101 @@
 >Systematically verifies code functionality to ensure consistent behavior by detecting errors early.
 
 ***
+
+</details>
+
+***
+
+<details>
+<summary><h3>DOM Manipulation and Events</h3></summary>
+
+***
+<h4>What is the DOM?</h4>
+
+> The Document Object Model represents a HTML document as a tree of nodes and provides functions to allow the document to be manipulated.
+
+***
+<h4>How do you target the nodes you want to work with?</h4>
+
+>Through the use of 'selectors'.
+
+***
+<h4>How do you create an element in the DOM?</h4>
+
+><code>document.createElement(tagName, [options])</code>
+
+***
+<h4>How do you add an element to the DOM?</h4>
+
+><code>parentNode.appendChild(childNode)</code> This will append childNode as the last child of parentNode.<br>
+><code>parentNode.insertBefore(newNode, referenceNode)</code> This will insert newNode into parentNode before referenceNode.
+
+***
+<h4>How do you remove an element from the DOM?</h4>
+
+><code>parentNode.removeChild(child)</code> This removes child from parentNode on the DOM and will return a reference to child.
+
+***
+<h4>How can you alter an element in the DOM?</h4>
+
+>Once the element is referenced you can use that reference to alter it.
+
+***
+<h4>When adding text to a DOM element, should you use textContent or innerHTML? Why?</h4>
+
+>You should use textContent so that a malicious individual cannot use cross site scripting to infiltrate your website.
+
+***
+<h4>Where should you include your JavaScript tag in your HTML file when working with DOM nodes?</h4>
+
+>Either in the 'head' of your HTML file with the 'defer' keyword or at the bottom of your HTML file.
+
+***
+<h4>How do “events” and “listeners” work?</h4>
+
+>An 'event' is an action that occurs on a webpage, such as mouse-clicks or keystrokes.<br>
+>A 'listener' waits until a specified event occurs.
+
+***
+<h4>What are three ways to use events in your code?</h4>
+
+><ol>
+><li>Inline Event Handling - Assigning event handlers within HTML tags.</li>
+><li>DOM Event Handling - Listeners are attached to specific elements in the DOM. </li>
+><li>Event Attributes - 'addEventListener' is applied directly to an element which can handle multiple event listeners.</li>
+></ol>
+
+***
+<h4>Why are event listeners the preferred way to handle events?</h4>
+
+>They allow for multiple event handling, promote a cleaner separation of HTML structure and JS behavior, and have improved maintainability.
+
+***
+<h4>What are the benefits of using named functions in your listeners?</h4>
+
+>Improves the readability and conciseness of your code while making it easier to reuse in multiple places.
+
+***
+<h4>How do you attach listeners to groups of nodes?</h4>
+
+>By using the <code>querySelectorAll('selector')</code> combined with the <code>forEach</code> method to iterate through each button follow by the event listener.
+
+***
+<h4>What is the difference between the return values of querySelector and querySelectorAll?</h4>
+
+>querySelector will return a reference to the first match of selector.<br>
+>querySelectorAll will return a nodelist containing references to all the matches of the selectors.
+
+***
+<h4>What does a “nodelist” contain?</h4>
+
+>A list of nodes that match specified criteria when a DOM query or selection method is used.<br>
+>Each node represents an individual element in the document tree or a collection or nodes based on the query.
+
+***
+<h4>Explain the difference between “capture” and “bubbling”.</h4>
+
+>Capture: Events are detected starting from the outermost ancestor down to the largest element.<br>
+>Bubbling: Events are detected from the target element up through its ancestors to the outermost element.
+
+***
