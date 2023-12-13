@@ -33,6 +33,8 @@ function game(choice){
         let playerSelection = choice
         let computerSelection = getComputerChoice();
         console.log(playRound(playerSelection, computerSelection));
+        const computerChoiceElement = document.querySelector('.computer_choice');
+        computerChoiceElement.textContent = `Computer selects ${computerSelection}`;
 }
 
 const body = document.body;
@@ -94,6 +96,11 @@ scissors.addEventListener('click', function() {
     game('scissors');
 });
 game_content.appendChild(scissors);
+
+const computer_choice = document.createElement("div");
+computer_choice.classList.add("computer_choice");
+computer_choice.style.fontSize = "30px"
+body.appendChild(computer_choice);
 
 
 const results_container = document.createElement("div");
