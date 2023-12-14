@@ -44,6 +44,12 @@ for (let i = 0; i < 16; i++) {
 const squares = document.querySelectorAll('.square');
 squares.forEach(square => {
     square.addEventListener('mouseover', function(){
+        square.style.transition = 'background-color 0.2s ease-in-out'
         square.style.backgroundColor = "#77C3EC";
     });
+
+    //square.addEventListener('mouseout', function(){
+        //square.style.transition = 'background-color 0.5s ease-in-out';
+        //square.style.backgroundColor = '#D3D3D3'
+    //});
 });
