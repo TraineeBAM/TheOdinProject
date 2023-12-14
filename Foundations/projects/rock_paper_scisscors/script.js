@@ -12,29 +12,54 @@ function getComputerChoice() {
 function playRound(playerSelection, computerSelection){
     console.log("You have chosen" + " " + playerSelection);
     console.log("Your opponent has chosen" + " " + computerSelection);
+    let game_result = "";
     if (playerSelection == computerSelection){
-        return "Draw - Please try again!";   
+        game_result = "Draw - Please try again!";   
     } else if (playerSelection == "paper" && computerSelection == "rock"){
-        return "You win!";
+        game_result = "You win!";
     } else if (playerSelection == "paper" && computerSelection == "scissors"){
-        return "You lose!";
+        game_result = "You lose!";
     } else if (playerSelection == "rock" && computerSelection == "paper"){
-        return "You lose!";
+        game_result = "You lose!";
     } else if (playerSelection == "rock" && computerSelection == "scissors"){
-        return "You win!";
+        game_result = "You win!";
     } else if (playerSelection == "paper" && computerSelection == "rock"){
-        return "You win!";
+        game_result = "You win!";
     } else {
-        return "You lose!";
+        game_result = "You lose!";
     }
+    return game_result;
 }
 
 function game(choice){
         let playerSelection = choice
         let computerSelection = getComputerChoice();
-        console.log(playRound(playerSelection, computerSelection));
+        const game_result = playRound(playerSelection, computerSelection);
+        console.log(game_result);
         const computerChoiceElement = document.querySelector('.computer_choice');
         computerChoiceElement.textContent = `Computer selects ${computerSelection}`;
+        const gameResultElement = document.querySelector('.game_result');
+        gameResultElement.textContent = `${game_result}`;
+        if (game_result === "You win!"){
+            let currentPlayerScore = parseInt(player_result.textContent) || 0;
+            currentPlayerScore += 1;
+            player_result.textContent = currentPlayerScore;
+            if(currentPlayerScore === 5){
+                alert("Player Wins!");
+                player_result.textContent = 0;
+                computer_result.textContent = 0;
+            }
+        };
+        if (game_result === "You lose!"){
+            let currentComputerScore = parseInt(computer_result.textContent) || 0;
+            currentComputerScore += 1;
+            computer_result.textContent = currentComputerScore;
+            if(currentComputerScore === 5){
+                alert("Computer Wins!");
+                player_result.textContent = 0;
+                computer_result.textContent = 0;
+            }
+        }
 }
 
 const body = document.body;
@@ -48,8 +73,8 @@ heading.classList.add("heading");
 heading.style.display = "flex";
 heading.style.fontSize = "75px";
 heading.textContent = "Rock, Paper, Scissors!";
-heading.style.marginTop = "100px";
-heading.style.marginBottom = "100px";
+heading.style.marginTop = "75px";
+heading.style.marginBottom = "75px";
 body.appendChild(heading);;
 
 const instructions = document.createElement("div");
@@ -99,40 +124,66 @@ game_content.appendChild(scissors);
 
 const computer_choice = document.createElement("div");
 computer_choice.classList.add("computer_choice");
-computer_choice.style.fontSize = "30px"
+computer_choice.style.marginTop = "25px"
+computer_choice.style.fontSize = "40px"
 body.appendChild(computer_choice);
+
+const gameResult = document.createElement("div");
+gameResult.classList.add("game_result");
+gameResult.style.marginTop = "25px";
+gameResult.style.fontSize = "70px";
+body.appendChild(gameResult)
 
 
 const results_container = document.createElement("div");
 results_container.classList.add("results_container");
 body.appendChild(results_container);
-results_container.style.display = "flex"
-results_container.style.flexDirection = "column"
-results_container.style.alignItems = "center"
-results_container.style.marginTop = "40px"
-results_container.textContent = "Results";
+results_container.style.display = "flex";
+results_container.style.flexDirection = "column";
+results_container.style.alignItems = "center";
+results_container.style.marginTop = "40px";
 results_container.style.fontSize = "50px";
 
 const results = document.createElement("div");
 results.classList.add("results");
 results_container.appendChild(results);
 results.style.display = "flex";
-results.style.gap = "200px";
+results.style.alignItemsItems = "center"
+results.style.gap = "150px";
 
-const computer_result = document.createElement("p");
-computer_result.textContent = "000";
-results.appendChild(computer_result);
+const player_id = document.createElement("p");
+player_id.textContent = "Player";
+player_id.style.width = "200px";
+player_id.style.textAlign = "right";
+results.appendChild(player_id);
 
 const player_result = document.createElement("p");
-player_result.textContent = "000";
+player_result.textContent = "";
+player_result.style.width = "200px";
+player_result.style.textAlign = "center";
 results.appendChild(player_result);
 
-const history = document.createElement("div");
-history.classList.add("history");
-history.textContent = "History";
-history.style.fontSize = "30px";
-body.appendChild(history);
+const computer_result = document.createElement("p");
+computer_result.textContent = "";
+computer_result.style.width = "200px";
+computer_result.style.textAlign = "center";
+results.appendChild(computer_result);
 
-const history_entries = document.createElement("div");
-history_entries.classList.add("history_entries");
-history.appendChild(history_entries);
+const computer_id = document.createElement("p");
+computer_id.textContent = "Computer";
+computer_id.style.width = "200px";
+computer_id.style.textAlign = "left";
+results.appendChild(computer_id);
+
+const buttons = document.querySelectorAll('button');
+buttons.forEach(button => {
+    button.addEventListener('mouseover', function(){
+        button.style.transition = "transform 0.2s ease-in-out";
+        button.style.transform = "scale(1.1)";
+    });
+    
+    button.addEventListener('mouseout', function(){
+        button.style.transition = 'transform 0.2s ease-in-out';
+        button.style.transform = 'scale(1)';
+    });
+});
