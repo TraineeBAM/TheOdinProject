@@ -27,6 +27,7 @@
 | Flexbox | Alignment | [05-Flex-modal](https://traineebam.github.io/TheOdinProject/Foundations/Flexbox/05-flex-modal)|
 | Flexbox | Alignment | [06-Flex-Layout](https://traineebam.github.io/TheOdinProject/Foundations/Flexbox/06-flex-layout)|
 | Flexbox | Alignment | [07-Flex-Layout-2](https://traineebam.github.io/TheOdinProject/Foundations/Flexbox/07-flex-layout-2)|
+| JavaScript | RPS Project | [Revisiting Rock Paper Scissors](https://traineebam.github.io/TheOdinProject/Foundations/projects/rock_paper_scissors)|
 
 ***
 
