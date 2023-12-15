@@ -1264,3 +1264,35 @@
 >Bubbling: Events are detected from the target element up through its ancestors to the outermost element.
 
 ***
+
+</details>
+
+***
+
+<details>
+<summary><h3>JavaScript Fundamentals - Part 5</h3></summary>
+
+***
+<h4>What is the difference between objects and arrays?</h4>
+
+>Objects are collections of key-value pairs used to represent entities with name properties.<br>
+>Arrays are ordered lists of elements accessed by numerical indices.
+
+***
+<h4>How do you access object properties?</h4>
+
+> Either "dot notation" (eg. <code>obj.property</code>) or "square brackets notation" (eg. <code>obj["property"]</code>).
+
+***
+<h4>What is Array.prototype.map() useful for?</h4>
+
+>Taking in an array and applying some change to it, then returning it.<br>
+>Using .map always returns the same amount of items as given.
+
+***
+<h4>What is Array.prototype.reduce() useful for?</h4>
+
+>Iteratively reducing an array to a single value through the execution of a provided function.<br>
+>It allows complex aggregations or computations to be performed on array elements.
+
+***
