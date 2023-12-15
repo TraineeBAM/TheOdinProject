@@ -31,7 +31,17 @@ regen.addEventListener('click', function(){
 });
 body.appendChild(regen);
 
+const gridContainer = document.createElement('div');
+gridContainer.classList.add('grid-container');
+gridContainer.style.maxWidth = '600px'
+gridContainer.style.maxHeight = '600px'
+gridContainer.style.border = '3px solid black'
+body.appendChild(gridContainer);
+
 function generateGrid(size){
+    const containerSize = 600;
+    const squareSize = containerSize / size;
+
     gridContainer.innerHTML = '';
 
     for(let i = 0 ; i < size; i ++){
@@ -41,10 +51,13 @@ function generateGrid(size){
 
         for(let j = 0 ; j < size ; j ++){
             const square = createSquare();
+            square.style.width = `${squareSize}px`;
+            square.style.height = `${squareSize}px`;
             row.appendChild(square);
         }
         gridContainer.appendChild(row);
     }
+
     const squares = document.querySelectorAll('.square');
     squares.forEach(square => {
         square.addEventListener('mouseover', function(){
@@ -54,17 +67,9 @@ function generateGrid(size){
     });
 }
 
-const gridContainer = document.createElement('div');
-gridContainer.classList.add('grid-container');
-body.appendChild(gridContainer);
-
-// Function to create a single square with a border
 function createSquare() {
     const square = document.createElement('div');
-    square.classList.add("square")
-    square.style.width = '40px';
-    square.style.height = '40px';
-    square.style.border = '1px solid black';
+    square.classList.add("square");
     return square;
 }
 
