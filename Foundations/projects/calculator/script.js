@@ -41,7 +41,7 @@ buttons.forEach(button => {
             const result = operate(numA, o, numB);
             if(o === "/" && numB === 0){
                 alert('You cannot divide by zero! What are you trying to pull here!?');
-                return userInput === "";
+                return userInput === ""
             }
             userInput.textContent = result;
         }
