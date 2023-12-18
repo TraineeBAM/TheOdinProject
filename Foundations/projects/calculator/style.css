@@ -15,14 +15,22 @@ body{
     width:600px;
     height:800px;
     border: 1px solid black;
+    border-radius: 20px;
 }
 
 .screen{
     display: flex;
     background-color: bisque;
-    width: 500px;
+    width: 480px;
     height: 150px;
     border: 1px solid black;
+    border-radius: 10px;
+    font-size: 25px;
+    align-items: flex-end;
+    justify-content: flex-end;
+    padding:10px;
+    overflow: auto;
+    word-wrap:break-word;
 }
 
 .buttons_container{
@@ -31,6 +39,7 @@ body{
     width: 500px;
     height: 500px;
     border: 1px solid black;
+    border-radius: 10px;
 }
 
 .row_one,
@@ -44,11 +53,19 @@ body{
     gap: 15px;
 }
 
+.row_one{
+    margin-top:20px;
+}
+
 .btn{
     display: flex;
     width: 75px;
     height: 75px;
     border: 1px solid black;
+    font-size: 40px;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
 }
 
 .btn_wide{
@@ -56,6 +73,10 @@ body{
     width: 140px;
     height: 75px;
     border: 1px solid black;
+    font-size: 40px;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
 }
 
 .equals{
@@ -63,4 +84,13 @@ body{
     width:200px;
     height:75px;
     border: 1px solid black;
+    font-size: 60px;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.userInput{
+    overflow: auto;
+    word-wrap:break-word;
 }
