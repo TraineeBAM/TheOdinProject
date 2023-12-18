@@ -22,7 +22,6 @@ buttons.forEach(button => {
         } else if(button.textContent === "Delete"){
             userInput.textContent = userInput.textContent.slice(0, -1);
         }
-        
         else {
             userInput.textContent += button.textContent;
         }
@@ -30,3 +29,16 @@ buttons.forEach(button => {
     });
 });
 screen.appendChild(userInput)
+
+const operate = function(a, o, b){
+    if(o === "+"){
+        return a + b; 
+    } else if(o === "-"){
+        return a - b;
+    } else if (o === "*"){
+        return a * b;
+    } else if (o === '/'){
+        return a / b;
+    }
+    console.log(operate);
+}
