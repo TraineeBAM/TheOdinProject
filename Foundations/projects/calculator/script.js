@@ -11,6 +11,19 @@ buttons.forEach(button => {
     });
 });
 
+const operate = function(a, o, b){
+    if(o === "+"){
+        return a + b; 
+    } else if(o === "-"){
+        return a - b;
+    } else if (o === "*"){
+        return a * b;
+    } else if (o === "/"){
+        return a / b;
+    }
+    console.log(operate);
+}
+
 const screen = document.querySelector('.screen');
 const userInput = document.createElement('div');
 userInput.classList.add('userInput')
@@ -21,6 +34,12 @@ buttons.forEach(button => {
             userInput.textContent = "";
         } else if(button.textContent === "Delete"){
             userInput.textContent = userInput.textContent.slice(0, -1);
+        } else if(button.textContent === "="){
+            const [a, o, b] = userInput.textContent.match(/(\d+)(\D)(\d+)/).slice(1);
+            const numA = parseFloat(a);
+            const numB = parseFloat(b);
+            const result = operate(numA, o, numB);
+            userInput.textContent = result;
         }
         else {
             userInput.textContent += button.textContent;
@@ -30,15 +49,3 @@ buttons.forEach(button => {
 });
 screen.appendChild(userInput)
 
-const operate = function(a, o, b){
-    if(o === "+"){
-        return a + b; 
-    } else if(o === "-"){
-        return a - b;
-    } else if (o === "*"){
-        return a * b;
-    } else if (o === '/'){
-        return a / b;
-    }
-    console.log(operate);
-}
