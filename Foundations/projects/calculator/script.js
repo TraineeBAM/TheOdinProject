@@ -24,6 +24,35 @@ const operate = function(a, o, b){
     console.log(operate);
 }
 
+// const screen = document.querySelector('.screen');
+// const userInput = document.createElement('div');
+// userInput.classList.add('userInput')
+// userInput.textContent = "";
+// buttons.forEach(button => {
+//     button.addEventListener('click', function(){
+//         if(button.textContent === "Clear"){
+//             userInput.textContent = "";
+//         } else if(button.textContent === "Delete"){
+//             userInput.textContent = userInput.textContent.slice(0, -1);
+//         } else if(button.textContent === "="){
+//             const [a, o, b] = userInput.textContent.match(/(\d+)(\D)(\d+)/).slice(1);
+//             const numA = parseFloat(a);
+//             const numB = parseFloat(b);
+//             const result = operate(numA, o, numB);
+//             if(o === "/" && numB === 0){
+//                 alert('You cannot divide by zero! What are you trying to pull here!?');
+//                 return userInput === ""
+//             }
+//             userInput.textContent = result;
+//         }
+//         else {
+//             userInput.textContent += button.textContent;
+//         }
+//         screen.appendChild(userInput);
+//     });
+// });
+// screen.appendChild(userInput)
+
 const screen = document.querySelector('.screen');
 const userInput = document.createElement('div');
 userInput.classList.add('userInput')
@@ -34,16 +63,19 @@ buttons.forEach(button => {
             userInput.textContent = "";
         } else if(button.textContent === "Delete"){
             userInput.textContent = userInput.textContent.slice(0, -1);
-        } else if(button.textContent === "="){
-            const [a, o, b] = userInput.textContent.match(/(\d+)(\D)(\d+)/).slice(1);
-            const numA = parseFloat(a);
-            const numB = parseFloat(b);
-            const result = operate(numA, o, numB);
-            if(o === "/" && numB === 0){
-                alert('You cannot divide by zero! What are you trying to pull here!?');
-                return userInput === ""
+        } else if(button.textContent === "*" || button.textContent === "/" || button.textContent === "-" || button.textContent === "+" || button.textContent === "="){
+            let operator = button.textContent;
+            let valueA = userInput.textContent;
+            console.log(valueA + " valueA");
+            if(valueA !== ""){
+                let valueB = userInput.textContent;
+                console.log(valueB + " valueB")
+                return valueB;
             }
-            userInput.textContent = result;
+            userInput.textContent = "";
+            const result = operate(valueA, operator, valueB); 
+            console.log(result)
+            userInput.textContent = result
         }
         else {
             userInput.textContent += button.textContent;
@@ -52,4 +84,3 @@ buttons.forEach(button => {
     });
 });
 screen.appendChild(userInput)
-
