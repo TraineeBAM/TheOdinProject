@@ -39,6 +39,10 @@ buttons.forEach(button => {
             const numA = parseFloat(a);
             const numB = parseFloat(b);
             const result = operate(numA, o, numB);
+            if(o === "/" && numB === 0){
+                alert('You cannot divide by zero! What are you trying to pull here!?');
+                return userInput === "";
+            }
             userInput.textContent = result;
         }
         else {
