@@ -12,6 +12,9 @@ buttons.forEach(button => {
 });
 
 const operate = function(a, o, b){
+    a = parseFloat(a);
+    b = parseFloat(b);
+    
     if(o === "+"){
         return a + b; 
     } else if(o === "-"){
@@ -57,25 +60,35 @@ const screen = document.querySelector('.screen');
 const userInput = document.createElement('div');
 userInput.classList.add('userInput')
 userInput.textContent = "";
+let valueA = "";
+let valueB = "";
+let operator = "";
+let result = "";
 buttons.forEach(button => {
     button.addEventListener('click', function(){
         if(button.textContent === "Clear"){
             userInput.textContent = "";
+            valueA = "";
+            valueB = "";
+            operator = "";
         } else if(button.textContent === "Delete"){
             userInput.textContent = userInput.textContent.slice(0, -1);
-        } else if(button.textContent === "*" || button.textContent === "/" || button.textContent === "-" || button.textContent === "+" || button.textContent === "="){
-            let operator = button.textContent;
-            let valueA = userInput.textContent;
-            console.log(valueA + " valueA");
-            if(valueA !== ""){
-                let valueB = userInput.textContent;
-                console.log(valueB + " valueB")
-                return valueB;
-            }
+        } else if(valueA === "" && (button.textContent === "*" || button.textContent === "/" || button.textContent === "-" || button.textContent === "+" || button.textContent === "=")){
+            operator = button.textContent;
+            console.log(operator)
+            valueA = userInput.textContent;
+            console.log(valueA);
             userInput.textContent = "";
-            const result = operate(valueA, operator, valueB); 
-            console.log(result)
-            userInput.textContent = result
+        } else if(valueA !== "" && (button.textContent === "*" || button.textContent === "/" || button.textContent === "-" || button.textContent === "+" || button.textContent === "=")) {
+            valueB = userInput.textContent;
+            console.log(valueB);
+            userInput.textContent = "";
+            result = operate(valueA, operator, valueB);
+            userInput.textContent = result;
+            console.log("result equals ", result);
+            valueA = result;
+            valueB = "";
+            userInput.textContent = "";
         }
         else {
             userInput.textContent += button.textContent;
