@@ -3,47 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculator</title>
+    <title>calculator</title>
+    <link href ="style.css" rel="Stylesheet">
     <script src="script.js" defer></script>
-    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div class='calculator_body'>
-    <div class='screen'>
-        <!-- <div class="screen-history"></div>
-        <div class="screen-current"></div> -->
-    </div>
-    <div class='buttons_container'>
-        <div class='row_one'>
-            <button class="clear btn_wide">Clear</button>
-            <button class="delete btn_wide">Delete</button>
-            <button class="divide btn">/</button>
+    <div class = "calculator-grid">
+        <div class = "output">
+            <div data-previous-operand class = "previous-operand"></div>
+            <div data-current-operand class = "current-operand"></div>
         </div>
-        <div class="row_two">
-            <button class="seven btn">7</button>
-            <button class="eight btn">8</button>
-            <button class="nine btn">9</button>
-            <button class="multiply btn">*</button>
-        </div>
-        <div class="row_three">
-            <button class="four btn">4</button>
-            <button class="five btn">5</button>
-            <button class="six btn">6</button>
-            <button class="minus btn">-</button>
-        </div>
-        <div class="row_four">
-            <button class="one btn">1</button>
-            <button class="two btn">2</button>
-            <button class="three btn">3</button>
-            <button class="plus btn">+</button>
-        </div>
-        <div class="row_five">
-            <button class="decimal btn">.</button>
-            <button class="zero btn">0</button>
-            <button class="equals">=</button>
-        </div>
-    </div>
-
+    <button data-all-clear class = "span-two">AC</button>
+    <button data-delete>DEL</button>
+    <button data-operation>÷</button>
+    <button data-number>7</button>
+    <button data-number>8</button>
+    <button data-number>9</button>
+    <button data-operation>*</button>
+    <button data-number>4</button>
+    <button data-number>5</button>
+    <button data-number>6</button>
+    <button data-operation>+</button>
+    <button data-number>1</button>
+    <button data-number>2</button>
+    <button data-number>3</button>
+    <button data-operation>-</button>
+    <button data-number>.</button>
+    <button data-number>0</button>
+    <button data-equals class = "span-two">=</button>
 </div>
 </body>
 </html>

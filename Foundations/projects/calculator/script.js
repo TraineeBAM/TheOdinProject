@@ -1,190 +1,128 @@
-const buttons = document.querySelectorAll('button');
-buttons.forEach(button => {
-    button.addEventListener('mouseover', function(){
-        button.style.transition = "transform 0.2s ease-in-out";
-        button.style.transform = "scale(0.95)";
-    });
-    
-    button.addEventListener('mouseout', function(){
-        button.style.transition = 'transform 0.2s ease-in-out';
-        button.style.transform = 'scale(1)';
-    });
-});
-const screen = document.querySelector('.screen');
-const userInput = document.createElement('div');
-userInput.classList.add('userInput')
-userInput.textContent = "";
+//Credit to Web Dev Simplified
 
-// Define variables to store the current input values and the last operation
-let valueA = "";
-let valueB = "";
-let operator = "";
+class Calculator{
+    constructor(previousOperandTextElement, currentOperandTextElement){
+        this.previousOperandTextElement = previousOperandTextElement
+        this.currentOperandTextElement = currentOperandTextElement
+        this.clear()
+    }
 
-// Function to perform the calculation based on operator
-const calculate = (a, o, b) => {
-    a = parseFloat(a);
-    b = parseFloat(b);
+    clear(){
+        this.currentOperand = ''
+        this.previousOperand = ''
+        this.operation = undefined
+    }
 
-    if (o === "+") {
-        return a + b;
-    } else if (o === "-") {
-        return a - b;
-    } else if (o === "*") {
-        return a * b;
-    } else if (o === "/") {
-        if (b !== 0) {
-            return a / b;
+    delete(){
+        this.currentOperand = this.currentOperand.toString().slice(0, -1)
+    }
+
+    appendNumber(number){
+        if (number === '.' && this.currentOperand.includes('.')) return
+        this.currentOperand = this.currentOperand.toString() + number.toString()
+    }
+
+    chooseOperation(operation){
+        if (this.currentOperand === '') return
+        if (this.previousOperand !== '') {
+            this.compute()
+        }
+        this.operation = operation
+        this.previousOperand = this.currentOperand
+        this.currentOperand = ''
+    }
+
+    compute(){
+        let computation
+        const prev = parseFloat(this.previousOperand)
+        const current = parseFloat(this.currentOperand)
+        if(isNaN(prev) || isNaN(current)) return
+        switch(this.operation){
+            case '+': 
+                computation = prev + current
+                break
+            case '-': 
+                computation = prev - current
+                break
+            case '*': 
+                computation = prev * current
+                break
+            case '÷': 
+                computation = prev / current
+                break
+            default: 
+                return
+        }
+        this.currentOperand = computation
+        this.operation = undefined
+        this.previousOperand = ''
+    }
+
+    getDisplayNumber(number) {
+        const stringNumber = number.toString()
+        const integerDigits = parseFloat(stringNumber.split('.')[0])
+        const decimalDigits = stringNumber.split('.')[1]
+        let integerDisplay
+        if (isNaN(integerDigits)) {
+          integerDisplay = ''
         } else {
-            return "Game Over";
+          integerDisplay = integerDigits.toLocaleString('en', { maximumFractionDigits: 0 })
+        }
+        if (decimalDigits != null) {
+          return `${integerDisplay}.${decimalDigits}`
+        } else {
+          return integerDisplay
+        }
+      }
+
+    updateDisplay(){
+        this.currentOperandTextElement.innerText = 
+            this.getDisplayNumber(this.currentOperand)
+        if (this.operation != null) {
+            this.previousOperandTextElement.innerText = 
+            `${this.getDisplayNumber(this.previousOperand)} ${this.operation}`
+        } else {
+            this.previousOperandTextElement.innerText = ''
         }
     }
-    return NaN; // Invalid operation
-};
+}
 
-// Function to handle intermediate calculation
-const evaluateIntermediate = () => {
-    if (valueA && operator && valueB) {
-        const result = calculate(valueA, operator, valueB);
-        valueA = result.toString();
-        valueB = "";
-        operator = "";
-        userInput.textContent = result;
-    }
-};
 
-// Event listeners for button clicks
-buttons.forEach(button => {
-    button.addEventListener('click', function() {
-        const buttonText = button.textContent;
+const numberButtons = document.querySelectorAll('[data-number]')
+const operationButtons = document.querySelectorAll('[data-operation]')
+const equalsButtons = document.querySelector('[data-equals]')
+const deleteButtons = document.querySelector('[data-delete]')
+const allClearButtons = document.querySelector('[data-all-clear]')
+const previousOperandTextElement = document.querySelector('[data-previous-operand]')
+const currentOperandTextElement = document.querySelector('[data-current-operand]')
 
-        if (buttonText === "Clear") {
-            valueA = "";
-            valueB = "";
-            operator = "";
-            userInput.textContent = "";
-        } else if (buttonText === "Delete") {
-            userInput.textContent = userInput.textContent.slice(0, -1);
-        } else if (["+", "-", "*", "/"].includes(buttonText)) {
-            const lastChar = userInput.textContent[userInput.textContent.length - 1];
-            if (["+", "-", "*", "/"].includes(lastChar)) {
-                return;
-            }
-            if (valueA && operator && valueB) {
-                evaluateIntermediate();
-            }
-            operator = buttonText;
-            userInput.textContent += buttonText;
-        } else if (buttonText === "=") {
-            evaluateIntermediate();
-        } else if (buttonText === ".") {
-            const lastNumIndex = userInput.textContent.split(/[\+\-\*\/]/).pop().lastIndexOf('.');
+const calculator = new Calculator(previousOperandTextElement, currentOperandTextElement)
 
-            // Check if the last entered number already contains a decimal point
-            if (lastNumIndex !== -1) {
-                return; // Do not add multiple decimal points in a number
-            }
-            userInput.textContent += buttonText;
-        }
-        
-        
-          else {
-            userInput.textContent += buttonText;
+numberButtons.forEach(button => {
+    button.addEventListener('click', () => {
+        calculator.appendNumber(button.innerText)
+        calculator.updateDisplay()
+    })
+})
 
-            if (!operator) {
-                valueA += buttonText;
-            } else {
-                valueB += buttonText;
-            }
-        }
-    });
-});
-screen.appendChild(userInput)
+operationButtons.forEach(button => {
+    button.addEventListener('click', () => {
+        calculator.chooseOperation(button.innerText)
+        calculator.updateDisplay()
+    })
+})
 
-// const operate = function(a, o, b){
-//     a = parseFloat(a);
-//     b = parseFloat(b);
-    
-//     if(o === "+"){
-//         return a + b; 
-//     } else if(o === "-"){
-//         return a - b;
-//     } else if (o === "*"){
-//         return a * b;
-//     } else if (o === "/"){
-//         return a / b;
-//     }
-//     console.log(operate);
-// }
+equalsButtons.addEventListener('click', button => {
+    calculator.compute()
+    calculator.updateDisplay()
+})
 
-// const screen = document.querySelector('.screen');
-// const userInput = document.createElement('div');
-// userInput.classList.add('userInput')
-// userInput.textContent = "";
-// buttons.forEach(button => {
-//     button.addEventListener('click', function(){
-//         if(button.textContent === "Clear"){
-//             userInput.textContent = "";
-//         } else if(button.textContent === "Delete"){
-//             userInput.textContent = userInput.textContent.slice(0, -1);
-//         } else if(button.textContent === "="){
-//             const [a, a_decimal, o, b, b_decimal] = userInput.textContent.match(/(\d+(\.\d+)?|\.\d+)(\D)?(\d+(\.\d+)?|\.\d+)/).slice(1);
-//             console.log([a,o,b])
-//             const numA = parseFloat(a);
-//             const numB = parseFloat(b);
-//             const result = operate(numA, o, numB);
-//             if(o === "/" && numB === 0){
-//                 alert('You cannot divide by zero! What are you trying to pull here!?');
-//                 return userInput === ""
-//             }
-//             userInput.textContent = result;
-//         }
-//         else {
-//             userInput.textContent += button.textContent;
-//         }
-//         screen.appendChild(userInput);
-//     });
-// });
-// screen.appendChild(userInput)
+allClearButtons.addEventListener('click', button => {
+    calculator.clear()
+    calculator.updateDisplay()
+})
 
-// const history = document.querySelector('.screen-history');
-// const current = document.querySelector('.screen-current')
-// const valueA = document.createElement('div');
-// userInput.classList.add('userInput')
-// userInput.textContent = "";
-// let valueA = "";
-// let valueB = "";
-// let operator = "";
-// let result = "";
-// buttons.forEach(button => {
-//     button.addEventListener('click', function(){
-//         if(button.textContent === "Clear"){
-//             userInput.textContent = "";
-//             valueA = "";
-//             valueB = "";
-//             operator = "";
-//         } else if(button.textContent === "Delete"){
-//             userInput.textContent = userInput.textContent.slice(0, -1);
-//         } else if(valueA === "" && (button.textContent === "*" || button.textContent === "/" || button.textContent === "-" || button.textContent === "+" || button.textContent === "=")){
-//             operator = button.textContent;
-//             console.log(operator)
-//             valueA = userInput.textContent;
-//             console.log(valueA);
-//             userInput.textContent = "";
-//         } else if(valueA !== "" && (button.textContent === "*" || button.textContent === "/" || button.textContent === "-" || button.textContent === "+" || button.textContent === "=")) {
-//             valueB = userInput.textContent;
-//             console.log(valueB);
-//             userInput.textContent = "";
-//             result = operate(valueA, operator, valueB);
-//             userInput.textContent = result;
-//             console.log("result equals ", result);
-//             valueA = result;
-//             valueB = "";
-//             userInput.textContent = "";
-//         }
-//         else {
-//             userInput.textContent += button.textContent;
-//         }
-//         screen.appendChild(userInput);
-//     });
-// });
-// screen.appendChild(userInput)
+deleteButtons.addEventListener('click', button => {
+    calculator.delete()
+    calculator.updateDisplay()
+})
