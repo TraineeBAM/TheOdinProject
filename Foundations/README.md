@@ -28,6 +28,8 @@
 | Flexbox | Alignment | [06-Flex-Layout](https://traineebam.github.io/TheOdinProject/Foundations/Flexbox/06-flex-layout)|
 | Flexbox | Alignment | [07-Flex-Layout-2](https://traineebam.github.io/TheOdinProject/Foundations/Flexbox/07-flex-layout-2)|
 | JavaScript | RPS Project | [Revisiting Rock Paper Scissors](https://traineebam.github.io/TheOdinProject/Foundations/projects/rock_paper_scissors)|
+| JavaScript | Etch-a-Sketch Project | [Etch-a-Sketch](https://traineebam.github.io/TheOdinProject/Foundations/projects/etch-a-sketch)|
+| JavaScript | Calculator Project | [Calculator](https://traineebam.github.io/TheOdinProject/Foundations/projects/calculator)|
 
 ***
 
