@@ -1298,3 +1298,40 @@
 >It allows complex aggregations or computations to be performed on array elements.
 
 ***
+
+</details>
+
+***
+
+<details>
+<summary><h3>Emmet</h3></summary>
+
+***
+<h4>Why should you use Emmet?</h4>
+
+>It helps you to write HTML and CSS more efficiently by providing access to a range of different shortcuts.
+
+***
+<h4>What are some useful Emmet abbreviations?</h4>
+
+><code>!</code> will generate a HTML boilerplate.<br>
+>"link:css" will auto populate the css link tag in a HTML file.<br>
+>"ul>li*x" will generate a list with x list items.<br>
+>"bd+" in CSS will set <code>border:1px solid #000</code>
+
+***
+<h4>What syntax would you use to create this element <code><p class="text"></p></code>?</h4>
+
+>You would type "p.text".
+
+***
+<h4>What syntax expands to an element with a child element inside of it? For example: <code><div><p></p></div></h4></code>
+
+>The greater than (>) symbol.<br>
+>The example above would be written "div>p".
+
+***
+<h4>What syntax would you use to create three elements that have the same class name?</h4>
+
+>You can use the * symbol.<br>
+>E.g. To create three div elements with the class name "items" you could write "div.items*3".
