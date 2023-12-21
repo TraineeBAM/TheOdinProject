@@ -1335,3 +1335,30 @@
 
 >You can use the * symbol.<br>
 >E.g. To create three div elements with the class name "items" you could write "div.items*3".
+
+***
+
+</details>
+
+***
+
+<details>
+<summary><h3>SVG - Scalable Vector Graphics</h3></summary>
+
+***
+<h4>What is the <code>xmlns</code> attribute?</h4>
+
+>This stands for "XML NameSpace" and specifies the dialect of XML that is being used.
+
+***
+<h4>What are some situations where you wouldn’t want to use SVG?</h4>
+
+>SVG is very inefficient at storing complex images which means that photo-realistic or highly detailed/textured images are not good use cases for SVG. 
+
+***
+<h4>What are the benefits of “inlining” your SVGs? What are the drawbacks?</h4>
+
+>The benefit is that the properties of the SVG will be visible to your code, allowing it to be altered dynamically by CSS or JS.<br>
+>The drawback is that your code is harder to read, your page is less cacheable and if the SVG is large the rest of your HTML could take longer to load.
+
+***
