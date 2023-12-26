@@ -31,10 +31,12 @@
 ***
 <h4>What are some useful Emmet abbreviations?</h4>
 
-><code>!</code> will generate a HTML boilerplate.<br>
->"link:css" will auto populate the css link tag in a HTML file.<br>
->"ul>li*x" will generate a list with x list items.<br>
->"bd+" in CSS will set <code>border:1px solid #000</code>
+><ul>
+><li><code>!</code> will generate a HTML boilerplate.</li>
+><li>"link:css" will auto populate the css link tag in a HTML file.</li>
+><li>"ul>li*x" will generate a list with x list items.</li>
+><li>"bd+" in CSS will set <code>border:1px solid #000</code></li>
+></ul>
 
 ***
 <h4>What syntax would you use to create this element <code><p class="text"></p></code>?</h4>
