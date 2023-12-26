@@ -127,3 +127,27 @@
 >To clear all browser default CSS styles to ensure that your webpage will be styled consistently across different browsers.
 
 ***
+
+</details>
+
+***
+
+<details>
+<summary><h3>CSS Units</h3></summary>
+
+***
+<h4>Why would you want to use em or rem for font-size instead of px?</h4>
+
+>Enhances readability for users who modify their browsers base font-size.
+
+***
+<h4>What are some instances where you might want to use vh and vw?</h4>
+
+>When designing full-height heroes or full-screen app interfaces.
+
+***
+<h4>What are some instances where you might want to use px instead of a relative unit?</h4>
+
+>When dealing with things like margins and padding.
+
+***
