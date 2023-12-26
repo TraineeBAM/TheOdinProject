@@ -113,3 +113,17 @@
 >Used within the <code><th></code> element to tell screen readers exactly what cells the header is a header for.
 
 ***
+
+</details>
+
+***
+
+<details>
+<summary><h3>Default Styles</h3></summary>
+
+***
+<h4>Why would you want to use a CSS reset?</h4>
+
+>To clear all browser default CSS styles to ensure that your webpage will be styled consistently across different browsers.
+
+***
