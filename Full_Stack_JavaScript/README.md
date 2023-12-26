@@ -79,3 +79,37 @@
 >The drawback is that your code is harder to read, your page is less cacheable and if the SVG is large the rest of your HTML could take longer to load.
 
 ***
+
+</details>
+
+***
+
+<details>
+<summary><h3>Tables</h3></summary>
+
+***
+<h4>What is a table?</h4>
+
+>A structured set of data made up of rows and columns.
+
+***
+<h4>Why is it a bad idea to use HTML Tables for page layout?</h4>
+
+><ol>
+><li>Reduces accessibility for visually impaired users.</li>
+><li>Code is more difficult to write, maintain and debug.</li>
+><li>Tables are not automatically responsive.</li>
+></ol>
+
+***
+<h4>What are caption elements useful for?</h4>
+
+>Allows users to quickly understand what type of information the table is likely to contain.<br>
+>This is especially valuable for visually impaired readers who would otherwise need their screen reader to read out the contents of many cells in order to establish what the table is about.
+
+***
+<h4>What is the scope attribute?</h4>
+
+>Used within the <code><th></code> element to tell screen readers exactly what cells the header is a header for.
+
+***
