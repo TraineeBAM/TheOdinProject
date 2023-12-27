@@ -44,7 +44,7 @@
 >You would type "p.text".
 
 ***
-<h4>What syntax expands to an element with a child element inside of it? For example: <code><div><p></p></div></h4></code>
+<h4>What syntax expands to an element with a child element inside of it? For example: <code><div><p></p></div></code></h4>
 
 >The greater than (>) symbol.<br>
 >The example above would be written "div>p".
