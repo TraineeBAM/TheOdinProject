@@ -211,7 +211,7 @@
 
 >The <code>box-shadow</code> can be used to add a shadow behind an element.<br>
 >This property is described by X and Y offsets relative to the element, blur and spread radius and color.<br>
->e.g. <code>box-shadow: 12px 12px 2px 1px gold;
+>e.g. <code>box-shadow: 12px 12px 2px 1px gold;</code>
 
 ***
 <h4>Which property would you use to create rounded corners on an element?</h4>
@@ -223,3 +223,74 @@
 <h4>How would you use border-radius to make a circular element?</h4>
 
 >Provided your element was equal in height and width, you could simply use <code>border-radius: 50%</code> in order to create a circular element.
+
+</details>
+
+***
+
+<details>
+<summary><h3>Advanced Selectors</h3></summary>
+
+***
+<h4>What is the difference between the child combinator and the descendant combinator?</h4>
+
+>The child combinator is more specific and can be used to select only direct children.<br>
+>The descendant combinator will select <strong>all</strong> children and any grand-childen under them.
+
+***
+
+<h4>How does the syntax of pseudo-classes and pseudo-elements differ?</h4>
+
+>pseudo-classes use ":" (e.g. <code>:first-child</code>, <code>:hover</code>, <code>:active</code>).
+>pseudo-elements use "::" (e.g. <code>::marker</code>, <code>::first-letter</code>, <code>::selection</code>).
+
+***
+
+<h4>Do pseudo-classes exist somewhere in HTML? Do pseudo-elements?</h4>
+
+>Pseudo-classes are used to target elements that already exist in HTML, whereas pseudo-elements <strong>don't</strong> normally exist in the markup.
+
+***
+
+<h4>Name two ways you could select every second child of an element, starting with the first.</h4>
+
+><code>:nth-child(2n)</code><br>
+><code>:nth-child(even)</code>
+
+***
+
+<h4>What is the difference between div:first-child and div:last-child? What will each select?</h4>
+
+>first-child will select the first child of the div, whereas last-child would select the last.<br>
+><strong>NOTE:</strong>If there is only one div child then both last and first child would select this child.
+
+***
+
+<h4>What selector would you use to style a button a user is currently hovering over? How about one that is currently being clicked on?</h4>
+
+>For a button being hovered over you would use <code>:hover</code>.<br>
+>For a button currently being clicked over you would use <code>:active</code>.
+
+***
+
+<h4>How could you select all input elements with a type of text?</h4>
+
+>To achieve this you would use an Attribute selector such as <code>[attribute="value"]</code>.
+
+***
+
+<h4>How could you select all classes that begin with thunder?</h4>
+
+>To select all classes beginning with "thunder" you would use <code>[class^="thunder"]</code>.
+
+***
+
+
+
+
+
+
+
+
+
+
