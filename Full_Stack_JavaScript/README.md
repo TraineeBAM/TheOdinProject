@@ -232,6 +232,7 @@
 <summary><h3>Advanced Selectors</h3></summary>
 
 ***
+
 <h4>What is the difference between the child combinator and the descendant combinator?</h4>
 
 >The child combinator is more specific and can be used to select only direct children.<br>
@@ -285,7 +286,32 @@
 
 ***
 
+</details>
 
+***
+
+<details>
+<summary><h3>Positioning</h3></summary>
+
+***
+
+<h4>What is the difference between static and relative positioning?</h4>
+
+>The difference between static and relative positioning is that with <code>position: relative</code>, you can use properties such as <code>top</code>, <code>right...(etc).</code> to displace the element relative to its normal position in the flow of the document.
+
+***
+
+<h4>What is absolute positioning useful for?</h4>
+
+>Absolute positioning is useful for precisely placing elements on a page.
+
+***
+
+<h4>What is the difference between fixed and sticky positioning?</h4>
+
+>The difference is that <code>position: fixed</code> elements remain fixed to the viewport at all times, while <code>position: sticky</code> elements behave like normal elements until it reaches a specified scroll position.
+
+***
 
 
 
