@@ -1,6 +1,6 @@
 ***
 
-<h1>Full Stack JavaScript Course</h1>
+<h1>Full Stack JavaScript Path</h1>
 
 ***
 
@@ -39,7 +39,7 @@
 ></ul>
 
 ***
-<h4>What syntax would you use to create this element <code><p class="text"></p></code>?</h4>
+<h4>What syntax would you use to create this element <code><\p class="text"><\/p></code>?</h4>
 
 >You would type "p.text".
 
@@ -153,3 +153,73 @@
 >When dealing with things like margins and padding.
 
 ***
+
+</details>
+
+***
+
+<details>
+<summary><h3>More Text Styles</h3></summary>
+
+***
+<h4>What are the 2 ways to add fonts that are not installed on a user’s computer?</h4>
+
+> By using either the <code>link</code> tag or an <code>@import</code> tag in your HTML to import it.
+
+***
+<h4>What is the ‘system font stack’ and why would you want to use it?</h4>
+
+>The default system font of a particular operating system.<br>
+>Using them can be beneficial to performance because the browser doesn't need to download any font files.
+
+***
+<h4>Which property would you use to increase or decrease the space between letters in a word?</h4>
+
+>The <code>letter-spacing</code> property.
+
+***
+<h4>Which property would you use to increase or decrease the space between lines in a paragraph?</h4>
+
+>The <code>line-height</code> property.
+
+</details>
+
+***
+
+<details>
+<summary><h3>More CSS Properties</h3></summary>
+
+***
+<h4>Which property would you use to make an element transparent?</h4>
+
+>You would use the <code>opacity</code> property followed by a value between 0 (invisible) to 1 (visually solid).<br>
+><code>opacity</code> is the opposite to transparency.
+
+***
+<h4>Which property would you use to make a background image tile?</h4>
+
+>To make a background image tile you would use the <code>background-image</code> property.
+
+***
+<h4>Which property would you use to add scrollbars to an element?</h4>
+
+>You can use the <code>overflow</code> property to add scrollbars to an element.<br>
+>To add scrollbars you would use either <code>overflow: scroll;</code> or <code>overflow: auto;</code>
+
+***
+<h4>Which property would you use to add a shadow behind an element?</h4>
+
+>The <code>box-shadow</code> can be used to add a shadow behind an element.<br>
+>This property is described by X and Y offsets relative to the element, blur and spread radius and color.<br>
+>e.g. <code>box-shadow: 12px 12px 2px 1px gold;
+
+***
+<h4>Which property would you use to create rounded corners on an element?</h4>
+
+>You can use the <code>border-radius</code> property to do this.<br>
+>This property is described by one, two, three or four length or percentage values which are used to set a single radius for the corners.
+
+***
+<h4>How would you use border-radius to make a circular element?</h4>
+
+>Provided your element was equal in height and width, you could simply use <code>border-radius: 50%</code> in order to create a circular element.
