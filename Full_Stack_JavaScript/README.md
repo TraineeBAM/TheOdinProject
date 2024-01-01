@@ -313,6 +313,39 @@
 
 ***
 
+</details>
+
+***
+
+<details>
+<summary><h3>CSS Functions</h3></summary>
+
+***
+
+<h4>What are the four CSS math functions we covered above?</h4>
+
+><ol>
+><li><code>calc()</code>: A function that can be used to perform calculations. E.g. <code>--main: calc(100vh - calc(var(--header) + var(--footer)));</code></li>
+><li><code>min()</code>: A function that sets a boundary for the maximum allowed value. E.g. <code>width: min(150px, 100%);</code></li>
+><li><code>max()</code>: A function that sets a boundary for the minimum allowed value. E.g. <code>width: max(100px, 4em, 50%);</code></li>
+><li><code>clamp()</code>: This function takes 3 values being the smallest value, an ideal value and the largest value. E.g. <code>font-size: clamp(320px, 80vw, 60rem);</code></li>
+></ol>
+
+***
+
+<h4>How do we use CSS math functions in our CSS?</h4>
+
+>You can use CSS math function with <code>calc()</code>.<br>
+>Additionally, you can do math inside the parenthesis of <code>min()</code> and <code>max()</code>. E.g. <code>width: min(80ch, 100vw - 2rem);</code>.
+
+***
+
+<h4>How can CSS functions help make websites and applications more responsive?</h4>
+
+>By using the <code>min()</code>,<code>max()</code> and <code>clamp()</code> functions we can ensure that our content is always presented to the viewer appropriately even if different display settings are in use.
+
+***
+
 
 
 
