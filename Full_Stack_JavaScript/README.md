@@ -403,7 +403,60 @@
 
 <h4>How are mobile browsers different on Apple mobile operating systems from Android?</h4>
 
->
+>On iOS and iPadOS, Safari is the only supported browser. This means that even if a user installs Chrome or Firefox, they still utilise the Safari rendering engine named "WebKit".
+
+***
+
+</details>
+
+***
+
+<details>
+<summary><h3>Frameworks and Preprocessors</h3></summary>
+
+***
+
+<h4>What are some advantages of using a CSS framework?</h4>
+
+><ul>
+><li>Ready made documentation.</li>
+><li>Easy access to support via online communities.</li>
+><li>Faster project delivery.</li>
+><li>Many design decisions are already made for you.</li>
+><li>Assists with responsive design.</li>
+></ul>
+
+***
+
+<h4>What are some disadvantages of using a CSS framework?</h4>
+
+><ul>
+><li>Difficulty with overriding framework code.</li>
+><li>Websites can end up looking very similar to others.</li>
+><li>Can cause performance issues due to unnecessary code.</li>
+></ul>
+
+***
+
+<h4>What are some advantages of using a CSS preprocessor?</h4>
+
+><ul>
+><li>Reduces code repetition.</li>
+><li>Make code easier to maintain.</li>
+><li>Keeps your code more organised.</li>
+></ul>
+
+***
+
+<h4>What are some disadvantages of using a CSS preprocessor?</h4>
+
+><ul>
+><li>Can make debugging harder.</li>
+><li>Compilation slows down development.</li>
+><li>Increased CSS file size.</li>
+><li>Requires extra tooling</li>
+><li>Much of the functionality that could be achieved with a CSS preprocessor can now be done with vanilla CSS.</li>
+></ul>
 
 ***
 
