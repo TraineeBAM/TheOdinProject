@@ -460,6 +460,66 @@
 
 ***
 
+</details>
+
+***
+
+<details>
+<summary><h3>Form Basics</h3></summary>
+
+***
+
+<h4>Explain what the form element is for and what two attributes it should always include.</h4>
+
+>The form element is to define a form and is a container element..<br>
+>The two attributes a form should always include are the <code>action</code> and <code>method</code> attributes.<br>
+>The <code>action</code> attribute accepts a URL and tells the form where the form data should be sent for processing.<br>
+>The <code>method</code> attribute tells the browser which HTTP request method it should use to submit the form (typically GET or POST).
+
+***
+
+<h4>Explain what form controls are at a high level.</h4>
+
+>All the elements that a user will interact with on the form.
+
+***
+
+<h4>What is the name attribute for?</h4>
+
+>The name attribute tells the backend what each piece of data represents.<br>
+>Essentially, it is a variable name for the input.
+
+***
+
+<h4>What are the three most common form controls you can use for allowing users to select predefined options?</h4>
+
+><ol>
+><li>Dropdown</li>
+><li>Radio Buttons</li>
+><li>Checkboxes</li>
+></ol>
+
+***
+
+<h4>What are the three types of buttons in HTML?</h4>
+
+><ol>
+><li>Submit</li>
+><li>Reset</li>
+><li>Generic</li>
+></ol>
+
+***
+
+<h4>What are the two most challenging aspects of styling forms?</h4>
+
+><ol>
+><li>The default browser styles</li>
+><li>Certain form controls being resistant to custom styling</li>
+></ol>
+
+***
+
 
 
 
