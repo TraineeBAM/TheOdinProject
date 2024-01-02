@@ -481,7 +481,7 @@
 
 <h4>Explain what the form element is for and what two attributes it should always include.</h4>
 
->The form element is to define a form and is a container element..<br>
+>The form element is to define a form and is a container element.<br>
 >The two attributes a form should always include are the <code>action</code> and <code>method</code> attributes.<br>
 >The <code>action</code> attribute accepts a URL and tells the form where the form data should be sent for processing.<br>
 >The <code>method</code> attribute tells the browser which HTTP request method it should use to submit the form (typically GET or POST).
@@ -524,9 +524,50 @@
 <h4>What are the two most challenging aspects of styling forms?</h4>
 
 ><ol>
-><li>The default browser styles</li>
-><li>Certain form controls being resistant to custom styling</li>
+><li>The default browser styles.</li>
+><li>Certain form controls being resistant to custom styling.</li>
 ></ol>
+
+***
+
+</details>
+
+***
+
+<details>
+<summary><h3>Form Validation</h3></summary>
+
+***
+
+<h4>What does the required validation do?</h4>
+
+>Ensures that specific fields are filled out prior to form submission.
+
+***
+
+<h4>What validations can you use for checking text length?</h4>
+
+>You can use both the <code>minlength</code> and <code>maxlength</code> validations for checking text length.<br>
+>E.g. <code>minlength="5" maxlength="20"</code> would set a text length requirement between 5 and 20.
+
+***
+
+<h4>How can you validate the minimum and maximum of numeric inputs?</h4>
+
+>By using the <code>min</code> and <code>max</code> validation you can set limits for numerical inputs.
+>E.g. <code>min="1" max="5"</code> would limit the numerical input to between 1 and 5.
+
+***
+
+<h4>What can you use the pattern validation for?</h4>
+
+>Pattern validation is useful for ensuring that data matches a particular pattern so that the correct information is obtained from users.<br>
+
+***
+
+<h4>What pseudo CSS selectors are available for styling valid and invalid inputs?</h4>
+
+>You could use both <code>:valid</code> and <code>:invalid</code> pseudo selectors for styling valid/invalid inputs.
 
 ***
 
