@@ -8,7 +8,7 @@
 
         Below you will find my solutions to the various assignments in TOP Full Stack JavaScript path.
 
-| Course | Assignment's Name | Link |
+| Course | Module | Title |
 | ------ | ------------ | ---- |
 | Tables | Basics |[Intro](https://traineebam.github.io/TheOdinProject/Full_Stack_JavaScript/Tables/Tables_Basics/Intro)|
 | Tables | Basics |[Animals Table](https://traineebam.github.io/TheOdinProject/Full_Stack_JavaScript/Tables/Tables_Basics/animal-table)|

@@ -8,7 +8,7 @@
 
         Below you will find my solutions to the various assignments in TOP Foundations.
 
-| Course | Assignment's Name | Link |
+| Course | Module | Title |
 | ------ | ------------ | ---- |
 | HTML Foundations | Project:Recipes |[Odin Recipes](https://traineebam.github.io/TheOdinProject/Foundations/odin-recipes)|
 | CSS Foundations | Intro to CSS | [CSS Methods](https://traineebam.github.io/TheOdinProject/Foundations/CSS_Intro/01-css-methods)|
