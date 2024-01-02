@@ -346,6 +346,40 @@
 
 ***
 
+</details>
+
+***
+
+<details>
+<summary><h3>Custom Properties</h3></summary>
+
+***
+
+<h4>How would you declare a custom property with a name of text-color?</h4>
+
+><code>--text-color: value;</code> is how you would declare a custom property called text-color.
+
+***
+
+<h4>How would you access a custom property with a name of background-color?</h4>
+
+>You would use <code>var(--background-color);</code>
+
+***
+
+<h4>Where would you declare a custom property to have its scope be global and accessible by all other selectors?</h4>
+
+>It is best practice to declare a custom property in <code>:root</code>.
+
+***
+
+<h4>Where would you declare a custom property so that a user’s theme setting from their OS or browser was taken into account?</h4>
+
+>You would declare the custom property within a <code>@media (prefers-color-scheme: dark)</code> block.<br>
+>It should be noted that the only two accepted theme settings are "dark" and "light".
+
+***
+
 
 
 
