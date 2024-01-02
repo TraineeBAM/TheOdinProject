@@ -380,6 +380,33 @@
 
 ***
 
+</details>
+
+***
+
+<details>
+<summary><h3>Browser Compatibility</h3></summary>
+
+***
+
+<h4>What is the most used browser currently?</h4>
+
+>Currently Chrome by Google is the most popular browser.
+
+***
+
+<h4>What was the original name of the first web browser?</h4>
+
+>"WorldWideWeb" browser was the original name. This was later changed to "Nexus" to avoid confusion with the World Wide Web.
+
+***
+
+<h4>How are mobile browsers different on Apple mobile operating systems from Android?</h4>
+
+>
+
+***
+
 
 
 
