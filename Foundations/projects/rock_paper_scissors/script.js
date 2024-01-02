@@ -17,13 +17,9 @@ function playRound(playerSelection, computerSelection){
         game_result = "Draw - Please try again!";   
     } else if (playerSelection == "paper" && computerSelection == "rock"){
         game_result = "You win!";
-    } else if (playerSelection == "paper" && computerSelection == "scissors"){
-        game_result = "You lose!";
-    } else if (playerSelection == "rock" && computerSelection == "paper"){
-        game_result = "You lose!";
     } else if (playerSelection == "rock" && computerSelection == "scissors"){
         game_result = "You win!";
-    } else if (playerSelection == "paper" && computerSelection == "rock"){
+    } else if (playerSelection == "scissors" && computerSelection == "paper"){
         game_result = "You win!";
     } else {
         game_result = "You lose!";
@@ -95,7 +91,7 @@ const rock = document.createElement("button");
 const paper = document.createElement("button");
 const scissors = document.createElement("button");
 
-rock.textContent = "🪨";
+rock.textContent = "🤘";
 rock.style.fontSize = "150px";
 rock.style.width = "250px";
 rock.style.height = "250px";

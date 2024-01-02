@@ -1,0 +1,65 @@
+<!-- Form validation 2
+Now we want you to take the same form you saw in the previous task (use your previous answer if you want to), and add some more specific pattern validation to the first three fields using regular expressions.
+
+All of the user names in our application consist of a single letter, followed by a dot, followed by three or more letters or numbers. All letters should be lowercase.
+All of the email addresses for our users consist of one or more letters (lower or upper case) or numbers, followed by "@bigcorp.eu".
+Remove the length validation from the phone number field if it is present, and set it so that it accepts 10 digits — either 10 digits in a row, or a pattern of three digits, three digits, then four digits, separated by either spaces, dashes, or dots. -->
+
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Form validation: Task 1</title>
+    <style>
+      body {
+        background-color: #fff;
+        color: #333;
+        font: 1em / 1.4 Helvetica Neue, Helvetica, Arial, sans-serif;
+        padding: 1em;
+        margin: 0;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      input:invalid,
+      textarea:invalid {
+        box-shadow: 0 0 5px 1px red;
+    }
+
+    input:focus:invalid,
+    textarea:focus:invalid {
+    box-shadow: none;
+    }
+    </style>
+  </head>
+
+  <body>
+    <form>
+      <h2>Enter your support query</h2>
+      <ul>
+        <li>
+          <label for="uname">User name:</label>
+          <input type="text" name="uname" id="uname" required minlength="5" maxlength="20" pattern="[a-z]{1}[.]{1}[a-z\]">
+        </li>
+        <li>
+          <label for="email">Email address:</label>
+          <input type="email" name="email" id="email" required>
+        </li>
+        <li>
+          <label for="phone">Phone number:</label>
+          <input type="tel" name="phone" id="phone" required maxlength="15" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
+        </li>
+        <li>
+          <label for="comment">Comment:</label>
+          <textarea name="comment" required id="comment" maxlength="200"></textarea>
+        </li>
+        <li>
+          <button>Submit comment</button>
+        </li>
+      </ul>
+    </form>
+  </body>
+
+</html>
