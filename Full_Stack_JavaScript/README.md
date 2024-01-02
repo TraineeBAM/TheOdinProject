@@ -10,7 +10,17 @@
 
 | Course | Assignment's Name | Link |
 | ------ | ------------ | ---- |
-| example | placeholder |[text here](www.google.com)|
+| Tables | Basics |[Intro](https://traineebam.github.io/TheOdinProject/Full_Stack_JavaScript/Tables/Tables_Basics/Intro)|
+| Tables | Basics |[Animals Table](https://traineebam.github.io/TheOdinProject/Full_Stack_JavaScript/Tables/Tables_Basics/animal-table)|
+| Tables | Basics |[Dogs Table](https://traineebam.github.io/TheOdinProject/Full_Stack_JavaScript/Tables/Tables_Basics/dogs-table)|
+| Tables | Basics |[Timetable](https://traineebam.github.io/TheOdinProject/Full_Stack_JavaScript/Tables/Tables_Basics/timetable)|
+| Tables | Advanced |[Captions](https://traineebam.github.io/TheOdinProject/Full_Stack_JavaScript/Tables/Tables_Advanced/captions)|
+| Tables | Advanced |[Spending Record](https://traineebam.github.io/TheOdinProject/Full_Stack_JavaScript/Tables/Tables_Advanced/spending-record)|
+| Tables | Assessment |[Planets](https://traineebam.github.io/TheOdinProject/Full_Stack_JavaScript/Tables/Tables_Assessment)|
+| Forms | Basics |[Intro](https://traineebam.github.io/TheOdinProject/Full_Stack_JavaScript/Forms/Your_first_form)|
+| Forms | Basics |[Payment Form](https://traineebam.github.io/TheOdinProject/Full_Stack_JavaScript/Forms/Payment_form)|
+| Forms | Basics |[Speaker Submission](https://traineebam.github.io/TheOdinProject/Full_Stack_JavaScript/Forms/Speaker_submission)|
+
 
 ***
 
