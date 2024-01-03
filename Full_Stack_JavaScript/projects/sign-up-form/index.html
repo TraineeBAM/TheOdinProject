@@ -17,51 +17,57 @@
         </div>
     </div>
     <div class="form">
+        <div class="top-container">
         <div class="info">
             <p>This is not a real online service! You know you need something like this in your life to help you realise your deepest dreams. Sign up <em>now</em> to get started.</p>
             <p>You <em>know</em> you want to.</p>
         </div>
+        </div>
+        <div class="middle-container">
         <div class="user-info">
             <p>Let's do this!</p>
 
             <form action="#">
-                <div class="inputs first-last">
+                <div class="first-last">
                     <div>
                         <label for="first-name">First Name</label>
-                        <input type="text" name="first-name" id="first-name" required>
+                        <input type="text" name="first-name" id="first-name" required minlength="2" maxlength="20" pattern="[a-zA-Z ]+" title="Please enter a valid name (only letters and spaces)" placeholder="John">
                     </div>
-                    <div>
+                    <div class="inputs">
                         <label for="last-name">Last Name</label>
-                        <input type="text" name="last-name" id="last-name" required>
+                        <input type="text" name="last-name" id="last-name" required minlength="2" maxlength="20" pattern="[a-zA-Z ]+" title="Please enter a valid name (only letters and spaces)" placeholder="Doe">
                     </div>
                 </div>
-                <div class="inputs contact">
+                <div class="contact">
                     <div>
                         <label for="email">Email</label>
-                        <input type="email" name="email" id="email" required>
+                        <input type="email" name="email" id="email" required placeholder="john.doe@example.com">
                     </div>
-                    <div>
-                        <label for="phone">Phone Number</label>
-                        <input type="tel" name="phone" id="phone" required>
+                    <div class="inputs">
+                        <label for="phone">Mobile Number</label>
+                        <input type="tel" name="phone" id="phone" required pattern="\d{10}" placeholder="0123456789" title="Please enter a valid number (10 digits)">
                     </div>
                 </div>
-                <div class="inputs password">
+                <div class="password">
                     <div>
                         <label for="password">Password</label>
-                        <input type="password" name="password" id="password" required>
+                        <input type="password" name="password" id="password" required minlength="10" maxlength="20" title="Must be 10-20 characters">
                     </div>
-                    <div>
+                    <div class="inputs">
                         <label for="confirm-password">Confirm Password</label>
-                        <input type="password" name="confirm-password" id="confirm-password" required>
+                        <input type="password" name="confirm-password" id="confirm-password" required minlength="10" maxlength="20" title="Must be 10-20 characters">
                     </div>
                 </div>
                 <div>
                     <button type="submit">Create Account</button>
                 </div>
+            </div>
             </form>
         </div>
+        <div class="bottom-container">
         <div>
             <p>Already have an account? <a href="#">Log in</a></p>
+        </div>
         </div>
     </div>
 </body>

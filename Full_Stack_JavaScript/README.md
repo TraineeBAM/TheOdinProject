@@ -22,6 +22,7 @@
 | Forms | Basics |[Speaker Submission](https://traineebam.github.io/TheOdinProject/Full_Stack_JavaScript/Forms/Speaker_submission)|
 | Forms | Validation |[MDN Form Validation 1](https://traineebam.github.io/TheOdinProject/Full_Stack_JavaScript/Forms/mdn_form_validation/form_validation_1)|
 | Forms | Validation |[MDN Form Validation 2](https://traineebam.github.io/TheOdinProject/Full_Stack_JavaScript/Forms/mdn_form_validation/form_validation_2)|
+| Forms | Project |[Sign-up Form](https://traineebam.github.io/TheOdinProject/Full_Stack_JavaScript/projects/sign-up-form)|
 
 
 ***

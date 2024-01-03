@@ -104,25 +104,109 @@ a {
     height: 100vh;
     width: 55vw;
     justify-content: center;
-    gap:10em;
+    gap:2em;
     margin:0em 1em;
     font-family: sans-serif;
+    min-width: 445px;
 }
 
-.info {
-    font-size: 2.5em;
+.top-container {
+    font-size:2em;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    gap:1.5em;
     border-bottom: 5px solid rgba(55, 210, 100, 0.6);
 }
 
-.user-info {
-    display: flex;
+.info {
+    display:flex;
     flex-direction: column;
+    align-items: flex-start;
+    gap:1em;
+    margin-bottom: 1em;
+}
+
+.middle-container {
+    border-bottom: 5px solid rgba(55, 210, 100, 0.6);
+    display: flex;
+    justify-content: flex-start;
 }
 
 .user-info p {
     font-size: 2em;
+}
+
+div .inputs {
+    padding-left:12em;
+}
+
+@media (max-width: 1100px){
+    div .inputs {
+        padding-left:2em;
+    }
+}
+
+.first-last {
+    display: flex;
+    margin-top: 7px;
+    padding-top: 15px;
+    width: 50%;
+    align-content: space-between;
+}
+
+.contact {
+    display: flex;
+    margin-top: 7px;
+    padding-top: 15px;
+    width: 50%;
+}
+
+.password {
+    display: flex;
+    margin-top: 7px;
+    padding-top: 15px;
+    width: 50%;
+    margin-bottom: 1em;
+}
+
+.user-info button {
+    font-size: 16px;
+    font-weight: bold;
+  
+    color: rgba(245, 245, 245, 0.932);
+    background-color: rgba(55, 210, 100, 0.6);
+  
+    border: none;
+    border-radius: 3px;
+  
+    padding: 10px 40px;
+    cursor: pointer;
+    margin-bottom: 2em;
+    margin-top: 0.7em;
+  }
+  
+  .user-info button:hover {
+    background-color: rgba(55, 210, 100, 0.4);
+  }
+  
+  .user-info button:active {
+    background-color: rgba(55, 210, 100, 0.8);
+  }
+
+  input {
+    width: 15em;
+    height: 2em;
+    border-radius: 4px;
+    border: 1px solid rgba(0, 0, 0, 0.6);
+}
+
+input:valid {
+    outline: none;
+    border-color: rgba(55, 210, 100, 0.6);
+    box-shadow: 0 0 10px rgba(55, 210, 100, 0.8);
+}
+
+input:invalid {
+    outline: none;
+    border-color: rgba(210, 55, 55, 0.6);
+    box-shadow: 0 0 10px rgba(210, 55, 55, 0.8);
 }
