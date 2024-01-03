@@ -574,6 +574,32 @@
 
 ***
 
+</details>
+
+***
+
+<details>
+<summary><h3>Introduction to Grid</h3></summary>
+
+***
+
+<h4>How can you use Flex to make a two-dimensional layout?</h4>
+
+>You can use Flex to make a two-dimensional layout by positioning items along the main and cross axes.
+
+***
+
+<h4>Why was CSS Grid introduced?</h4>
+
+>It allows for easy placement of items in both one and two dimensions while maintaining the desired size.
+
+***
+
+<h4>Which CSS layout module would you use to easily make equal sized items in a container?</h4>
+
+>To make equal sized items in a container you would use the CSS Grid layout.
+
+***
 
 
 
