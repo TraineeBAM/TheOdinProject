@@ -756,6 +756,29 @@
 
 ***
 
+</details>
 
+***
 
+<details>
+<summary><h3>Using Flexbox and Grid</h3></summary>
 
+***
+
+<h4>When might you use Flexbox over Grid?</h4>
+
+>Flexbox is preferable to Grid in Content First Design, where controlling the layout isn't the priority.
+
+***
+
+<h4>When might you use Grid over Flexbox?</h4>
+
+>Grid would be used over Flexbox for Layout First Design, where there is a full understanding of what the finishing container should look like.
+
+***
+
+<h4>When might you use the two of these tools together?</h4>
+
+>The ideal scenario for using both Flexbox and Grid is where you have a Grid layout for your content, but the Grid items set as Flex parents.
+
+***
