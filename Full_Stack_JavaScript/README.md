@@ -23,7 +23,9 @@
 | Forms | Validation |[MDN Form Validation 1](https://traineebam.github.io/TheOdinProject/Full_Stack_JavaScript/Forms/mdn_form_validation/form_validation_1)|
 | Forms | Validation |[MDN Form Validation 2](https://traineebam.github.io/TheOdinProject/Full_Stack_JavaScript/Forms/mdn_form_validation/form_validation_2)|
 | Forms | Project |[Sign-up Form](https://traineebam.github.io/TheOdinProject/Full_Stack_JavaScript/projects/sign-up-form)|
-| CSS Grid | Practice ex #1 |[Holy Grail Layout](https://traineebam.github.io/TheOdinProject/Full_Stack_JavaScript/CSS_Grid/01-grid-layout-1)|
+| CSS Grid | Practice Exercise #1 |[Holy Grail Layout](https://traineebam.github.io/TheOdinProject/Full_Stack_JavaScript/CSS_Grid/01-grid-layout-1)|
+| CSS Grid | Practice Exercise #2 |[Holy Grail Layout (flexible)](https://traineebam.github.io/TheOdinProject/Full_Stack_JavaScript/CSS_Grid/02-grid-layout-2)|
+| CSS Grid | Practice Exercise #3 |[Holy Grail Mockup](https://traineebam.github.io/TheOdinProject/Full_Stack_JavaScript/CSS_Grid/03-grid-layout-3)|
 
 
 ***
@@ -673,7 +675,7 @@
 <h4>Which property can we use to combine all the start and end values for a grid item?</h4>
 
 >You can use the <code>grid-area</code> property to combine all the start and end values for a grid item.<br>
->An example of the syntax would be <code>grid-area: 1 / 1 / 3 / 6;</code> which is equal to <code>grid-row-start</code>, <code>grid-column-start</code>, <code>grid-row-end</code> and <code>grid-column-end</code>.
+>An example of the syntax would be <code>grid-area: 1 / 1 / 3 / 6;</code> which is equal to <code>grid-row-start</code>/ <code>grid-column-start</code>/ <code>grid-row-end</code>/ <code>grid-column-end</code>.
 
 ***
 
@@ -683,7 +685,76 @@
 
 ***
 
+</details>
 
+***
+
+<details>
+<summary><h3>Advanced Grid Properties</h3></summary>
+
+***
+
+<h4>How do you create several grid tracks of the same size without manually typing each one out?</h4>
+
+>You can use the <code>repeat()</code> function to create several grid tracks of the same size.<br>
+>An example of how to use it would be: <code>grid-template-rows: repeat(2, 150px)</code>.<br>
+>In the above example, we are creating 2 rows, each with a value of 150px.
+
+***
+
+<h4>What is the difference between a static and dynamic size value?</h4>
+
+>The difference between a static and dynamic size value is that static values are fixed at a defined size (e.g. 150px), whereas dynamic values are flexible/responsive sizes.<br>
+
+***
+
+<h4>How can you assign a grid track a flexible value that changes depending on the remaining space available in the grid?</h4>
+
+>To assign a flexible value to a grid track you would use fraction units (<code>fr</code>).<br>
+>As an example, a 10 column grid with a total size of 1000px, with each grid item given a column track size of <code>1fr</code> would mean each item is 1/10th of the total size (100px).
+
+***
+
+<h4>How can you assign grid tracks an uneven distribution of the remaining space in a grid?</h4>
+
+>You can assign an uneven distribution to grid tracks by providing a value greater than <code>1fr</code>.<br>
+>Using the above example, if we assign the first 2 columns a size value of <code>2fr</code> then they will always take up twice as much size as the <code>1fr</code> values.
+
+***
+
+<h4>Which CSS functions will return the smallest or largest value supplied to them?</h4>
+
+>The functions that will return the smallest or largest value supplied to them are <code>min()</code> and <code>max()</code>.
+
+***
+
+<h4>Which CSS Grid-only function allows you to supply a minimum and maximum track size that is calculated in realtime?</h4>
+
+>For dynamic minimum and maximum track sizes you would use the <code>minmax()</code> function.<br>
+>This function is passed two arguments being the minimum size the track can be, as well as the maximum size.<br>
+>E.g. <code>grid-template-columns: repeat(5, minmax(100px, 200px));</code> will ensure the column is never less than 100px, or more than 200px.
+
+***
+
+<h4>Which global CSS function allows you to supply a minimum, ideal, and maximum value that is calculated in realtime?</h4>
+
+>The global equivalent of <code>minmax()</code> would be <code>clamp()</code>.<br>
+>This function is passed three arguments being minimum-size, ideal-size and maximum-size. It is advisable to use a static size for the minimum and maximum size, and a dynamic value for the ideal size.<br>
+>E.g. <code>width: clamp(500px, 80%, 1000px);</code> would create a width equal to 80% of the parent width, down to a minimum of 500px and up to a maximum of 1000px.
+
+***
+
+<h4>What attribute of repeat() can be used to fill in as many grid tracks as possible, given certain constraints?</h4>
+
+>The attributes <code>auto-fit</code> and <code>auto-fill</code> can be used to fill as many grid tracks as possible.
+
+***
+
+<h4>What is the difference between auto-fit and auto-fill?</h4>
+
+>The difference between auto-fit and auto-fill is that auto-fill will leave empty tracks, whereas auto-fit will adjust and stretch the tracks to fill available space without leaving any empty tracks.
+
+***
 
 
 
