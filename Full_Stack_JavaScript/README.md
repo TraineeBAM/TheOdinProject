@@ -585,7 +585,7 @@
 
 <h4>How can you use Flex to make a two-dimensional layout?</h4>
 
->You can use Flex to make a two-dimensional layout by positioning items along the main and cross axes.
+>You can use Flex to make a two-dimensional layout by combining multiple flex containers.
 
 ***
 
@@ -598,6 +598,46 @@
 <h4>Which CSS layout module would you use to easily make equal sized items in a container?</h4>
 
 >To make equal sized items in a container you would use the CSS Grid layout.
+
+***
+
+</details>
+
+***
+
+<details>
+<summary><h3>Creating a Grid</h3></summary>
+
+***
+
+<h4>How does an HTML element become a grid item?</h4>
+
+>A HTML element becomes a grid item when the property of either <code>display: grid</code> or <code>display: inline-grid</code> is applied to it.
+
+***
+
+<h4>What is the space between lines on the grid?</h4>
+
+>The space between lines on a grid is referred to as the "grid track".
+
+***
+
+<h4>How do you set gutters (also known as alleys) in the grid?</h4>
+
+>Gutters/alleys in the grid is the gap between grid rows and columns. This gap can be adjusted with the <code>gap</code> property.<br>
+>E.g. <code>gap 10px 50px</code> would set a row gap of 10px and a column gap of 50px.
+
+***
+
+<h4>Describe what happens when you have more content than defined tracks.</h4>
+
+>When there is more content then there are defined tracks, the extra content is placed in an "implicit grid" automatically which follows a similar logic to the "explicit grid".
+
+***
+
+<h4>How could you change the size for those undefined tracks?</h4>
+
+>You can change the size of the implicit grid (undefined tracks) by using <code>grid-auto-rows</code> and/or <code>grid-auto-columns</code>
 
 ***
 
