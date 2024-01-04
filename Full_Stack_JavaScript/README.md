@@ -23,6 +23,7 @@
 | Forms | Validation |[MDN Form Validation 1](https://traineebam.github.io/TheOdinProject/Full_Stack_JavaScript/Forms/mdn_form_validation/form_validation_1)|
 | Forms | Validation |[MDN Form Validation 2](https://traineebam.github.io/TheOdinProject/Full_Stack_JavaScript/Forms/mdn_form_validation/form_validation_2)|
 | Forms | Project |[Sign-up Form](https://traineebam.github.io/TheOdinProject/Full_Stack_JavaScript/projects/sign-up-form)|
+| CSS Grid | Practice ex #1 |[Holy Grail Layout](https://traineebam.github.io/TheOdinProject/Full_Stack_JavaScript/CSS_Grid/01-grid-layout-1)|
 
 
 ***
@@ -641,6 +642,46 @@
 
 ***
 
+</details>
+
+***
+
+<details>
+<summary><h3>Positioning Grid Elements</h3></summary>
+
+***
+
+<h4>Explain the difference between a track and a line.</h4>
+
+>The difference between a track and a line is that a track is essentially any single column or row, and the lines are what divide these tracks.<br>
+>It should be noted that tracks have a start and end line, so a 1x3 grid would have horizontal lines ranging from 1 to 4.
+
+***
+
+<h4>What is the smallest unit on a grid?</h4>
+
+>A "cell" is the smallest unit on a grid.
+
+***
+
+<h4>What kind of value do we give to the grid-column-start or grid-column-end properties?</h4>
+
+>We give <code>grid-column-start</code> and <code>grid-column-end</code> a numerical value that defines the line to start/end on.
+
+***
+
+<h4>Which property can we use to combine all the start and end values for a grid item?</h4>
+
+>You can use the <code>grid-area</code> property to combine all the start and end values for a grid item.<br>
+>An example of the syntax would be <code>grid-area: 1 / 1 / 3 / 6;</code> which is equal to <code>grid-row-start</code>, <code>grid-column-start</code>, <code>grid-row-end</code> and <code>grid-column-end</code>.
+
+***
+
+<h4>Which grid container property can map out a visual structure of grid items?</h4>
+
+>To map out a visual structure of grid items you can use the <code>grid-template-areas</code> property in the grid container.
+
+***
 
 
 
