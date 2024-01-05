@@ -172,6 +172,15 @@ svg:hover {
     align-items: center;
     gap:2em;
     font-size: 1.4em;
+    margin-right:20px;
+}
+
+.notify img {
+    border-radius: 50%;
+}
+
+.notify img:hover {
+    box-shadow: 0px 0px 15px rgb(55, 180, 240);
 }
 
 .content {
@@ -213,6 +222,7 @@ svg:hover {
 .flex-icons{
     display:flex;
     justify-content: right;
+    align-items: flex-end;
     gap:5px;
 
 }
@@ -224,6 +234,7 @@ svg:hover {
     grid-template-rows: auto auto;
     font-weight: light;
     background-color: rgb(220, 220, 220);
+    padding-bottom: 20px;
 }
 
 .rightbar strong,
@@ -245,6 +256,9 @@ svg:hover {
 .trending {
     margin-left: 20px;
     margin-right: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
 }
 
 .trending-items {
@@ -298,8 +312,9 @@ svg:hover {
 .new-upload-share {
     display:flex;
     gap: 3em;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
+    margin-right: 20px;
 }
 
 .new-upload-share button {
