@@ -26,6 +26,7 @@
 | CSS Grid | Practice Exercise #1 |[Holy Grail Layout](https://traineebam.github.io/TheOdinProject/Full_Stack_JavaScript/CSS_Grid/01-grid-layout-1)|
 | CSS Grid | Practice Exercise #2 |[Holy Grail Layout (flexible)](https://traineebam.github.io/TheOdinProject/Full_Stack_JavaScript/CSS_Grid/02-grid-layout-2)|
 | CSS Grid | Practice Exercise #3 |[Holy Grail Mockup](https://traineebam.github.io/TheOdinProject/Full_Stack_JavaScript/CSS_Grid/03-grid-layout-3)|
+| CSS Grid | Project |[Admin Dashboard](https://traineebam.github.io/TheOdinProject/Full_Stack_JavaScript/projects/admin_dashboard)|
 
 
 ***
