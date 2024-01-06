@@ -783,3 +783,59 @@
 >The ideal scenario for using both Flexbox and Grid is where you have a Grid layout for your content, but the Grid items set as Flex parents.
 
 ***
+
+</details>
+
+***
+
+<details>
+<summary><h3>Objects and Object Constructors</h3></summary>
+
+***
+
+<h4>Write an object constructor and instantiate the object.</h4>
+
+><code>function Book(title, author, pages, read) {<br>
+>this.title = title;<br>
+>this.author = author;<br>
+>this.pages = pages;<br>
+>this.read = read;<br>
+>this.info = function() {<br>
+>console.log(`${this.title} by ${this.author}, ${this.pages} pages, ${this.read}.`);<br>
+>};<br>
+>}<br>
+><br>
+>let theHobbit = new Book('The Hobbit', 'J.R.R. Tolkien', '295', 'not read yet');<br>
+>console.log(theHobbit.info()); //output: "The Hobbit by J.R.R. Tolkien, 295 pages, not read yet"</code>
+
+***
+
+<h4>Describe what a prototype is and how it can be used.</h4>
+
+>
+
+***
+
+<h4>Explain prototypal inheritance.</h4>
+
+>
+
+***
+
+<h4>Understand the basic do’s and don’t’s of prototypal inheritance.</h4>
+
+>
+
+***
+
+<h4>Explain what Object.create does.</h4>
+
+>
+
+***
+
+<h4>How does this behave in different situations?</h4>
+
+>
+
+***
