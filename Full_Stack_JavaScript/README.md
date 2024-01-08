@@ -812,30 +812,53 @@
 
 <h4>Describe what a prototype is and how it can be used.</h4>
 
->
+>The prototype is an object from which other objects inherit properties. This mechanism allows objects in JavaScript to share behavior and properties.<br>
+>Prototype can be used to save memory by having common methods and properties shared among instances, rather than being defined separately each time.
 
 ***
 
 <h4>Explain prototypal inheritance.</h4>
 
->
+>Prototypal inheritance is where objects are able to inherit properties and methods directly from other objects.<br>
+>In JavaScript, prototypal inheritance is the primary inheritance mechanism.
 
 ***
 
 <h4>Understand the basic do’s and don’t’s of prototypal inheritance.</h4>
 
+>Do's of Prototypal Inheritance:
+><ol>
+><li>Use Prototypal Inheritance for Shared Properties/Methods.</li>
+><li>Modify the Prototype, Not Instances.</li>
+><li>Understand the Prototype Chain.</li>
+><li>Utilise Fallbacks for Missing Properties/Chains.</li>
+></ol>
 >
+>Don'ts of Prototypal Inheritance:
+><ol>
+><li>Don't modify Built-in Prototypes.</li>
+><li>Avoid Overwrite Prototypes Directly.</li>
+><li>Avoid Circular References.</li>
+><li>Avoid Modifying Prototypes in shared code.</li>
+></ol>
 
 ***
 
 <h4>Explain what Object.create does.</h4>
 
->
+><code>Object.create()</code> allows you to create objects that inherit properties and methods from a specified prototype, while also giving you flexibility to add custom properties to the new object.
 
 ***
 
-<h4>How does this behave in different situations?</h4>
+<h4>How does <code>this</code> behave in different situations?</h4>
 
->
+>The behavior of <code>this</code> varies depending on the context in which it is used:
+><ol>
+><li>Global Context: Refers to the global object (e.g. `window` in browsers, `global` in Node.js).</li>
+><li>Regular Function Calls: Refers to the global object (or `undefined` in strict mode).</li>
+><li>Object Methods: Refers to the object on which the method was invoked.</li>
+><li>Constructor Functions: Refers to the newly created instance.</li>
+><li>Event Handlers: Refers to the element that triggered the event (in DOM events).</li>
+></ol>
 
 ***
