@@ -160,20 +160,24 @@ table {
 .left_sidebar {
     background-color:chocolate;
     grid-area: 2 / 1 / 3 / 2;
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    justify-content: center;
-    align-items: center;
-    padding-top: 1.5em;
-    
+    display: grid;
+    grid-template-rows: 1fr 10fr;
+
 }
+    .add_book {
+        display:flex;
+        flex-direction: column;
+        gap: 15px;
+        padding-top: 1em;
+        justify-content: flex-start;
+        align-items: center;
+    }
 
     .left_sidebar_text {
-        margin-bottom: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         font-weight: bold;
-        padding-bottom: 10px;
-        border-bottom: gray solid 5px;
     }
 
     .form-row.radio {
@@ -190,28 +194,60 @@ table {
     .form-row.radio #book_read,
     .form-row.radio #book_unread {
         justify-self: left;
+        margin: 0px;
     }
 
+    /* Form layout */
+
     .form-row {
-    margin-bottom: 40px;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    flex-wrap: wrap;
+        margin-bottom: 40px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        flex-wrap: wrap;
     }
+
+    /* Styling form inputs */
 
     .form-row input[type='text'],
     .form-row input[type='number'] {
-    background-color: #FFFFFF;
-    border: 1px solid #D6D9DC;
-    border-radius: 25px;
-    width: 80%;
-    padding: 7px;
+        background-color: #FFFFFF;
+        border: 1px solid #D6D9DC;
+        border-radius: 25px;
+        width: 80%;
+        padding: 7px;
     }
+
+    /* Styling button */
+
+    .form-row button {
+        font-size: 16px;
+        font-weight: bold;
+        
+        color: #FFFFFF;
+        background-color: #5995DA;
+        
+        border: none;
+        border-radius: 3px;
+        
+        padding: 10px 40px;
+        cursor: pointer;
+    }
+
+/* Styling right sidebar */
 
 .right_sidebar {
 background-color: crimson;
 grid-area: 2 / 3 / 3 / 4;
+display: grid;
+grid-template-rows: 1fr 10fr;
+}
+
+.favorite_title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
 }
 
 .content_cards_container {
