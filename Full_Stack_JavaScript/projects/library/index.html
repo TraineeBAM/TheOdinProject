@@ -17,7 +17,10 @@
                  aria-label="Search through site content">
               </form></p>
         </div>
-        <div class="user_welcome">Welcome to MyLibrary<br><strong>Brandon Maruna</strong></div>
+        <div class="user_welcome">
+            <p><img src="./images/profile.png" alt="large profile pic" height="80px" width="80px"></p>
+            <div class="intro">Welcome to MyLibrary<br><strong>Brandon Maruna</strong></div>
+        </div>
         <div class="user_info">
             <div class="user_name">bmaruna</div>
             <div class="user_image"><img src="./images/profile.png" alt="profile image" width="50px" height="50px"></div>
@@ -30,7 +33,7 @@
     </div>
     <div class="left_sidebar">
         <div class="left_sidebar_text">
-             <u>Add a book to MyLibrary:</u>
+             <u>Add a book:</u>
         </div>
         <div class="add_book">
             <form action="#">
@@ -44,7 +47,7 @@
                 </div>
                 <div class="form-row">
                     <label for="pages">Pages:</label><br>
-                        <input type="number" name="pages" id="pages" required minlength="1" placeholder="310">
+                        <input type="number" name="pages" id="pages" required minlength="1" placeholder="310" pattern="\d">
                 </div>
                 <div class="form-row radio">
                         <legend>I have read this book:</legend>
@@ -52,14 +55,26 @@
                         <input id='book_read'
                                name='book_read'
                                type='radio'
-                               value='No' />
+                               value='No'
+                               required />
                         <label for='book_unread' class='radio-label'>No</label>
                         <input id='book_unread'
-                               name='book_unread'
+                               name='book_read'
                                type='radio'
                                value='No'
-                               checked />    
+                               required/>    
                 </div>
+                <div class='form-row options'>
+                    <label for='rating'>Rating</label>
+                    <select id='rating' name='rating' required>
+                      <option value='Excellent'>Excellent</option>
+                      <option value='Good'>Good</option>
+                      <option value='Average'>Average</option>
+                      <option value='Bad'>Bad</option>
+                      <option value='Terrible'>Terrible</option>
+                      <option value='N/A'>N/A - Book Unread</option>
+                    </select>
+                  </div>
                 <div class="form-row">
                     <label class='checkbox-label' for='favorite'>
                         <span>Add book to favorites</span>
@@ -77,10 +92,30 @@
     </div>
     <div class="right_sidebar">
         <div class="favorite_title"><u>Favorites</u></div>
-        <div class="favorite_cards">Inset favorite cards here</div>
+        <div class="favorite_cards">
+            <div class="favorite_demo_card">
+                <h1>The Hobbit</h1>
+                <h2>by J.R.R. Tolkein</h2>
+            </div>
+            <div class="favorite_demo_card">
+                <h1>Warrior Brothers</h1>
+                <h2>by Keith Fennell</h2>
+            </div>
+        </div>
     </div>
     <div class="content_cards_container">
-        <div class="content_cards">individual cards go here</div>
+            <div class="demo_card">
+                <h1>The Hobbit</h1>
+                <h2>by J.R.R. Tolkein</h2>
+                <h3>310 pages</h3>
+                <h3>Excellent</h3>
+            </div>
+            <div class="demo_card">
+                <h1>Warrior Brothers</h1>
+                <h2>by Keith Fennell</h2>
+                <h3>276 pages</h3>
+                <h3>Good</h3>
+            </div>
     </div>
 </div>
 

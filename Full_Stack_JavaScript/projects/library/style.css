@@ -110,12 +110,12 @@ table {
     .user_welcome {
         grid-area: 2 / 1 / 3 / 3;
         display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: flex-start;
+        /* flex-direction: column; */
+        justify-content: flex-start;
+        align-items: center;
         margin-left: 2em;
         font-weight: normal;
-        gap:5px;
+        gap:20px;
     }
 
     .user_welcome strong {
@@ -178,6 +178,7 @@ table {
         align-items: center;
         justify-content: center;
         font-weight: bold;
+        font-size: larger;
     }
 
     .form-row.radio {
@@ -197,10 +198,15 @@ table {
         margin: 0px;
     }
 
+    .form-row.options {
+        display:flex;
+        gap:5px;
+    }
+
     /* Form layout */
 
     .form-row {
-        margin-bottom: 40px;
+        margin-bottom: 20px;
         display: flex;
         justify-content: center;
         flex-direction: column;
@@ -228,7 +234,7 @@ table {
         background-color: #5995DA;
         
         border: none;
-        border-radius: 3px;
+        border-radius: 25px;
         
         padding: 10px 40px;
         cursor: pointer;
@@ -241,6 +247,7 @@ background-color: crimson;
 grid-area: 2 / 3 / 3 / 4;
 display: grid;
 grid-template-rows: 1fr 10fr;
+overflow: auto;
 }
 
 .favorite_title {
@@ -248,9 +255,56 @@ grid-template-rows: 1fr 10fr;
     align-items: center;
     justify-content: center;
     font-weight: bold;
+    font-size: larger ;
+}
+
+.favorite_cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 1em;
+    gap: 1em;
+}
+
+.favorite_demo_card,
+.demo_card {
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding:5px;
+    border: solid rgb(0, 0, 0) 2px;
+    width: 75%;
+    border-radius: 25px;
+    align-items: center;
+    background-color: #66acfc;
+}
+
+.content_cards_container h1,
+.favorite_cards h1 {
+    font-weight: bold;
+    text-decoration: underline;
+    font-size: 1.1em;
+    text-align: center;
+}
+
+.content_cards_container h3 {
+    font-size:smaller;
 }
 
 .content_cards_container {
 background-color: yellow;
-grid-area: 2 / 2 / 3 / 3
+grid-area: 2 / 2 / 3 / 3;
+display: flex;
+justify-content: center;
+align-items: flex-start;
+padding-top: 1em;
+flex-wrap: wrap;
+gap: 2em;
+padding: 2em;
+overflow: auto;
+}
+
+.demo_card {
+    width:20%
 }

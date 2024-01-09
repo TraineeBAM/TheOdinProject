@@ -14,5 +14,6 @@ function Book(title, author, pages, read){
 let demo_book = new Book(
     'The Hobbit',
     'J.R.R Tolkein',
-    '215',
+    310,
     'read');
+

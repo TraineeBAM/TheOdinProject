@@ -10,7 +10,7 @@
 
 | Course | Module | Title |
 | ------ | ------------ | ---- |
-| HTML Foundations | Project:Recipes |[Odin Recipes](https://traineebam.github.io/TheOdinProject/Foundations/odin-recipes)|
+| HTML Foundations | Project |[Odin Recipes](https://traineebam.github.io/TheOdinProject/Foundations/odin-recipes)|
 | CSS Foundations | Intro to CSS | [CSS Methods](https://traineebam.github.io/TheOdinProject/Foundations/CSS_Intro/01-css-methods)|
 | CSS Foundations | Intro to CSS | [Class ID selectors](https://traineebam.github.io/TheOdinProject/Foundations/CSS_Intro/02-class-id-selectors)|
 | CSS Foundations | Intro to CSS | [Grouping selectors](https://traineebam.github.io/TheOdinProject/Foundations/CSS_Intro/03-grouping-selectors)|
@@ -27,9 +27,10 @@
 | Flexbox | Alignment | [05-Flex-modal](https://traineebam.github.io/TheOdinProject/Foundations/Flexbox/05-flex-modal)|
 | Flexbox | Alignment | [06-Flex-Layout](https://traineebam.github.io/TheOdinProject/Foundations/Flexbox/06-flex-layout)|
 | Flexbox | Alignment | [07-Flex-Layout-2](https://traineebam.github.io/TheOdinProject/Foundations/Flexbox/07-flex-layout-2)|
-| JavaScript | RPS Project | [Revisiting Rock Paper Scissors](https://traineebam.github.io/TheOdinProject/Foundations/projects/rock_paper_scissors)|
-| JavaScript | Etch-a-Sketch Project | [Etch-a-Sketch](https://traineebam.github.io/TheOdinProject/Foundations/projects/etch-a-sketch)|
-| JavaScript | Calculator Project | [Calculator](https://traineebam.github.io/TheOdinProject/Foundations/projects/calculator)|
+| Flexbox | Project | [Landing Page](https://traineebam.github.io/TheOdinProject/Foundations/projects/landing_page)|
+| JavaScript | Project | [Revisiting Rock Paper Scissors](https://traineebam.github.io/TheOdinProject/Foundations/projects/rock_paper_scissors)|
+| JavaScript | Project | [Etch-a-Sketch](https://traineebam.github.io/TheOdinProject/Foundations/projects/etch-a-sketch)|
+| JavaScript | Project | [Calculator](https://traineebam.github.io/TheOdinProject/Foundations/projects/calculator)|
 
 ***
 
