@@ -36,7 +36,7 @@
              <u>Add a book:</u>
         </div>
         <div class="add_book">
-            <form action="#">
+            <form id="book-form">
                 <div class="form-row">
                     <label for="title">Title:</label><br>
                         <input type="text" name="title" id="title" required minlength="2" placeholder="The Hobbit">
@@ -53,13 +53,14 @@
                         <legend>I have read this book:</legend>
                         <label for='book_read' class='radio-label'>Yes</label>
                         <input id='book_read'
-                               name='book_read'
+                               name='read'
                                type='radio'
-                               value='No'
-                               required />
+                               value='Yes'
+                               required
+                               checked />
                         <label for='book_unread' class='radio-label'>No</label>
                         <input id='book_unread'
-                               name='book_read'
+                               name='read'
                                type='radio'
                                value='No'
                                required/>    
@@ -81,11 +82,11 @@
                         <input id='favorite'
                                name='favorite'
                                type='checkbox'
-                               value='favorite-book'/>
+                               value='favorite'/>
                         </label>
                 </div>
                 <div class='form-row'>
-                    <button>Add book</button>
+                    <button type="submit">Add book</button>
                   </div>
             </form>
         </div>
@@ -103,7 +104,7 @@
             </div>
         </div>
     </div>
-    <div class="content_cards_container">
+    <div class="content_cards_container" id="content_cards_container">
             <div class="demo_card">
                 <h1>The Hobbit</h1>
                 <h2>by J.R.R. Tolkein</h2>

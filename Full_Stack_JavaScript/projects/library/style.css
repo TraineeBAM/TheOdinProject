@@ -268,7 +268,8 @@ overflow: auto;
 }
 
 .favorite_demo_card,
-.demo_card {
+.demo_card,
+.new_card {
     display:flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -305,6 +306,7 @@ padding: 2em;
 overflow: auto;
 }
 
-.demo_card {
+.demo_card,
+.new_card {
     width:20%
 }
