@@ -862,3 +862,68 @@
 ></ol>
 
 ***
+
+</details>
+
+***
+
+<details>
+<summary><h3>Factory Functions and the Module Pattern</h3></summary>
+
+***
+
+<h4>Explain how scope works in JavaScript.</h4>
+
+>Scope in JavaScript is about the current context of a variable.<br>
+>Scopes can be either global (declared outside of any functions) or locally scoped (declared within a variable or curly braces).
+
+***
+
+<h4>Explain what closures are and how they help in creating private variables.</h4>
+
+>Closures in JavaScript enable functions to access and remember the variables from their outer scope even after that scope has finished executing.<br>
+>They help create private variables by encapsulating these variables within a function's scope, allowing data to be hidden and ensures that they can't be directly accessed or modified from outside the function.
+
+***
+
+<h4>Describe the common issues that you can face when working with constructors.</h4>
+
+>Some common issues include:
+><ul>
+><li>Difficulty in Testing and Mocking: Caused if code relies to heavily on constructors (especially those with complex dependencies or side effects).</li>
+><li>Multiple Inheritance: Attempting to mimic this can lead to complex prototype chains or prototype pollution.</li>
+><li>Issues with the 'this' Context: Incorrect binding of 'this'.</li>
+><li>Absence of Proper Encapsulation: All properties and methods are accessible from outside the object.</li>
+></ul>
+
+***
+
+<h4>Describe private variables in factory functions and how they can be useful.</h4>
+
+>
+
+***
+
+<h4>Describe how we can implement prototypal inheritance with factory functions.</h4>
+
+>
+
+***
+
+<h4>Explain how the module pattern works.</h4>
+
+>
+
+***
+
+<h4>Describe IIFEs and what they stand for.</h4>
+
+>
+
+***
+
+<h4>Explain the concept of namespacing and how factory functions help with encapsulation.</h4>
+
+>
+
+***
