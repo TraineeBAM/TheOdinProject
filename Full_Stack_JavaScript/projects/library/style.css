@@ -337,6 +337,10 @@ color:rgb(212, 212, 212)
     text-align: center;
 }
 
+.favorite_cards h2 {
+    text-align: center;
+}
+
 .content_cards_container h3 {
     font-size:smaller;
 }
