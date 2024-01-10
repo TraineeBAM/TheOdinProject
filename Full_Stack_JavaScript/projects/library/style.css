@@ -99,11 +99,22 @@ table {
             background-color: rgb(220, 220, 220);
     }
 
+    .searchbar input:hover,
+    .searchbar input:focus,
+    #pages:hover, #author:hover, #title:hover,
+    #pages:focus, #author:focus, #title:focus{
+        box-shadow: 0px 0px 15px 1px rgba(0, 247, 255, 0.6);
+    }
+
     .searchbar button {
         all:unset;
         cursor: pointer;
         width: 44px;
         height: 44px;
+    }
+
+    .searchbar svg:hover {
+        fill:rgba(0, 247, 255, 0.6);
     }
     
     /* User Welcome container */
@@ -201,6 +212,10 @@ table {
         gap:5px;
     }
 
+    .left_sidebar button:hover{
+        background-color:#23548b81;
+    }
+
     /* Form layout */
 
     .form-row {
@@ -239,7 +254,9 @@ table {
         cursor: pointer;
     }
 
-    .remove-btn, .favorite-btn {
+    .remove-btn, 
+    .favorite-btn,
+    .toggle-read-btn {
         font-weight: bold;
         background-color: inherit;
         border-radius: 25px;
@@ -250,6 +267,7 @@ table {
     }
 
     .card_options {
+        padding-top:5px;
         display:flex;
         width: 100%;
         justify-content: space-between;
@@ -262,6 +280,10 @@ table {
 
     .remove-btn svg:hover {
         fill: rgb(182, 55, 55);
+    }
+
+    .toggle-read-btn svg:hover {
+        fill: rgb(30, 205, 211);
     }
 /* Styling right sidebar */
 
@@ -305,14 +327,13 @@ color:rgb(212, 212, 212)
     align-items: center;
     background-color:#23548b;
     color: rgb(221, 221, 221);
-    box-shadow: 0px 0px 15px 1px rgb(0, 247, 255);
+    box-shadow: 0px 0px 15px 1px rgba(0, 247, 255, 0.6);
 }
 
 .content_cards_container h1,
 .favorite_cards h1 {
     font-weight: bold;
     font-size: 1.1em;
-    text-align: center;
 }
 
 .content_cards_container h3 {
@@ -333,5 +354,9 @@ overflow: auto;
 
 .demo_card,
 .new_card {
-    width:20%
+    justify-content: center;
+    width:20%;
+    min-height: 20%;
+    text-align: center;
+    gap: 10px;
 }
