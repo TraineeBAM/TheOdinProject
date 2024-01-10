@@ -33,10 +33,10 @@
     </div>
     <div class="left_sidebar">
         <div class="left_sidebar_text">
-             <u>Add a book:</u>
+             <button id="createNewBook">Create new entry</button>
         </div>
         <div class="add_book">
-            <form id="book-form">
+            <form id="book-form" style="display: none;">
                 <div class="form-row">
                     <label for="title">Title:</label><br>
                         <input type="text" name="title" id="title" required minlength="2" placeholder="The Hobbit">
@@ -86,19 +86,22 @@
                         </label>
                 </div>
                 <div class='form-row'>
-                    <button type="submit">Add book</button>
+                    <button type="submit">Add to MyLibrary</button>
                   </div>
+                <div class='form-row'>
+                    <button type="button" id="resetForm">Hide form</button>
+                </div>
             </form>
         </div>
     </div>
     <div class="right_sidebar">
         <div class="favorite_title"><u>Favorites</u></div>
         <div class="favorite_cards">
-            <div class="favorite_demo_card">
+            <div class="fav_card">
                 <h1>The Hobbit</h1>
                 <h2>by J.R.R. Tolkein</h2>
             </div>
-            <div class="favorite_demo_card">
+            <div class="fav_card">
                 <h1>Warrior Brothers</h1>
                 <h2>by Keith Fennell</h2>
             </div>

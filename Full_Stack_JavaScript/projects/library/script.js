@@ -1,6 +1,6 @@
 const myLibrary = []
 
-function Book(title, author, pages, read){
+function Book(title, author, pages, read, favorite, rating){
     this.title = title;
     this.author = author;
     this.pages = pages;
@@ -9,36 +9,96 @@ function Book(title, author, pages, read){
     this.rating = rating;
 }
 
-// function addBookToLibrary(){
-//         myLibrary.push(`${this.Book}`)
-// };
+let favorite_cards = document.querySelector(".favorite_cards");
 
-// let demo_book = new Book(
-//     'The Hobbit',
-//     'J.R.R Tolkein',
-//     310,
-//     'read');
+function render() {
+    let content_cards_container = document.querySelector(".content_cards_container");
+    content_cards_container.innerHTML = "";
+    favorite_cards.innerHTML = "";
+    for (let i = 0; i < myLibrary.length; i++) {
+        let book = myLibrary[i];
+        let new_card = document.createElement('div');
+        new_card.classList.add('new_card');
+        new_card.innerHTML = `
+        <h1>${book.title}</h1>
+        <h2>by ${book.author}</h2>
+        <h3>${book.pages} pages</h3>
+        <h3>${book.rating}</h3>
+        <p class="card_options">
+        <button class="remove-btn" onclick="removeBook(${i})"><svg width="24px" height="24px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M16 8L8 16M8.00001 8L16 16M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg></button>
+        <button class="favorite-btn" onclick="togglefavorite(${i})"><svg width="24px" height="24px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M11.2691 4.41115C11.5006 3.89177 11.6164 3.63208 11.7776 3.55211C11.9176 3.48263 12.082 3.48263 12.222 3.55211C12.3832 3.63208 12.499 3.89177 12.7305 4.41115L14.5745 8.54808C14.643 8.70162 14.6772 8.77839 14.7302 8.83718C14.777 8.8892 14.8343 8.93081 14.8982 8.95929C14.9705 8.99149 15.0541 9.00031 15.2213 9.01795L19.7256 9.49336C20.2911 9.55304 20.5738 9.58288 20.6997 9.71147C20.809 9.82316 20.8598 9.97956 20.837 10.1342C20.8108 10.3122 20.5996 10.5025 20.1772 10.8832L16.8125 13.9154C16.6877 14.0279 16.6252 14.0842 16.5857 14.1527C16.5507 14.2134 16.5288 14.2807 16.5215 14.3503C16.5132 14.429 16.5306 14.5112 16.5655 14.6757L17.5053 19.1064C17.6233 19.6627 17.6823 19.9408 17.5989 20.1002C17.5264 20.2388 17.3934 20.3354 17.2393 20.3615C17.0619 20.3915 16.8156 20.2495 16.323 19.9654L12.3995 17.7024C12.2539 17.6184 12.1811 17.5765 12.1037 17.56C12.0352 17.5455 11.9644 17.5455 11.8959 17.56C11.8185 17.5765 11.7457 17.6184 11.6001 17.7024L7.67662 19.9654C7.18404 20.2495 6.93775 20.3915 6.76034 20.3615C6.60623 20.3354 6.47319 20.2388 6.40075 20.1002C6.31736 19.9408 6.37635 19.6627 6.49434 19.1064L7.4341 14.6757C7.46898 14.5112 7.48642 14.429 7.47814 14.3503C7.47081 14.2807 7.44894 14.2134 7.41394 14.1527C7.37439 14.0842 7.31195 14.0279 7.18708 13.9154L3.82246 10.8832C3.40005 10.5025 3.18884 10.3122 3.16258 10.1342C3.13978 9.97956 3.19059 9.82316 3.29993 9.71147C3.42581 9.58288 3.70856 9.55304 4.27406 9.49336L8.77835 9.01795C8.94553 9.00031 9.02911 8.99149 9.10139 8.95929C9.16534 8.93081 9.2226 8.8892 9.26946 8.83718C9.32241 8.77839 9.35663 8.70162 9.42508 8.54808L11.2691 4.41115Z" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg></button>
+        </p>
+       `;
+        content_cards_container.appendChild(new_card);
+        if (`${book.favorite}` === 'true'){
+            let fav_card = document.createElement('div');
+            fav_card.classList.add('fav_card');
+            fav_card.innerHTML = `
+            <h1>${book.title}</h1>
+            <h2>by ${book.author}</h2>
+            `;
+            favorite_cards.appendChild(fav_card);
+        }
+    }
+}
+
+function removeBook(index) {
+    myLibrary.splice(index, 1)
+    render()
+}
+
+function addBookToLibrary(){
+    let title = document.getElementById("title").value;
+    let author = document.getElementById("author").value;
+    let pages = document.getElementById("pages").value;
+    let read = document.getElementById("book_read").checked;
+    let favorite = document.getElementById("favorite").checked;
+    let rating = document.getElementById("rating").value;
+    let newBook = new Book(title, author, pages, read, favorite, rating);
+    myLibrary.push(newBook);
+    render();
+    form.reset();
+};
+
+
+const createNewBook = document.querySelector("#createNewBook");
+createNewBook.addEventListener("click", function(){
+    form.style.display = "block";});
+
+const resetForm = document.querySelector("#resetForm");
+resetForm.addEventListener("click", function(){
+    form.style.display = "none";})
 
 const form = document.querySelector("#book-form");
 
-form.addEventListener("submit", (e) => {
-    e.preventDefault();
-    const data = new FormData(e.target);
-    const name = data.get("title")
-    const entries = Object.fromEntries(data.entries());
-    myLibrary.push(entries);
-    form.reset();
+form.addEventListener("submit", function(event){
+    event.preventDefault();
+    addBookToLibrary();
+})
 
-    const content_cards_container = document.getElementById('content_cards_container');
-    const new_card = document.createElement('div');
-    new_card.classList.add('new_card');
-    const { title, author, pages, rating } = entries;
-    new_card.innerHTML = `
-        <h1>${title}</h1>
-        <h2>by ${author}</h2>
-        <h3>${pages} pages</h3>
-        <h3>${rating}</h3>
-    `;
-    content_cards_container.appendChild(new_card);
 
-});
+// form.addEventListener("submit", (e) => {
+//     e.preventDefault();
+//     const data = new FormData(e.target);
+//     const name = data.get("title")
+//     const entries = Object.fromEntries(data.entries());
+//     myLibrary.push(entries);
+//     form.reset();
+
+//     const content_cards_container = document.getElementById('content_cards_container');
+//     const new_card = document.createElement('div');
+//     new_card.classList.add('new_card');
+//     const { title, author, pages, rating } = entries;
+//     new_card.innerHTML = `
+//         <h1>${title}</h1>
+//         <h2>by ${author}</h2>
+//         <h3>${pages} pages</h3>
+//         <h3>${rating}</h3>
+//     `;
+//     content_cards_container.appendChild(new_card);
+
+// });

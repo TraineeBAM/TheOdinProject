@@ -57,23 +57,25 @@ table {
 }
 
 .container {
-    width:100vw;
+    max-width:100vw;
+    min-width:1100px;
     height:100vh;
-    border: solid black 5px;
     box-sizing: border-box;
     display:grid;
     grid-template-columns: 1fr 4fr 1fr;
     grid-template-rows: 1fr 4fr;
+    background:linear-gradient(to right, rgb(49, 49, 49), rgb(0, 80, 117));
 }
 
 /* Header Container */
 
 .header {
-    background-color: blueviolet;
+    /* background:linear-gradient(to right, rgb(49, 49, 49), rgb(0, 80, 117)); */
     grid-area: 1 / 2 / 2 / 4;
     display:grid;
     grid-template-rows: 1fr 1fr;
     grid-template-columns: 3fr 1fr;
+    border-bottom: 3px solid black;
 }
 
     /* Searchbar container */
@@ -116,6 +118,7 @@ table {
         margin-left: 2em;
         font-weight: normal;
         gap:20px;
+        color:rgb(212, 212, 212);
     }
 
     .user_welcome strong {
@@ -142,23 +145,17 @@ table {
     grid-area: 1 / 1 / 2 / 2;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
+    padding-top: 1em;
     font-size: 2em;
     font-weight: bold;
+    color:rgb(212, 212, 212)
 }
-
-.webpage_title .title_banner {
-    background-color: rgba(255, 255, 255, 0.4);
-    width: calc(100vw/6);
-    display: flex;
-    justify-content: center;
-}
-
 
 /* Left Sidebar */
 
 .left_sidebar {
-    background-color:chocolate;
+    /* background-color:chocolate; */
     grid-area: 2 / 1 / 3 / 2;
     display: grid;
     grid-template-rows: 1fr 10fr;
@@ -226,7 +223,8 @@ table {
 
     /* Styling button */
 
-    .form-row button {
+    .form-row button,
+    .left_sidebar_text button {
         font-size: 16px;
         font-weight: bold;
         
@@ -240,10 +238,33 @@ table {
         cursor: pointer;
     }
 
+    .remove-btn, .favorite-btn {
+        font-weight: bold;
+        background-color: inherit;
+        border-radius: 25px;
+        cursor: pointer;
+        margin:0px;
+        padding:0px;
+        border:none;
+    }
+
+    .card_options {
+        display:flex;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .favorite-btn svg:hover {
+        fill: yellow;
+    }
+
+    .remove-btn svg:hover {
+        fill: red;
+    }
 /* Styling right sidebar */
 
 .right_sidebar {
-background-color: crimson;
+/* background-color: crimson; */
 grid-area: 2 / 3 / 3 / 4;
 display: grid;
 grid-template-rows: 1fr 10fr;
@@ -267,7 +288,7 @@ overflow: auto;
     gap: 1em;
 }
 
-.favorite_demo_card,
+.fav_card,
 .demo_card,
 .new_card {
     display:flex;
@@ -294,7 +315,7 @@ overflow: auto;
 }
 
 .content_cards_container {
-background-color: yellow;
+/* background-color: yellow; */
 grid-area: 2 / 2 / 3 / 3;
 display: flex;
 justify-content: center;
