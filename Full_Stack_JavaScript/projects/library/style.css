@@ -70,12 +70,11 @@ table {
 /* Header Container */
 
 .header {
-    /* background:linear-gradient(to right, rgb(49, 49, 49), rgb(0, 80, 117)); */
     grid-area: 1 / 2 / 2 / 4;
     display:grid;
     grid-template-rows: 1fr 1fr;
     grid-template-columns: 3fr 1fr;
-    border-bottom: 3px solid black;
+    border-bottom: 3px solid rgba(0, 0, 0, 0.39);
 }
 
     /* Searchbar container */
@@ -136,6 +135,7 @@ table {
         margin-right: 2em;
         gap: 15px;
         font-weight: bold;
+        color:rgb(212, 212, 212);
     }
 
 /* Webpage Title */
@@ -159,7 +159,8 @@ table {
     grid-area: 2 / 1 / 3 / 2;
     display: grid;
     grid-template-rows: 1fr 10fr;
-
+    border-right: solid rgba(0, 0, 0, 0.404) 3px;
+    color:rgb(212, 212, 212)
 }
     .add_book {
         display:flex;
@@ -213,8 +214,8 @@ table {
     /* Styling form inputs */
 
     .form-row input[type='text'],
-    .form-row input[type='number'] {
-        background-color: #FFFFFF;
+    .form-row input[type='number']{
+        background-color: #ffffff;
         border: 1px solid #D6D9DC;
         border-radius: 25px;
         width: 80%;
@@ -229,7 +230,7 @@ table {
         font-weight: bold;
         
         color: #FFFFFF;
-        background-color: #5995DA;
+        background-color: #23548b;
         
         border: none;
         border-radius: 25px;
@@ -252,23 +253,25 @@ table {
         display:flex;
         width: 100%;
         justify-content: space-between;
+        color:#d1d1d1
     }
 
     .favorite-btn svg:hover {
-        fill: yellow;
+        fill: rgb(190, 190, 39);
     }
 
     .remove-btn svg:hover {
-        fill: red;
+        fill: rgb(182, 55, 55);
     }
 /* Styling right sidebar */
 
 .right_sidebar {
-/* background-color: crimson; */
 grid-area: 2 / 3 / 3 / 4;
 display: grid;
 grid-template-rows: 1fr 10fr;
 overflow: auto;
+border-left: solid rgba(0, 0, 0, 0.404) 3px;
+color:rgb(212, 212, 212)
 }
 
 .favorite_title {
@@ -286,6 +289,7 @@ overflow: auto;
     align-items: center;
     padding-top: 1em;
     gap: 1em;
+    
 }
 
 .fav_card,
@@ -295,17 +299,18 @@ overflow: auto;
     flex-direction: column;
     flex-wrap: wrap;
     padding:5px;
-    border: solid rgb(0, 0, 0) 2px;
+    border: solid rgba(0, 0, 0, 0.5) 1px;
     width: 75%;
     border-radius: 25px;
     align-items: center;
-    background-color: #66acfc;
+    background-color:#23548b;
+    color: rgb(221, 221, 221);
+    box-shadow: 0px 0px 15px 1px rgb(0, 247, 255);
 }
 
 .content_cards_container h1,
 .favorite_cards h1 {
     font-weight: bold;
-    text-decoration: underline;
     font-size: 1.1em;
     text-align: center;
 }
@@ -315,7 +320,6 @@ overflow: auto;
 }
 
 .content_cards_container {
-/* background-color: yellow; */
 grid-area: 2 / 2 / 3 / 3;
 display: flex;
 justify-content: center;
