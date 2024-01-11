@@ -900,30 +900,34 @@
 
 <h4>Describe private variables in factory functions and how they can be useful.</h4>
 
->
+>Private variables in factory functions are variables that are only accessible from within the scope of the factory function and not from outside.<br>
+>This helps in creating more modular and maintainable code while facilitating greater code security.
 
 ***
 
 <h4>Describe how we can implement prototypal inheritance with factory functions.</h4>
 
->
+>Prototypal inheritance can be achieved with factory functions by utilising the <code>object.create()</code> method.
 
 ***
 
 <h4>Explain how the module pattern works.</h4>
 
->
+>The module pattern involves using closures and immediate function invocation.<br>
+>This creates a self-contained module with private members (variables and functions) and a public interface.
 
 ***
 
 <h4>Describe IIFEs and what they stand for.</h4>
 
->
+>IIFE = Immediately Invoked Function Expression.<br>
+>This is where you wrap your factory function in parentheses and immediately invoke it.
 
 ***
 
 <h4>Explain the concept of namespacing and how factory functions help with encapsulation.</h4>
 
->
+>Namespacing is the concept of organising code by encapsulating it within a specific namespace or container to avoid naming conflicts.<br>
+>Factory functions enable this encapsulation by allowing the creation of objects with private variables and methods.
 
 ***
