@@ -46,3 +46,84 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
+.container {
+    height:100vh;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 2fr 4fr 0.5fr 1fr 1fr;
+    background-color:rgb(101, 215, 250);
+    min-height: 870px;
+    min-width:575px;
+}
+
+.container h1 {
+    grid-area: 1 / 1 / 2 / 5;
+    display: flex;
+    justify-content: center;
+    font-size: 6em;
+    align-items: center;
+    background-color: rgb(17, 17, 17);
+    font-weight: bold;
+    color: #dadada;
+}
+
+#gameboard {
+    grid-area: 2 / 2 / 3 / 4;
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top:2em;
+    height: 300px;
+    justify-content: center;
+}
+
+.square {
+    display: flex;
+    flex-wrap: wrap;
+    border: 3px solid black;
+    justify-content: center;
+    align-items: center;
+    width:30%;
+    height: 40%;
+    text-align: center;
+    font-size: 80px;
+}
+
+#message {
+    grid-area: 3 / 2 / 4 / 4;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3em;
+}
+
+.player-names {
+    grid-area: 4 / 2 / 5 / 4;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.game-options {
+    grid-area: 5 / 2 / 6 / 4;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 2em;
+}
+
+.game-options button {
+    font-size: 16px;
+        font-weight: bold;
+        
+        color: #FFFFFF;
+        background-color:rgb(17, 17, 17);
+        
+        border: none;
+        border-radius: 25px;
+        
+        padding: 10px 40px;
+        cursor: pointer;
+}
