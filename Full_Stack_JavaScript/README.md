@@ -28,6 +28,7 @@
 | CSS Grid | Practice Exercise #3 |[Holy Grail Mockup](https://traineebam.github.io/TheOdinProject/Full_Stack_JavaScript/CSS_Grid/03-grid-layout-3)|
 | CSS Grid | Project |[Admin Dashboard](https://traineebam.github.io/TheOdinProject/Full_Stack_JavaScript/projects/admin_dashboard)|
 | JavaScript | Project |[Library](https://traineebam.github.io/TheOdinProject/Full_Stack_JavaScript/projects/library)|
+| JavaScript | Project |[Tic Tac Toe](https://traineebam.github.io/TheOdinProject/Full_Stack_JavaScript/projects/tic_tac_toe)|
 
 ***
 
