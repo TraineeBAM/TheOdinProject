@@ -49,6 +49,9 @@ const Game = (() => {
         let gameOver;
 
         const start = () => {
+            if (gameOver){
+                return;
+            }
             players = [
                 createPlayer(document.querySelector("#player1").value, "X"),
                 createPlayer(document.querySelector("#player2").value, "O")
@@ -86,6 +89,7 @@ const Game = (() => {
             for (let i = 0; i < 9; i++) {
                 Gameboard.update(i, "");
             }
+            currentPlayerIndex = 0;
             Gameboard.render();
             gameOver = false;
             document.querySelector("#message").innerHTML = "";
