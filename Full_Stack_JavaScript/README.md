@@ -932,3 +932,107 @@
 >Factory functions enable this encapsulation by allowing the creation of objects with private variables and methods.
 
 ***
+
+</details>
+
+***
+
+<details>
+<summary><h3>Classes</h3></summary>
+
+***
+
+<h4>Describe the pros and cons of using classes in JavaScript.</h4>
+
+>The pros of using classes in JavaScript are:
+><ol>
+><li>Can improve the syntax via encapsulation.</li>
+><li>Facilitates inheritance which promotes code reuse.</li>
+><li>Provides a constructor function that is called automatically upon object instantiation.</li>
+></ol>
+>The cons of using classes in JavaScript are:
+><ol>
+><li>"Classes" don't technically exist in JavaScript and are syntactic sugar over the existing prototype system which can lead to confusion.</li>
+><li>Can become very verbose resulting in greater code complexity or additional libraries.</li>
+><li>Implicit binding of <code>this</code> which can lead to issues when methods are passed as callbacks or used in different contexts.</li>
+></ol>
+
+
+***
+
+<h4>How does JavaScript’s object creation differ from a language like Java or Ruby?</h4>
+
+><ul>
+><li>JavaScript uses prototypal inheritance whereas most other languages use class-based inheritance.</li>
+><li>Objects in JavaScript are highly dynamic.</li>
+><li>JavaScript uses a dynamic form of typing called "duck typing" where the focus is on the properties and methods an object has rather than its explicit type.</li>
+></ul>
+
+***
+
+<h4>Explain the differences between object constructors and classes.</h4>
+
+>Some of the key differences between object constructors and classes are:
+><ul>
+><li>Classes provide a more concise syntax.</li>
+><li>Classes use the <code>extends</code> keyword for inheritance whereas object constructors are prototype based.</li>
+><li>Function declarations are hoisted whereas class declarations are not (you need to declare the class before using it).</li>
+><li>Methods in classes are defined without the need for the <code>function</code> keyword.</li>
+></ul>
+
+***
+
+<h4>What are “getters” & “setters”?</h4>
+
+>A "getter" method is used to retrieve the value of a property and is defined using the <code>get</code> keyword followed by the property name.
+>A "setter" method is used to modify the value of a property and is defined using the <code>set</code> keyword followed by the property name.
+
+***
+
+<h4>Describe computed names and class fields.</h4>
+
+>Computed property names allow you to use an expression as the property name when defining an object.
+>Class fields allow you to declare properties directly within a class without the need for a constructor.
+
+***
+
+<h4>Describe function binding.</h4>
+
+>Function binding refers to the process of associating a function with a particular object.
+
+***
+
+<h4>Describe static properties.</h4>
+
+>Static properties are defined using the <code>static</code> keyword and are properties that belong to a class rather than the instance of the class.
+
+***
+
+<h4>Describe private class features.</h4>
+
+>Private properties are created with the <code>#</code> prefix and <strong>CANNOT</strong> be legally referenced outside of the class.<br>
+>The privacy encapsulation of these class properties is enforced by JavaScript itself.
+
+***
+
+<h4>How is inheritance used with classes?</h4>
+
+>Inheritance is used with classes with the <code>extend</code> keyword.<br>
+>It is a way to create a relationship between classes where a subclass inherits properties and methods from a parent class.
+
+***
+
+<h4>Why is favoring Composition over Inheritance suggested?</h4>
+
+><ul>
+><li>Flexibility and Extensibility.</li>
+><li>Avoidance of the fragile base class problem.</li>
+><li>Encapsulation.</li>
+><li>Code reusability.</li>
+><li>Reduced coupling.</li>
+><li>Dynamic behavior.</li>
+><li>Easier testing.</li>
+><li>Promotion of code aggregation.</li>
+></ul>
+
+***
