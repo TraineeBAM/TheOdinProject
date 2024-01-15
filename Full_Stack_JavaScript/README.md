@@ -1082,36 +1082,43 @@
 
 <h4>Briefly explain what a development dependency is.</h4>
 
->
+>A development dependency is a component/library that is necessary for the development, testing or building of a project but is not required for the runtime operation of the final project.
 
 ***
 
 <h4>Explain what “transpiling code” means and how it relates to frontend development.</h4>
 
->
+>Transpiling code means taking code written in one language and converting it to equivalent code in another language (usually at a higher abstraction level).<br>
+>In frontend development, this typically involves converting code into a lower-level/more widely supported version to ensure compatibility with older browsers.
 
 ***
 
 <h4>Briefly describe what a task runner is and how it’s used in frontend development.</h4>
 
->
+>A task runner is a tool used to automate repetitive tasks and streamline the build process of a web application.<br>
+>These tasks can include code compilation, file minification, image optimization and other preprocessing tasks.
 
 ***
 
 <h4>Describe how to write an npm automation script.</h4>
 
->
+>To write an NPM automation script, you define custom scripts in the "scripts" section of the projects "package.json" file.<br>
+>Once defined, these scrips can be run using the <code>npm run 'script name'</code>.
 
 ***
 
 <h4>Explain one of the main benefits of writing code in modules.</h4>
 
->
+>The main benefit of writing code in modules is the enhancement of code organisation and maintainability.<br>
+>Enhanced organisation enables better navigation and understanding of the codebase.<br>
+>Enhanced maintainability facilitates easier updates, bug fixes and new features without disrupting the entire codebase.
 
 ***
 
 <h4>Explain “named exports” and “default exports”.</h4>
 
->
+>"Named exports" allow you to export multiple entities from a module with specific names.<br>
+>"Default exports enable you to export a single, primary entity as the default export.<br>
+>These can be used individually or combined depending on application requirements.
 
 ***
