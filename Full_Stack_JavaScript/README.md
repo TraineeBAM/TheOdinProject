@@ -1122,3 +1122,76 @@
 >These can be used individually or combined depending on application requirements.
 
 ***
+
+</details>
+
+***
+
+<details>
+<summary><h3>Webpack</h3></summary>
+
+***
+
+<h4>How do you load CSS using webpack?</h4>
+
+><ol>
+><li>Install Required Packages: <code>npm install --save-dev style-loader css-loader</code></li>
+><li>Configure Webpack by adding a module rule for handling CSS files: <code>test:/\.css$/,<br>
+use:['style-loader', 'css-loader'],</code></li>
+><li>Import CSS inside JavaScript file: <code>import './styles.css</code></li>
+><li>Run Webpack: <code>npx webpack</code></li>
+><li>Ensure Output is included in HTML: <code>script src="dist/main.js">/script</code></li>
+></ol>
+
+***
+
+<h4>How do you load images using webpack?</h4>
+
+><ol>
+><li>Install Required Packages: <code>npm install --save-dev file-loader</code></li>
+><li>Configure Webpack by adding a module rule for handling image files: <code>test: /\.(png|jpg|gif|svg)$/,<br>
+use: [loader: 'file-loader'],</code></li>
+><li>Import image inside JavaScript file: <code>import myImage from './images/my-image.png';</code></li>
+><li>Use image in HTML/CSS</li>
+><li>Run Webpack: <code>npx webpack</code></li>
+></ol>
+
+***
+
+<h4>How do you load fonts using webpack?</h4>
+
+>This process is mostly identical to loading images except for the following:<br>
+>Step 2 webpack test becomes <code>test: /\.(woff|woff2|eot|ttf|otf)$/,</code><br>
+>Fonts are imported in CSS using :<code>@font-face {font name and src + other properties}</code> or in JS using <code>import 'font URL'</code>.
+
+***
+
+<h4>How do you automatically build HTML files in dist using webpack?</h4>
+
+><ol>
+><li>Install 'html-webpack-plugin' with <code>npm install --save-dev html-webpack-plugin</code></li>
+><li>Update webpack config file to use the 'HtmlWebpackPlugin'</li>
+><li>Create an HTML Template</li>
+><li>Run Webpack with <code>npx webpack</code></li>
+></ol>
+
+***
+
+<h4>How do you automatically build an HTML file in dist using a custom template in src?</h4>
+
+>See above example.
+
+***
+
+<h4>How would you track errors in bundled source code?</h4>
+
+>To accomplish this you would set up source maps which provide a mapping between the original source code and the code running in the browser.<br>
+>When an error occurs, the browser is able to point to the exact location of where the error originated in the source code.<br>
+>The main steps steps to set this up are:<br>
+><ol>
+><li>Install source-map devtool with <code>npm install --save-dev source-map</code></li>
+><li>Configure webpack inside 'webpack.config.js' by adding <code>devtool:'sorce-map'</code> inside 'module.exports'</li>
+><li>Run Webpack with <code>npx webpack</code>.
+></ol>
+
+***
