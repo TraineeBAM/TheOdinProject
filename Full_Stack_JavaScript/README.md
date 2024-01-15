@@ -1036,3 +1036,82 @@
 ></ul>
 
 ***
+
+</details>
+
+***
+
+<details>
+<summary><h3>ES6 Modules</h3></summary>
+
+***
+
+<h4>Explain what npm is and where it was commonly used before being adopted on the frontend.</h4>
+
+>NPM stand for "Node Package Manager".<br>
+>These are used to help automate the process of downloading and upgrading libraries from a central repository.<br>
+>Before being used on the front-end, NPM were originally used for node.js, a JavaScript runtime designed to run on the server.
+
+***
+
+<h4>Describe what npm init does and what package.json is.</h4>
+
+>Running the <code>npm-init</code> command in your project directory will prompt you with a series of questions about your project (name, version, description, etc).<br>
+>Once these questions are answered (defaults are usually fine), npm generates a 'package.json' file that contains information about the project including dependencies, scripts, config details and other metadata.
+
+***
+
+<h4>Know how to install packages using npm.</h4>
+
+>To install packages using npm you use <code>npm install 'app name' --save</code>.
+
+***
+
+<h4>Describe what a JavaScript module bundler like webpack is.</h4>
+
+>A JavaScript module bundler is a tool that simplifies the management and organisation or JavaScript code in large, complex web applications.<br>
+>It addresses the challenges of working with numerous files and dependencies by bundling them into a more manageable and optimised format.
+
+***
+
+<h4>Explain what the concepts “entry” and “output” mean in relation to webpack.</h4>
+
+>In relation to webpack, the concepts "entry" and "output" are key configuration options that define how the bundling process should start and where the bundled files should be generated.
+
+***
+
+<h4>Briefly explain what a development dependency is.</h4>
+
+>
+
+***
+
+<h4>Explain what “transpiling code” means and how it relates to frontend development.</h4>
+
+>
+
+***
+
+<h4>Briefly describe what a task runner is and how it’s used in frontend development.</h4>
+
+>
+
+***
+
+<h4>Describe how to write an npm automation script.</h4>
+
+>
+
+***
+
+<h4>Explain one of the main benefits of writing code in modules.</h4>
+
+>
+
+***
+
+<h4>Explain “named exports” and “default exports”.</h4>
+
+>
+
+***
