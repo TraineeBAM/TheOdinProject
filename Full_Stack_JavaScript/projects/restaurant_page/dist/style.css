@@ -54,45 +54,64 @@ body {
     background-repeat: no-repeat;
     height: 100vh;
     color:rgba(245, 245, 245, 0.897);
+    min-width:890px;
 }
 
 #container {
     display: grid;
     height: 100vh;
     grid-template-columns: 1fr ;
-    grid-template-rows: 1fr 5fr 0.2fr;
+    grid-template-rows: 1fr 0.2fr 5fr 0.2fr;
+    
 }
 
-#header {
+.header {
     display:flex;
     justify-content: center;
     align-items: center;
     font-size: 8em;
     font-weight: bold;
     background-color: rgba(0, 0, 0, 0.1);
+    grid-row: 1 / 2
 }
 
-#intro {
+.navigation {
     display: flex;
-    flex-direction: column;
-    gap: 20px;
     justify-content: center;
     align-items: center;
-    grid-row: 2 / 3;
+    font-size: 2em;
+    gap:3em;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-bottom: solid 1px whitesmoke;
+    border-top: solid 1px whitesmoke;
 }
 
-#intro p {
+.navHome {
+    font-size: 1.5em;
+}
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+    justify-content: center;
+    align-items: center;
+    grid-row: 3 / 4;
+}
+
+.intro p {
     background-color: rgba(0, 0, 0, 0.7);
-    border: solid 5px rgba(0, 0, 0, 0.5);
+    padding: 5px;
+    border: solid 1px whitesmoke;
     display: flex;
     flex-wrap: wrap;
-    width:20vw;
+    width: 300px;
     text-align: center;
     font-size: 1.15em;
 }
 
 #footer {
-    grid-row: 3 / 4;
+    grid-row: 4 / 5;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -101,6 +120,5 @@ body {
 
 #footer a {
     color: inherit;
-    text-decoration: none;
   }
   
