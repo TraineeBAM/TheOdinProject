@@ -1,5 +1,7 @@
 import { createSkeleton } from './website';
-import { createHome } from './home';
+// import { createHome } from './home';
+import { createMenu } from './menu';
 
 createSkeleton();
-createHome();
+// createHome();
+createMenu();

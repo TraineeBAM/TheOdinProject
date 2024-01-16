@@ -78,7 +78,7 @@ function createMenu(){
             const menuItem4About = document.createElement("p");
             menuItem4About.innerText="Delicate and divine, our Raspberry Rose Macaron is a floral delight. Two almond meringue shells embrace a velvety raspberry rose ganache, offering a sophisticated blend of fruity and floral notes."
             const menuItem4Price = document.createElement("p");
-            menuItem4Price.innerText="$2.75 ea";
+            menuItem4Price.innerText="$1.99 ea";
             menuItem4.appendChild(menuItem4Image);
             menuItem4.appendChild(menuItem4Text);
             menuItem4Text.appendChild(menuItem4Name);
@@ -88,8 +88,42 @@ function createMenu(){
         const menuItem5 = document.createElement("div");
         menuItem5.classList.add("menuItem5");
         contentCards.appendChild(menuItem5);
+            const menuItem5Image = document.createElement("img");
+            menuItem5Image.src = '../dist/images/chai_spice_muffin.jpg';
+            menuItem5Image.alt = 'Chai Spice Latte Muffin';
+            const menuItem5Text = document.createElement("div");
+            menuItem5Text.classList.add("menuItem5Text");
+            const menuItem5Name = document.createElement("h1");
+            menuItem5Name.innerText="Chai Spice Latte Muffin";
+            const menuItem5About = document.createElement("p");
+            menuItem5About.innerText="Warm your senses with our Chai Spice Latte Muffin. This spiced delight is infused with aromatic chai tea, cinnamon, and a touch of vanilla, creating a cozy and comforting flavor experience."
+            const menuItem5Price = document.createElement("p");
+            menuItem5Price.innerText="$2.99 ea";
+            menuItem5.appendChild(menuItem5Image);
+            menuItem5.appendChild(menuItem5Text);
+            menuItem5Text.appendChild(menuItem5Name);
+            menuItem5Text.appendChild(menuItem5About);
+            menuItem5Text.appendChild(menuItem5Price);
 
         const menuItem6 = document.createElement("div");
         menuItem6.classList.add("menuItem6");
         contentCards.appendChild(menuItem6);
+            const menuItem6Image = document.createElement("img");
+            menuItem6Image.src = '../dist/images/lemon_lavender_shortbread.jpg';
+            menuItem6Image.alt = 'Lemon Lavender Shortbread';
+            const menuItem6Text = document.createElement("div");
+            menuItem6Text.classList.add("menuItem6Text");
+            const menuItem6Name = document.createElement("h1");
+            menuItem6Name.innerText="Lemon Lavender Shortbread";
+            const menuItem6About = document.createElement("p");
+            menuItem6About.innerText="Transport yourself to a fragrant garden with our Lemon Lavender Shortbread. These delicate, buttery shortbread cookies are infused with the bright zest of lemons and the subtle floral essence of lavender."
+            const menuItem6Price = document.createElement("p");
+            menuItem6Price.innerText="$3.99 (6)";
+            menuItem6.appendChild(menuItem6Image);
+            menuItem6.appendChild(menuItem6Text);
+            menuItem6Text.appendChild(menuItem6Name);
+            menuItem6Text.appendChild(menuItem6About);
+            menuItem6Text.appendChild(menuItem6Price);
 }
+
+export { createMenu };
