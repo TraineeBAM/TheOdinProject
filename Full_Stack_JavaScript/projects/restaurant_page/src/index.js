@@ -12,17 +12,14 @@ container.addEventListener('click', (event) => {
     const target = event.target;
     
     if (target.classList.contains('navMenu')) {
-        console.log("Menu works");
         container.innerText = "";
         createSkeleton();
         createMenu();
     } else if (target.classList.contains('navContact')) {
-        console.log("Contact works");
         container.innerText = "";
         createSkeleton();
         createContact();
     } else if (target.classList.contains('navHome')) {
-        console.log("Home works");
         container.innerText = "";
         createSkeleton();
         createHome();
