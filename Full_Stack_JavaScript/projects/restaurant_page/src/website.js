@@ -23,6 +23,13 @@ function createSkeleton() {
         navContact.classList.add("navContact")
         navContact.textContent="Contact"
         navigation.appendChild(navContact)
+
+    const footer = document.createElement("div");
+    footer.id = "footer";
+    container.appendChild(footer);
+        const footerText = document.createElement("p");
+        footerText.innerText = "Photo by Mae Mu on Unsplash";
+        footer.appendChild(footerText);
 }
 
 export { createSkeleton };
