@@ -29,6 +29,7 @@
 | CSS Grid | Project |[Admin Dashboard](https://traineebam.github.io/TheOdinProject/Full_Stack_JavaScript/projects/admin_dashboard)|
 | JavaScript | Project |[Library](https://traineebam.github.io/TheOdinProject/Full_Stack_JavaScript/projects/library)|
 | JavaScript | Project |[Tic Tac Toe](https://traineebam.github.io/TheOdinProject/Full_Stack_JavaScript/projects/tic_tac_toe)|
+| JavaScript | Project |[Restaurant Page](https://traineebam.github.io/TheOdinProject/Full_Stack_JavaScript/projects/restaurant_page/dist)|
 
 ***
 
