@@ -61,13 +61,23 @@ body {
     height: 100vh;
 }
 
+#headerImage {
+    grid-template-columns: 1 / 2;
+    background-image: url(./images/ToDoImage.jpg);
+    background-size: cover;
+    background-position-y: -50px;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
 #header {
-    grid-column: 1 / 3;
+    grid-column: 2 / 3;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 3em;
     background-color: rgb(150, 150, 100);
+    border-right: solid black 2px;
 }
 
 #header h1 {
@@ -96,8 +106,6 @@ body {
     align-items: center;
     font-size: 1.8em;
     justify-content: flex-start;
-    gap:2em;
-    padding-top:1em;
     background-color: rgb(150, 150, 100);
     border-right: black solid 2px;
     border-left: black solid 2px;
@@ -108,12 +116,16 @@ body {
 #sidebar * {
     cursor: pointer;
     width: 100%;
+    height: 100%;
     text-align: center;
-    padding-right: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s ease;
 }
 
 #sidebar *:hover {
-    text-align: right;
+    justify-content: flex-end;
     background-color: beige;
 }
 
@@ -133,6 +145,17 @@ body {
 #newToDo {
     font-size: 1.8em;
     cursor: pointer;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s ease;
+}
+
+#newToDo:hover {
+    background-color: beige;
 }
 
 #contentCardContainer {
