@@ -1196,3 +1196,36 @@ use: [loader: 'file-loader'],</code></li>
 ></ol>
 
 ***
+
+</details>
+
+***
+
+<details>
+<summary><h3>Object Oriented Programming</h3></summary>
+
+***
+
+<h4>Explain the “Single Responsibility Principle”.</h4>
+
+>The Single Responsibility Principle states that classes/objects/modules should only have one responsibility.<br>
+>This doesn't mean that multiple things cannot be performed, but these various things should all facilitate the one responsibility.
+
+***
+
+<h4>Briefly explain the additional SOLID principles.</h4>
+
+>S : Single Responsibility Principle (software entities only have one responsibility)
+>O : Open/Closed Principal (software entities are closed for changes but open for extendability)
+>L : Liskov Substitution Principal (if A is a subtype of B, then objects of type B may be replaced with objects of type A)
+>I : Interface Segregation Principal (no client should be forced to depend on interfaces they don't use.)
+>D : Dependency Inversion Principal (high-level modules should depend on abstractions rather than concrete implementations.)
+
+***
+
+<h4>Explain what “tightly coupled” objects are and why we want to avoid them.</h4>
+
+>Tightly coupled objects are objects that rely so heavily on each other that altering one will mean that you have to completely change another one.<br>
+>This should be avoided as it can decrease the maintainability of your code while also making it harder to update..
+
+***
