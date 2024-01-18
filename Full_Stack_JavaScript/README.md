@@ -1218,8 +1218,8 @@ use: [loader: 'file-loader'],</code></li>
 >S : Single Responsibility Principle (software entities only have one responsibility)<br>
 >O : Open/Closed Principal (software entities are closed for changes but open for extendability)<br>
 >L : Liskov Substitution Principal (if A is a subtype of B, then objects of type B may be replaced with objects of type A)<br>
->I : Interface Segregation Principal (no client should be forced to depend on interfaces they don't use.)<br>
->D : Dependency Inversion Principal (high-level modules should depend on abstractions rather than concrete implementations.)<br>
+>I : Interface Segregation Principal (no client should be forced to depend on interfaces they don't use)<br>
+>D : Dependency Inversion Principal (high-level modules should depend on abstractions rather than concrete implementations)<br>
 
 ***
 
