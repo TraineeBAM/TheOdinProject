@@ -213,6 +213,19 @@ body {
     position: absolute;
     justify-self: right;
     cursor: pointer;
+    display: block;
+    width: 24px;
+    height: 24px;
+}
+
+.toDoDeleteButton svg {
+    width: 24px;
+    height: 24px;
+}
+
+.toDoDeleteButton path {
+    width: 18px;
+    height: 18px;
 }
 
 .toDoDeleteButton svg:hover {

@@ -19,7 +19,7 @@ submitForm.addEventListener('click', (e) => {
     const dueDate = document.getElementById('dueDate').value;
     // Ensure form contains info
     if (title.trim() === '' || priority.trim() === '' || dueDate.trim() === '') {
-        alert('Please fill in all required fields (Title, Priority, Due Date).');
+        alert('Please fill in all required fields (Title, Description, Due Date).');
         return;
     }
     const toDoItem = createToDoItem(title, priority, description, dueDate);
@@ -52,9 +52,28 @@ submitForm.addEventListener('click', (e) => {
     toDoDue.innerText = dueDate;
     contentCard.appendChild(toDoDue);
     //delete button
-    const 
+    const svgNamespace = 'http://www.w3.org/2000/svg';
+    const toDoDeleteButton = document.createElement('div');
+    toDoDeleteButton.classList.add('toDoDeleteButton');
+    contentCard.appendChild(toDoDeleteButton);
+    const toDoDeleteButtonSVG = document.createElementNS(svgNamespace, 'svg');
+    toDoDeleteButtonSVG.setAttribute('width', '24');
+    toDoDeleteButtonSVG.setAttribute('height', '24');
+    toDoDeleteButtonSVG.setAttribute('viewBox', '0 0 24 24');
+    toDoDeleteButtonSVG.setAttribute('fill', 'none');
+    toDoDeleteButtonSVG.setAttribute('xmlns', 'http://www.w3.org/2000/svg');
+    const path = document.createElementNS(svgNamespace, 'path');
+    path.setAttribute('d', 'M16 8L8 16M8.00001 8L16 16M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z');
+    path.setAttribute('stroke', '#000000');
+    path.setAttribute('stroke-width', '1.5');
+    path.setAttribute('stroke-linecap', 'round');
+    path.setAttribute('stroke-linejoin', 'round');
+    toDoDeleteButtonSVG.appendChild(path);
+    toDoDeleteButton.appendChild(toDoDeleteButtonSVG);
 
-    
+    toDoDeleteButtonSVG.addEventListener('click', (e) => {
+        contentCard.remove();
+    })
     
     // Clear the form
     document.getElementById('formOverlay').style.display = 'none';
@@ -71,5 +90,3 @@ function createToDoItem(title, priority, description, dueDate){
         dueDate : dueDate,
     }
 }
-
-export { createToDoItem };
