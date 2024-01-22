@@ -93,6 +93,7 @@ form {
 
 .new::placeholder{
     opacity: 0.4;
+    color: inherit;
 }
 
 .new:focus {
@@ -228,7 +229,7 @@ form {
     position: absolute;
     width:100%;
     left: 0;
-    bottom: -35px;
+    top: -130px;
     color: var(--clr-light)
 }
 
