@@ -89,7 +89,7 @@ submitForm.addEventListener('click', (e) => {
     
     // Clear the form
     document.getElementById('formOverlay').style.display = 'none';
-    document.getElementById('title').value = '';
+    document.getElementById('title').value = ''; 
     document.getElementById('description').value = '';
     document.getElementById('dueDate').value = '';
     document.getElementById('priority').value = 'low';

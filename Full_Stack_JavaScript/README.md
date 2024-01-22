@@ -30,6 +30,8 @@
 | JavaScript | Project |[Library](https://traineebam.github.io/TheOdinProject/Full_Stack_JavaScript/projects/library)|
 | JavaScript | Project |[Tic Tac Toe](https://traineebam.github.io/TheOdinProject/Full_Stack_JavaScript/projects/tic_tac_toe)|
 | JavaScript | Project |[Restaurant Page](https://traineebam.github.io/TheOdinProject/Full_Stack_JavaScript/projects/restaurant_page/dist)|
+| JavaScript | Project |[ToDo (incomplete, will return)](https://traineebam.github.io/TheOdinProject/Full_Stack_JavaScript/projects/todo/dist)|
+| JavaScript | Project |[ToDo (Tutorial Example)](https://traineebam.github.io/TheOdinProject/Full_Stack_JavaScript/projects/todoV2)|
 
 ***
 
