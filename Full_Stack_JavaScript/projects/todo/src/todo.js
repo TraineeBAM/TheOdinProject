@@ -8,6 +8,7 @@ closeForm.addEventListener('click', (e) =>{
     document.getElementById('title').value = '';
     document.getElementById('description').value = '';
     document.getElementById('dueDate').value = '';
+    document.getElementById('project').value = '';
 })
 
 
@@ -17,12 +18,14 @@ submitForm.addEventListener('click', (e) => {
     const priority = document.getElementById('priority').value;
     const description = document.getElementById('description').value;
     const dueDate = document.getElementById('dueDate').value;
+    const project = document.getElementById('project').value;
     // Ensure form contains info
-    if (title.trim() === '' || priority.trim() === '' || dueDate.trim() === '') {
-        alert('Please fill in all required fields (Title, Description, Due Date).');
+    if (title.trim() === '' || priority.trim() === '' || dueDate.trim() === '' || project.trim() === '') {
+        alert('Please fill in all required fields (Title, Project, Description, Due Date).');
         return;
     }
-    const toDoItem = createToDoItem(title, priority, description, dueDate);
+
+    const toDoItem = createToDoItem(title, priority, project, description, dueDate);
     console.log(toDoItem)
 
     //Creating the content card
@@ -41,6 +44,11 @@ submitForm.addEventListener('click', (e) => {
     toDoPriority.classList.add('toDoPriority');
     toDoPriority.innerText = priority;
     contentCard.appendChild(toDoPriority);
+    //project
+    const toDoProject = document.createElement('div');
+    toDoProject.classList.add('toDoProject');
+    toDoProject.innerText = project;
+    contentCard.appendChild(toDoProject);
     //description
     const toDoText = document.createElement('div');
     toDoText.classList.add('toDoText');
@@ -74,12 +82,18 @@ submitForm.addEventListener('click', (e) => {
     toDoDeleteButtonSVG.addEventListener('click', (e) => {
         contentCard.remove();
     })
+    // Assign to relevant list
+    if (toDoProject.innerText === 'test'){
+        contentCard.style.display = 'none';
+    }
     
     // Clear the form
     document.getElementById('formOverlay').style.display = 'none';
     document.getElementById('title').value = '';
     document.getElementById('description').value = '';
     document.getElementById('dueDate').value = '';
+    document.getElementById('priority').value = 'low';
+    document.getElementById('project').value = '';
 })
 
 function createToDoItem(title, priority, description, dueDate){
