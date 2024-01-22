@@ -1231,3 +1231,44 @@ use: [loader: 'file-loader'],</code></li>
 >This should be avoided as it can decrease the maintainability of your code while also making it harder to update..
 
 ***
+
+</details>
+
+***
+
+<details>
+<summary><h3>Linting</h3></summary>
+
+***
+
+<h4>What is linting?</h4>
+
+>Linting is the utilisation of a basic code quality tool which will tell you where and how to clean it up.
+
+***
+
+<h4>Which problems can linting prevent?</h4>
+
+><ul>
+><li>Prevent scope conflicts</li>
+><li>Prevent XSS security holes</li>
+><li>Prevent issues with readability</li>
+></ul>
+
+***
+
+<h4>Why should you use Prettier?</h4>
+
+><ul>
+><li>Makes coding faster and easier</li>
+><li>Takes care of things like indentation and semi-colons</li>
+><li>Automatically formats your code according to predefined rules</li>
+></ul>
+
+***
+
+<h4>What is a template repository?</h4>
+
+>A template repository allows you to copy the setup code of a project and apply it to new ones. This results in faster set-up time and code-base uniformity.
+
+***
