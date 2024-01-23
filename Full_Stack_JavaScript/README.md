@@ -1272,3 +1272,42 @@ use: [loader: 'file-loader'],</code></li>
 >A template repository allows you to copy the setup code of a project and apply it to new ones. This results in faster set-up time and code-base uniformity.
 
 ***
+
+</details>
+
+***
+
+<details>
+<summary><h3>Dynamic User Interface Interactions</h3></summary>
+
+***
+
+
+
+<h4>What are some different types of navigation menus?</h4>
+
+><ul>
+><li>Rectangular Grid Navigation</li>
+><li>Rudder Navigation</li>
+><li>Drawer Navigation</li>
+><li>Tabber - Classic navigation menu</li>
+></ul>
+
+***
+
+<h4>What are the alternatives to hamburger menus?</h4>
+
+><ul>
+><li>Tabs</li>
+><li>Progressively collapsing menu</li>
+><li>Scrollable navigation</li>
+><li>Dropdown menus</li>
+></ul>
+
+***
+
+<h4>What are the downsides of hamburger menus?</h4>
+
+>The main downsides of hamburger menu designs are low discoverability and efficiency.
+
+***
