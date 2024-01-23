@@ -1,0 +1,53 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(250, 166, 88);
+}
+
+.master-container {
+    display: grid;
+    grid-template-rows: 1fr 4fr;
+    height: 100vh;
+}
+
+.header {
+    grid-row: 1 / 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5em;
+    background: linear-gradient(to top, rgb(250, 166, 88), rgb(156, 38, 17));
+}
+
+.content-container {
+    grid-row: 2/3;
+    overflow: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    position: relative;
+}
+
+img {
+    height: 600px;
+}
+
+button {
+    position: fixed;
+    background: none;
+	border: none;
+	cursor: pointer;
+}
+
+#previous-btn {
+    left: 10px;
+}
+
+#next-btn {
+    right: 10px;
+}
+
+.hidden {
+    display:none;
+}
