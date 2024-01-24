@@ -12,27 +12,17 @@
         <div class="header">
             <h1>Image Slider Demo</h1>
         </div>
-        <div class="content-container">
-            <div class="image-frame">
-                <div class="image"><img src="./img/blueberry_scone.jpg" alt="blueberry_scone"></div>
-            </div>
-            <div class="image-frame">
-                <div class="image"><img src="./img/caramel_pecan.jpg" alt="caramel_pecan"></div>
-            </div>
-            <div class="image-frame">
-                <div class="image"><img src="./img/chai_spice_muffin.jpg" alt="chai_spice_muffin"></div>
-            </div>
-            <div class="image-frame">
-                <div class="image"><img src="./img/lemon_lavender_shortbread.jpg" alt="lemon_lavender_shortbread"></div>
-            </div>
-            <div class="image-frame">
-                <div class="image"><img src="./img/nutella_croissant.jpg" alt="nutella_croissant"></div>
-            </div>
-            <div class="image-frame">
-                <div class="image"><img src="./img/raspberry_macaron.jpg" alt="raspberry_macaron"></div>
-            </div>
-            <button id="previous-btn"><svg fill="#000000" width="180px" height="180px" viewBox="0 0 24.00 24.00" id="previous" data-name="Line Color" xmlns="http://www.w3.org/2000/svg" class="icon line-color" stroke="#000000" transform="rotate(0)matrix(1, 0, 0, 1, 0, 0)"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path id="primary" d="M17,3V21L5,12Z" style="fill: none; stroke: #000000; stroke-linecap: round; stroke-linejoin: round; stroke-width:1.08;"></path></g></svg></button>
-            <button id="next-btn"><svg fill="#000000" width="180px" height="180px" viewBox="0 0 24.00 24.00" id="previous" data-name="Line Color" xmlns="http://www.w3.org/2000/svg" class="icon line-color" stroke="#000000" transform="rotate(0)matrix(-1, 0, 0, -1, 0, 0)"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path id="primary" d="M17,3V21L5,12Z" style="fill: none; stroke: #000000; stroke-linecap: round; stroke-linejoin: round; stroke-width:1.08;"></path></g></svg></button>
+        <div class="slider">
+            <div class="slides">
+                <img class="slide" src="./img/blueberry_scone.jpg" alt="blueberry scone">
+                <img class="slide" src="./img/caramel_pecan.jpg" alt="caramel pecan">
+                <img class="slide" src="./img/chai_spice_muffin.jpg" alt="chai spice muffin">
+                <img class="slide" src="./img/lemon_lavender_shortbread.jpg" alt="lemon lavender shortbread">
+                <img class="slide" src="./img/nutella_croissant.jpg" alt="nutella croissant">
+                <img class="slide" src="./img/raspberry_macaron.jpg" alt="raspberry macaron">
+            </div> 
+               <button class="prev" onclick="prevSlide()">&#10094</button>
+               <button class="next" onclick="nextSlide()">&#10095</button>
         </div>
     </div>
     
