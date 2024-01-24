@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Form Validation</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" defer></script>
+</head>
+<body>
+    <div class="master-container">
+        <div class="header">
+            <h1>JavaScript Form Validation</h1>
+        </div>
+        <div class="content">
+        <form id="test-form">
+            <div class="form-row">
+                <label for="email">Email:</label><br>
+                    <input type="email" name="email" id="email" placeholder="your@email.address">
+            </div>
+            <div class="form-row">
+                <label for="country">Country:</label><br>
+                    <input type="text" name="country" id="country" placeholder="From where do you hail?">
+            </div>
+            <div class="form-row">
+                <label for="zip">Zip Code:</label><br>
+                    <input type="number" name="zip" id="zip" placeholder="Four digit Zip Code">
+            </div>
+            <div class="form-row">
+                <label for="password">Password</label><br>
+                    <input type="password" name="password" id="password" placeholder="Enter password">
+            </div>
+            <div class="form-row">
+                <label for="confirm-password">Confirm password</label><br>
+                    <input type="password" name="confirm-password" id="confirm-password" placeholder="Confirm password">
+            </div>
+            <button id="submitForm">submit</button>
+        </form>
+        </div>
+    </div>
+    
+</body>
+</html>

@@ -1321,24 +1321,31 @@ use: [loader: 'file-loader'],</code></li>
 
 <h4>Explain the importance of validating HTML forms before submitting them to a server.</h4>
 
->
+>Validating forms prior to submission is important because it ensures a good user experience by alerting them right away if data is not formatted correctly/is missing.
 
 ***
 
 <h4>Describe the two types of client-side form validation.</h4>
 
->
+><ul>
+><li>Built-in form validation: This uses HTML form validation features and has better performance than JavaScript validation, but is not as customisable.</li>
+><li>JavaScript: This is completely customisable but needs to be manually created.</li>
+></ul>
 
 ***
 
 <h4>Explain how JavaScript Constraint Validation API provides more control and customization of form validation.</h4>
 
->
+><ul>
+><li>Allows access to validation properties (e.g. 'validity', 'validationMessage' and 'willValidate').</li>
+><li>Allows you to customise error messages for each validation constraint (using 'setCustomValidity').</li>
+><li>Allows you to add event listeners related to validation events like 'invalid and 'input' enabling custom behaviors or UI updates.</li>
+></ul>
 
 ***
 
 <h4>Could forms also be validated without using Constraint Validation API?</h4>
 
->
+>You can validate forms without using the Constraint Validation API, however you will need to write your own JavaScript to accomplish this.
 
 ***
