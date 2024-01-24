@@ -1282,8 +1282,6 @@ use: [loader: 'file-loader'],</code></li>
 
 ***
 
-
-
 <h4>What are some different types of navigation menus?</h4>
 
 ><ul>
@@ -1309,5 +1307,38 @@ use: [loader: 'file-loader'],</code></li>
 <h4>What are the downsides of hamburger menus?</h4>
 
 >The main downsides of hamburger menu designs are low discoverability and efficiency.
+
+***
+
+</details>
+
+***
+
+<details>
+<summary><h3>Form Validation with JavaScript</h3></summary>
+
+***
+
+<h4>Explain the importance of validating HTML forms before submitting them to a server.</h4>
+
+>
+
+***
+
+<h4>Describe the two types of client-side form validation.</h4>
+
+>
+
+***
+
+<h4>Explain how JavaScript Constraint Validation API provides more control and customization of form validation.</h4>
+
+>
+
+***
+
+<h4>Could forms also be validated without using Constraint Validation API?</h4>
+
+>
 
 ***
