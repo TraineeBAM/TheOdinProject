@@ -8,10 +8,13 @@
     <script src="./script.js" defer></script>
 </head>
 <body>
+    <div class="top-container">
     <div class="header">
         <h1>Pathfinder CSV Generator</h1>
     </div>
     <div id="roles-form">
+      <p id="collectionName">Collection Name<br>
+      <input id="collectionInput" placeholder="e.g. Typical APS"></p>
       <form>
         <div class="form-column-1">
         <p>
@@ -125,10 +128,12 @@
         </div>
       </form>
     </div>
+  </div>
     <div id="display">
       <p>
         <button id="btnExport">Export to CSV</button>
       </p>
+      <div class="table-container">
       <table>
         <thead>
           <tr>
@@ -163,6 +168,7 @@
           </tr> -->
         </tbody>
       </table>
+    </div>
     </div>
   </body>
 </html>
