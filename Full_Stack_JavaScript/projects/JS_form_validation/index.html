@@ -8,36 +8,161 @@
     <script src="./script.js" defer></script>
 </head>
 <body>
-    <div class="master-container">
-        <div class="header">
-            <h1>JavaScript Form Validation</h1>
-        </div>
-        <div class="content">
-        <form id="test-form">
-            <div class="form-row">
-                <label for="email">Email:</label><br>
-                    <input type="email" name="email" id="email" placeholder="your@email.address">
-            </div>
-            <div class="form-row">
-                <label for="country">Country:</label><br>
-                    <input type="text" name="country" id="country" placeholder="From where do you hail?">
-            </div>
-            <div class="form-row">
-                <label for="zip">Zip Code:</label><br>
-                    <input type="number" name="zip" id="zip" placeholder="Four digit Zip Code">
-            </div>
-            <div class="form-row">
-                <label for="password">Password</label><br>
-                    <input type="password" name="password" id="password" placeholder="Enter password">
-            </div>
-            <div class="form-row">
-                <label for="confirm-password">Confirm password</label><br>
-                    <input type="password" name="confirm-password" id="confirm-password" placeholder="Confirm password">
-            </div>
-            <button id="submitForm">submit</button>
-        </form>
-        </div>
+    <div class="header">
+        <h1>Pathfinder CSV Generator</h1>
     </div>
-    
-</body>
+    <div id="roles-form">
+      <form>
+        <div class="form-column-1">
+        <p>
+          <label for="name">Name</label><br>
+          <input type="text" id="name" name="name" value="" placeholder="e.g. Cloud Service Manager"/>
+        </p>
+        <p>
+          <label for="job_family">Job Family</label><br>
+          <input type="text" id="job_family" name="job_family" value="" placeholder="e.g. ICT and Digital Solutions"/>
+        </p>
+        <p>
+          <label for="job_family_function">Job Family Function</label><br>
+          <input type="text" id="job_family_function" name="job_family_function" value="" placeholder="e.g. Service Delivery" />
+        </p>
+        <p>
+          <label for="job_family_role">Job Family Role</label><br>
+          <input type="text" id="job_family_role" name="job_family_role" value="" placeholder="e.g. ICT Infrastructure Officer" />
+        </p>
+        <p>
+          <label for="aps_job_code">APS Job Code</label><br>
+          <input type="text" id="aps_job_code" name="aps_job_code" value="" placeholder="e.g. 150303" />
+        </p>
+        </div>
+        <div class="form-column-2">
+        <p>
+          <label for="profile_link">Profile Link</label><br>
+          <input type="url" id="profile_link" name="profile_link" value="" placeholder="link to generic role information" />
+        </p>
+        <p>
+          <label for="demand">Demand</label><br>
+          <input type="number" id="demand" name="demand" value="" min="0" max="1" step="0.05" placeholder="1 = highest demand" />
+        </p>
+        <p>
+          <label for="interests">Interests</label><br>
+          <input type="text" id="interests" name="interests" value="" placeholder="e.g. Cloud,Infrastructure,Platforms etc" />
+        </p>
+        <p>
+          <label for="learning_link">Learning Link</label><br>
+          <input type="url" id="learning_link" name="learning_link" value="" placeholder="link to learning content" />
+        </p>
+        <p>
+          <label for="discipline">Discipline</label><br>
+          <input type="text" id="discipline" name="discipline" value="" placeholder="e.g. Cloud Service Management" />
+        </p>
+        </div>
+        <div class="form-column-3">
+        <p>
+          <label for="alias">Alias</label><br>
+          <input type="text" id="alias" name="alias" value="" placeholder="Alternative role titles. e.g. Cloud Administrator, Cloud Capability Specialist, etc" />
+        </p>
+        <p>
+          <label for="description">Description</label><br>
+          <input type="text" id="description" name="description" value="" placeholder="A brief description of the role" />
+        </p>
+        <p>
+        <label for="classification">Classification</label><br>
+        <select id="classification" name="classification">
+            <option value="APS1">APS1</option>
+            <option value="APS2">APS2</option>
+            <option value="APS3">APS3</option>
+            <option value="APS4">APS4</option>
+            <option value="APS5">APS5</option>
+            <option value="APS6">APS6</option>
+            <option value="EL1">EL1</option>
+            <option value="EL2">EL2</option>
+            <option value="SES1">SES1</option>
+        </select>
+        </p>
+        <p>
+          <label for="knowledge">Knowledge</label><br>
+          <select id="knowledge" name="knowledge">
+            <option value="novice">Novice</option>
+            <option value="beginner">Beginner</option>
+            <option value="competent">Competent</option>
+            <option value="expert">Expert</option>
+            <option value="guru">Guru</option>
+          </select>
+        </p>
+        <p>
+          <label for="influence">Influence</label><br>
+          <select id="influence" name="influence">
+            <option value=""></option>
+            <option value="business">Business</option>
+            <option value="service">Service</option>
+            <option value="organisation">Organisation</option>
+            <option value="strategic">Strategic</option>
+          </select>
+        </p>
+        </div>
+        <div class="form-column-4">
+        <p>
+          <label for="experience">Experience</label><br>
+          <input type="text" id="experience" name="experience" value="" placeholder="Skills exercised previously but not required for current role" />
+        </p>
+        <p>
+          <label for="critical_skills">Critical Skills</label><br>
+          <input type="text" id="critical_skills" name="critical_skills" value="" placeholder="[framework]:[version]:[skill-code]:[skill-level]" />
+        </p>
+        <p>
+          <label for="desirable_skills">Desirable Skills</label><br>
+          <input type="text" id="desirable_skills" name="desirable_skills" value="" placeholder="[framework]:[version]:[skill-code]:[skill-level]" />
+        </p>
+        <p>
+          <label for="knowledge_items">Knowledge Items</label><br>
+          <input type="text" id="knowledge_items" name="knowledge_items" value="" placeholder="[skill-id]=([knowledge-id])" />
+        </p>
+        <p>
+          <button id="btnSave">Save</button>
+          <button id="btnReset">Reset</button>
+        </p>
+        </div>
+      </form>
+    </div>
+    <div id="display">
+      <p>
+        <button id="btnExport">Export to CSV</button>
+      </p>
+      <table>
+        <thead>
+          <tr>
+            <th>id</th>
+            <th>name</th>
+            <th>job_family</th>
+            <th>job_family_function</th>
+            <th>job_family_role</th>
+            <th>aps_job_code</th>
+            <th>profile_link</th>
+            <th>demand</th>
+            <th>interests</th>
+            <th>learning_link</th>
+            <th>discipline</th>
+            <th>alias</th>
+            <th>description</th>
+            <th>classification</th>
+            <th>knowledge</th>
+            <th>influence</th>
+            <th>experience</th>
+            <th>critical_skills</th>
+            <th>desirable_skills</th>
+            <th>knowledge</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- <tr data-row="0">
+            <td data-col="0" data-name="fname">Sample</td>
+            <td data-col="1">Name</td>
+            <td>sample@work.org</td>
+            <td>freesample</td>
+          </tr> -->
+        </tbody>
+      </table>
+    </div>
+  </body>
 </html>

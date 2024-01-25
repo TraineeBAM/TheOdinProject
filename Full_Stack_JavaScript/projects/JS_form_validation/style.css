@@ -1,70 +1,64 @@
 body {
+    display: grid;
+    grid-template-rows: 2fr 1fr 4fr;
+    height: 100vh;
     margin: 0;
     padding: 0;
-    background: linear-gradient(to right, rgb(255, 158, 158), rgb(155, 155, 255));
-}
-
-.master-container{
-    display: grid;
-    height: 100vh;
-    grid-template-rows: 1fr 3fr;
+    overflow: auto;
 }
 
 .header {
     display: flex;
-    align-items: center;
     justify-content: center;
-    font-size: 2.5em;
+    align-items: center;
+    font-size: 2em;
+    background-color: cornflowerblue;
+    color: white
 }
 
-.content {
+form {
+    display: flex;
+    justify-content:space-around;
+    gap: 10px;
+    font-size: 20px;
+    border-bottom: solid 5px black;
+    font-weight: 600;
+}
+
+form input,
+form select {
+    width: 200px
+}
+
+th, tr, td {
+    border: 1px solid black;
+}
+
+table {
+    width: 95%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    border: 1px solid black;
+}
+
+button {
+    background-color: cornflowerblue;
+    color: white;
+    font-size: 1rem;
+    padding: 0.2rem 20px;
+    border: none;
+}
+
+#btnExport {
+    font-size: 1.5em
+}
+
+.form-column-4 p:last-child{
+    display: flex;
+    justify-content: space-between;
+}
+
+#display p {
     display:flex;
-    align-items: center;
     justify-content: center;
-    font-size: 1.5em;
-}
-
-#test-form{
-    display:flex;
-    flex-direction: column;
-    gap: 1em;
-    align-items: center;
-}
-
-#test-form input {
-    border: none;
-    background-color: rgba(0, 0, 0, 0.6);
-    border-radius: 2em;
-    padding: 5px 10px;
-    color: white;
-}
-
-#test-form input:hover{
-    background-color: black;
-}
-
-#test-form input:focus{
-    background-color: black;
-}
-
-#test-form input::placeholder{
-    color: rgba(255, 255, 255, 0.8);
-}
-
-#test-form button{
-    background-color: rgba(0, 0, 0, 0.6);
-    border: none;
-    border-radius: 2em;
-    padding: 10px 25px;
-    color: rgba(255, 255, 255, 0.8);
-    cursor: pointer;
-}
-
-#test-form button:hover{
-    background-color: black;
-    color: white;
-}
-
-#test-form input:invalid{
-    box-shadow: 3px 3px 8px 3px rgb(255, 44, 44);
 }
