@@ -6,7 +6,7 @@ const csvScript = {
 
     addListeners(){
         const form = document.querySelector('#roles-form');
-        form.addEventListener('submit', csvScript.saveData);
+        form.addEventListener('submit', csvScript.formValidation);
 
         document
             .getElementById('btnExport')
@@ -25,6 +25,11 @@ const csvScript = {
                     document.getElementById('name').focus();
                 })
 
+    },
+
+    formValidation(ev){
+        ev.preventDefault();
+        // We call saveData after we validate the input
     },
 
     saveData(ev){
