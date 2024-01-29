@@ -13,9 +13,10 @@
         <h1>Pathfinder CSV Generator</h1>
     </div>
     <div id="roles-form">
+      <p id="info">Utilise this form to generate a CSV for organisation specific roles.</p>
       <p id="collectionName">Collection Name<br>
-      <input id="collectionInput" placeholder="e.g. Typical APS"></p>
-      <form>
+      <input id="collectionInput" placeholder="e.g. Typical APS" required></p>
+      <form novalidate>
         <div class="form-column-1">
         <p>
           <label for="name">Name</label><br>
@@ -57,7 +58,7 @@
         </p>
         <p>
           <label for="discipline">Discipline</label><br>
-          <input type="text" id="discipline" name="discipline" value="" placeholder="e.g. Cloud Service Management" required/>
+          <input type="text" id="discipline" name="discipline" value="" placeholder="e.g. Cloud Service Management"/>
         </p>
         </div>
         <div class="form-column-3">
@@ -81,6 +82,7 @@
             <option value="EL1">EL1</option>
             <option value="EL2">EL2</option>
             <option value="SES1">SES1</option>
+            <option value="blank"></option>
         </select>
         </p>
         <p>
@@ -111,7 +113,7 @@
         </p>
         <p>
           <label for="critical_skills">Critical Skills</label><br>
-          <input type="text" id="critical_skills" name="critical_skills" value="" placeholder="[framework]:[version]:[skill-code]:[skill-level]" />
+          <input type="text" id="critical_skills" name="critical_skills" value="" placeholder="[framework]:[version]:[skill-code]:[skill-level]" required/>
         </p>
         <p>
           <label for="desirable_skills">Desirable Skills</label><br>

@@ -5,7 +5,7 @@ const csvScript = {
     },
 
     addListeners(){
-        const form = document.querySelector('#roles-form');
+        const form = document.querySelector('form');
         form.addEventListener('submit', csvScript.formValidation);
 
         document
@@ -13,13 +13,8 @@ const csvScript = {
             .addEventListener('click', csvScript.exportCSV);
 
         document
-            .querySelector('table tbody')
-            .addEventListener('dblclick', csvScript.editCell);
-
-        document
             .getElementById('btnReset')
-            .addEventListener('click', (ev) => {
-                let form = document.querySelector('form')    
+            .addEventListener('click', (ev) => {  
                 ev.preventDefault();
                     form.reset();
                     document.getElementById('name').focus();
@@ -29,12 +24,40 @@ const csvScript = {
 
     formValidation(ev){
         ev.preventDefault();
-        // We call saveData after we validate the input
+        // Get required fields
+        const form = document.querySelector('form');
+        let collectionInput = document.getElementById('collectionInput');
+        let name = document.getElementById('name');
+        let description = document.getElementById('description');
+        let criticalSkills = document.getElementById('critical_skills');
+        // Implement data validation for required fields
+        if (!collectionInput.value.trim()) {
+            collectionInput.setCustomValidity('A collection is required for all roles');
+            collectionInput.reportValidity(); // Trigger form validation
+            return;
+        } else if (/[^a-zA-Z0-9\s_]/.test(collectionInput.value)) {
+            collectionInput.setCustomValidity('Only letters, numbers, spaces, and underscores are permitted');
+            collectionInput.reportValidity();
+            return;
+        }
+        
+        else if(
+            !name.value.trim()){
+                name.setCustomValidity('A name is required for all roles');
+                name.reportValidity();
+                return;
+            }
+    
+        // Clear custom validity if validation passes
+        // collectionInput.setCustomValidity("");
+        // name.setCustomValidity("");
+    
+        // Continue with data saving if validation passes
+        csvScript.saveData();
     },
 
-    saveData(ev){
-        ev.preventDefault();
-        const form = ev.target;
+    saveData(){
+        const form = document.querySelector('form');
         const formdata = new FormData(form);
         csvScript.cacheData(formdata);
         csvScript.newRow(formdata);
@@ -109,9 +132,6 @@ const csvScript = {
         a.click();
     },
 
-    editCell(e){
-
-    },
 }
 
 document.addEventListener('DOMContentLoaded', csvScript.init);
