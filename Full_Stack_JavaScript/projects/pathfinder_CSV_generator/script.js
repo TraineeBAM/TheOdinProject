@@ -28,30 +28,55 @@ const csvScript = {
         const form = document.querySelector('form');
         let collectionInput = document.getElementById('collectionInput');
         let name = document.getElementById('name');
+        let jobCode = document.getElementById('aps_job_code')
+        let profileLink = document.getElementById('profile_link')
+        let learningLink = document.getElementById('learning_link')
         let description = document.getElementById('description');
         let criticalSkills = document.getElementById('critical_skills');
         // Implement data validation for required fields
         if (!collectionInput.value.trim()) {
             collectionInput.setCustomValidity('A collection is required for all roles');
-            collectionInput.reportValidity(); // Trigger form validation
+            collectionInput.reportValidity();
             return;
         } else if (/[^a-zA-Z0-9\s_]/.test(collectionInput.value)) {
             collectionInput.setCustomValidity('Only letters, numbers, spaces, and underscores are permitted');
             collectionInput.reportValidity();
             return;
-        }
-        
-        else if(
+        } else if(
             !name.value.trim()){
-                name.setCustomValidity('A name is required for all roles');
-                name.reportValidity();
-                return;
-            }
+            name.setCustomValidity('A name is required for all roles');
+            name.reportValidity();
+            return;
+        } else if(/[,]/.test(name.value)){
+            name.setCustomValidity('Name cannot contain a comma');
+            name.reportValidity();
+            return;
+        } else if (jobCode.value && !/^\d{6}$/.test(jobCode.value)) {
+            jobCode.setCustomValidity('6 numeric digits expected (include leading zeroes)');
+            jobCode.reportValidity();
+            return;
+        } else if (!description.value.trim()){
+            description.setCustomValidity('A brief description of each role is required');
+            description.reportValidity();
+            return;
+        } else if (profileLink.validity.typeMismatch){
+            profileLink.setCustomValidity('Please enter a standard URL');
+            profileLink.reportValidity();
+            return
+        } else if (learningLink.validity.typeMismatch){
+            learningLink.setCustomValidity('Please enter a standard URL');
+            learningLink.reportValidity();
+            return
+        } else if (!criticalSkills.value.trim()){
+            criticalSkills.setCustomValidity('Please enter at least one critical skill from a supporting framework');
+            criticalSkills.reportValidity();
+            return
+        }
     
         // Clear custom validity if validation passes
         // collectionInput.setCustomValidity("");
         // name.setCustomValidity("");
-    
+        
         // Continue with data saving if validation passes
         csvScript.saveData();
     },

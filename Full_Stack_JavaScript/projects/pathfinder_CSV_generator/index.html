@@ -13,13 +13,14 @@
         <h1>Pathfinder CSV Generator</h1>
     </div>
     <div id="roles-form">
-      <p id="info">Utilise this form to generate a CSV for organisation specific roles.</p>
-      <p id="collectionName">Collection Name<br>
+      <p id="info">Utilise this form to generate a CSV for organisation specific roles.<br>
+      * = Mandatory</p>
+      <p id="collectionName">*Collection Name<br>
       <input id="collectionInput" placeholder="e.g. Typical APS" required></p>
       <form novalidate>
         <div class="form-column-1">
         <p>
-          <label for="name">Name</label><br>
+          <label for="name">*Name</label><br>
           <input type="text" id="name" name="name" value="" placeholder="e.g. Cloud Service Manager" required/>
         </p>
         <p>
@@ -36,7 +37,7 @@
         </p>
         <p>
           <label for="aps_job_code">APS Job Code</label><br>
-          <input type="text" id="aps_job_code" name="aps_job_code" value="" placeholder="e.g. 150303" />
+          <input type="number" id="aps_job_code" name="aps_job_code" value="" placeholder="e.g. 150303" pattern="[0-9]{6}" />
         </p>
         </div>
         <div class="form-column-2">
@@ -50,7 +51,7 @@
         </p>
         <p>
           <label for="interests">Interests</label><br>
-          <input type="text" id="interests" name="interests" value="" placeholder="e.g. Cloud,Infrastructure,Platforms etc" />
+          <input type="text" id="interests" name="interests" value="" placeholder="comma separated list" />
         </p>
         <p>
           <label for="learning_link">Learning Link</label><br>
@@ -67,7 +68,7 @@
           <input type="text" id="alias" name="alias" value="" placeholder="Alternative role titles. e.g. Cloud Administrator, Cloud Capability Specialist, etc" />
         </p>
         <p>
-          <label for="description">Description</label><br>
+          <label for="description">*Description</label><br>
           <input type="text" id="description" name="description" value="" placeholder="A brief description of the role" required/>
         </p>
         <p>
@@ -112,7 +113,7 @@
           <input type="text" id="experience" name="experience" value="" placeholder="Skills exercised previously but not required for current role" />
         </p>
         <p>
-          <label for="critical_skills">Critical Skills</label><br>
+          <label for="critical_skills">*Critical Skills</label><br>
           <input type="text" id="critical_skills" name="critical_skills" value="" placeholder="[framework]:[version]:[skill-code]:[skill-level]" required/>
         </p>
         <p>

@@ -82,15 +82,3 @@ button {
     justify-content: center;
 }
 
-input:invalid {
-    border-color: #900;
-    background-color: #fdd;
-  }
-  
-  #name:valid,
-  #collectionInput:valid,
-  #description:valid,
-  #critical_skills:valid {
-    border-color: greenyellow;
-    background-color: rgb(100, 200, 90);
-  }
