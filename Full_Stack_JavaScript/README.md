@@ -1384,3 +1384,36 @@ use: [loader: 'file-loader'],</code></li>
 >The basic syntax is: <code>somePromise.then(onFulfilled, onRejected);</code>
 
 ***
+
+</details>
+
+***
+
+<details>
+<summary><h3>Working with APIs</h3></summary>
+
+***
+
+<h4>What is an API?</h4>
+
+>
+
+***
+
+<h4>How is access to an API restricted?</h4>
+
+>
+
+***
+
+<h4>How do you fetch and extract data from an API?</h4>
+
+>
+
+***
+
+<h4>Why might your API request be blocked by the browser, and how might you fix this?</h4>
+
+>
+
+***
