@@ -32,7 +32,7 @@
 | JavaScript | Project |[Restaurant Page](https://traineebam.github.io/TheOdinProject/Full_Stack_JavaScript/projects/restaurant_page/dist)|
 | JavaScript | Project |[ToDo (incomplete, will return)](https://traineebam.github.io/TheOdinProject/Full_Stack_JavaScript/projects/todo/dist)|
 | JavaScript | Project |[ToDo (Tutorial Example)](https://traineebam.github.io/TheOdinProject/Full_Stack_JavaScript/projects/todoV2)|
-| JavaScript | Project |[Pathfinder Form Validation)](https://traineebam.github.io/TheOdinProject/Full_Stack_JavaScript/projects/pathfinder_CSV_generator)|
+| JavaScript | Project |[Pathfinder Form Validation)](https://traineebam.github.io/TheOdinProject/Full_Stack_JavaScript/projects/pathfinder_CSV_generator|
 
 ***
 
@@ -1348,5 +1348,39 @@ use: [loader: 'file-loader'],</code></li>
 <h4>Could forms also be validated without using Constraint Validation API?</h4>
 
 >You can validate forms without using the Constraint Validation API, however you will need to write your own JavaScript to accomplish this.
+
+***
+
+</details>
+
+***
+
+<details>
+<summary><h3>Asynchronous Code</h3></summary>
+
+***
+
+<h4>What is a callback?</h4>
+
+>A callback function is a function passed as an argument to another function, which is then executed or called back at a later point in the program's execution, often to handle asynchronous operations or respond to events.
+
+***
+
+<h4>What is a promise?</h4>
+
+> A promise is an object that might produce a value at some point in the future.
+
+***
+
+<h4>When should you use promises over callbacks?</h4>
+
+>Promises are preferable over callbacks in situations where you need to handle asynchronous operations with better readability, error handling, and for avoiding nested callbacks.
+
+***
+
+<h4>What does the .then() function do?</h4>
+
+>The <code>.then()</code> function is used to attach callbacks that will be executed when a Promise if resolved with a value.<br>
+>The basic syntax is: <code>somePromise.then(onFulfilled, onRejected);</code>
 
 ***
