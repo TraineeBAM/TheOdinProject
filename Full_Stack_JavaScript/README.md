@@ -32,7 +32,8 @@
 | JavaScript | Project |[Restaurant Page](https://traineebam.github.io/TheOdinProject/Full_Stack_JavaScript/projects/restaurant_page/dist)|
 | JavaScript | Project |[ToDo (incomplete, will return)](https://traineebam.github.io/TheOdinProject/Full_Stack_JavaScript/projects/todo/dist)|
 | JavaScript | Project |[ToDo (Tutorial Example)](https://traineebam.github.io/TheOdinProject/Full_Stack_JavaScript/projects/todoV2)|
-| JavaScript | Project |[Pathfinder Form Validation)](https://traineebam.github.io/TheOdinProject/Full_Stack_JavaScript/projects/pathfinder_CSV_generator|
+| JavaScript | Project |[Pathfinder Form Validation](https://traineebam.github.io/TheOdinProject/Full_Stack_JavaScript/projects/pathfinder_CSV_generator)|
+| JavaScript | Tutorial |[APIs - GIF Generator](https://traineebam.github.io/TheOdinProject/Full_Stack_JavaScript/APIs/intro_tutorial)|
 
 ***
 
@@ -1417,5 +1418,51 @@ use: [loader: 'file-loader'],</code></li>
 
 >Your API request could be blocked by the browser as a security precaution.<br>
 >To fix this, you can add <code>mode:'cors'</code> inside your <code>fetch('URL_GOES_HERE')</code> (cors=Cross Origin Resource Sharing).
+
+***
+
+</details>
+
+***
+
+<details>
+<summary><h3>Async and Await</h3></summary>
+
+***
+
+<h4>How do you declare an async function?</h4>
+
+>You declare an async function by using <code>async</code> before the function.
+
+***
+
+<h4>What does the async keyword do?</h4>
+
+>The <code>async</code> keyword is what lets the JavaScript engine know that an asynchronous function is being declared.
+
+***
+
+<h4>What does the await keyword do?</h4>
+
+>The <code>await</code> keyword tells JavaScript to wait for an asynchronous action to finish before continuing the function.
+
+***
+
+<h4>What is returned from an async function?</h4>
+
+>When a function is declared with <code>async</code> a promise is automatically returned.
+
+***
+
+<h4>What happens when an error is thrown inside an async function?</h4>
+
+>When an error is thrown inside an async function then the promise is rejected.
+
+***
+
+<h4>How can you handle errors inside an async function?</h4>
+
+>To handle errors inside an async function you can call the function and append a <code>.catch()</code> method to the end.<br>
+>Alternatively you can utilise the <code>try/catch</code> block inside your async function.
 
 ***
