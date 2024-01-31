@@ -1396,24 +1396,26 @@ use: [loader: 'file-loader'],</code></li>
 
 <h4>What is an API?</h4>
 
->
+>API refers to 'Application Programming Interfaces' and are servers that are created for serving data for use in websites or apps.
 
 ***
 
 <h4>How is access to an API restricted?</h4>
 
->
+>API access is restricted via the use of API keys which usually need to be included with every data request.
 
 ***
 
 <h4>How do you fetch and extract data from an API?</h4>
 
->
+>You utilise <code>fetch('API_URL_HERE')</code> to retrieve data from an API.<br>
+>This should return an object and so to extract our data we need to look through the objects layers to find what is required.
 
 ***
 
 <h4>Why might your API request be blocked by the browser, and how might you fix this?</h4>
 
->
+>Your API request could be blocked by the browser as a security precaution.<br>
+>To fix this, you can add <code>mode:'cors'</code> inside your <code>fetch('URL_GOES_HERE')</code> (cors=Cross Origin Resource Sharing).
 
 ***

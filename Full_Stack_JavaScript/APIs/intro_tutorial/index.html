@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>GIFY Generator</title>
+</head>
+<body style="background-color: bisque;">
+  <header>
+  <h1 style="text-align: center;">GIFY Generator</h1>
+  </header>
+  <img src="#" style="display: block; margin: auto;"><br>
+  <div style="text-align: center;">
+    <p><button id="newImage">New Image</button></p>
+    <input id="searchInput" type="text"><button id="search">Search</button>
+</div>
+   
+<script>
+    const img = document.querySelector('img');
+    const newImage = document.getElementById('newImage');
+    const search = document.getElementById('search');
+
+    function fetchAndDisplayImage() {
+      fetch(findInput(), { mode: 'cors' })
+        .then(response => response.json())
+        .then(response => {
+          img.src = response.data.images.original.url;
+        })
+        .catch(error => {
+            alert('Fetch Error', error);
+        });
+    }
+
+    let searchInput = document.getElementById('searchInput');
+
+    function findInput() {
+    let apiUrl = 'https://api.giphy.com/v1/gifs/translate?api_key=FvwtppJviZP2T1YhimLKAchcPITrhetQ&s=';
+
+    if (searchInput.value === null || searchInput.value.trim() === '') {
+            return apiUrl + 'cats';
+        } else {
+            return apiUrl + encodeURIComponent(searchInput.value.trim());
+        }
+    }
+    document.addEventListener('DOMContentLoaded', fetchAndDisplayImage);
+    newImage.addEventListener('click', fetchAndDisplayImage);
+    search.addEventListener('click', fetchAndDisplayImage);
+  </script>
+</body>
+</html>
