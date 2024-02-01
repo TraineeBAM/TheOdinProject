@@ -1,0 +1,142 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url(./img/Background\ Img.jpg);
+    background-size:cover;
+    background-position: top;
+    background-repeat: no-repeat;
+}
+
+#masterContainer {
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 1fr 1fr 5fr;
+}
+
+.header {
+    font-size: 2.2em;
+    text-align: center;
+}
+
+.searchContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border-top: 5px rgba(0, 0, 0, 0.8) solid;
+    border-bottom: 5px rgba(0, 0, 0, 0.8) solid;
+    padding: 10px;
+}
+
+#userInput {
+    width: 200px;
+    height: 40px;
+    font-size: 1.5em;
+    border: none;
+    border-radius: 10px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.507);
+}
+
+#searchButton{
+    width: 100px;
+    height: 30px;
+    border: none;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.507);
+}
+
+.weatherCard{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cardContainer{
+    align-self: center;
+    justify-self: center;
+    display: grid;
+    grid-template-rows: 1fr 2fr 1fr;
+    padding:10px;
+    border: rgba(0, 0, 0, 0.8) solid 5px;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+/* Location styling */
+.location{
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    border-bottom: solid 5px rgba(0, 0, 0, 0.8);
+}
+
+.coordinates{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#city{
+    font-size: 2.2em;
+    font-weight: bold;
+}
+
+#country,
+#localTime,
+.coordinates{
+    font-size: 1.3em;
+}
+
+#country{
+    display: flex;
+    align-items: center;
+}
+
+#city,
+#localTime{
+    display:flex;
+    align-items: center;
+}
+
+/* Current weather styling */
+
+.current{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.currentDetails{
+    display: grid;
+    grid-template-rows: 1fr repeat(6);
+}
+
+.currentImage{
+    display: grid;
+    grid-template-rows: 3fr 1fr;
+}
+
+/* Forecast styling */
+.forecast{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.dayItem {
+    display:grid;
+    grid-template-rows: 1fr repeat(4) ;
+    gap:5px;
+}
+
+footer{
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+footer a {
+    text-decoration: none;
+    color: rgb(255, 206, 141);
+}
+
+
