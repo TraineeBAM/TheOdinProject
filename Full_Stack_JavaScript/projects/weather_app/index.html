@@ -16,9 +16,14 @@
             <input type="text" aria-label="Search for city" placeholder="Canberra" id="userInput"><button id="searchButton">Search</button>
         </div>
         <div class="weatherCard">
-        <div class="cardContainer">
+            <div class="apiError">
+            <span id="errorCode"></span>
+        </div>
+            <div class="cardContainer">
             <div class="location">
                 <div id="city"></div>
+                <div id="timeText">Local Time</div>
+                <div id="region"></div>
                 <div id="localTime">2024-02-01 17:03</div>
                 <div id="country"></div>
                 <div class="coordinates">

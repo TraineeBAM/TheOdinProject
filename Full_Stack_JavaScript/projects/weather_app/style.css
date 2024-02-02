@@ -34,7 +34,7 @@ body {
 }
 
 #userInput {
-    width: 200px;
+    width:fit-content;
     height: 40px;
     font-size: 1.5em;
     border: none;
@@ -55,6 +55,15 @@ body {
     display:flex;
     align-items: center;
     justify-content: center;
+    position: relative;
+}
+
+.apiError{
+    position: absolute;
+    top: 10px;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: rgb(180, 0, 0);
 }
 
 .cardContainer{
@@ -71,15 +80,18 @@ body {
 /* Location styling */
 .location{
     display: grid;
-    grid-template-columns: 1.5fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 0.8fr 1fr;
     border-bottom: solid 5px rgba(0, 0, 0, 0.8);
+    padding-left:5px;
+    padding-right:5px;
 }
 
 .coordinates{
     display:flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
+    gap:20px;
     font-size: 0.9em;
 }
 
@@ -88,18 +100,26 @@ body {
     font-weight: bold;
 }
 
-#localTime{
+#timeText{
+    display:flex;
+    justify-content: flex-end;
+    align-items: center;
     font-size: 1.3em;
+}
+
+#localTime{
+    display:flex;
+    justify-content: flex-end;
 }
 
 #country{
     display: flex;
     align-items: center;
-    font-size: 1.5em;
+    font-size: 2em;
+    padding-right: 20px;
 }
 
-#city,
-#localTime{
+#city{
     display:flex;
     align-items: center;
 }
@@ -107,6 +127,8 @@ body {
 /* Current weather styling */
 
 .current{
+    padding-left:5px;
+    padding-right:5px;
     padding-top: 10px;
     padding-bottom: 10px;
     display: grid;
@@ -151,6 +173,7 @@ body {
     flex-direction: column;
     gap:5px;
     align-items: center;
+    padding: 5px;
 }
 
 .dayOne{
@@ -158,10 +181,20 @@ body {
     border-right: solid 5px rgba(0, 0, 0, 0.8);
 }
 
+#zeroCondition,
+#oneCondition,
+#twoCondition{
+    font-size: 1.2em;
+    text-align: center;
+}
+
 /* Footer */
 footer{
     text-align: center;
     padding-bottom: 10px;
+    position: absolute;
+    bottom:0;
+    width:100%;
 }
 
 footer a {

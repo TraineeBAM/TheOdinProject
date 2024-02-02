@@ -34,6 +34,7 @@
 | JavaScript | Project |[ToDo (Tutorial Example)](https://traineebam.github.io/TheOdinProject/Full_Stack_JavaScript/projects/todoV2)|
 | JavaScript | Project |[Pathfinder Form Validation](https://traineebam.github.io/TheOdinProject/Full_Stack_JavaScript/projects/pathfinder_CSV_generator)|
 | JavaScript | Tutorial |[APIs - GIF Generator](https://traineebam.github.io/TheOdinProject/Full_Stack_JavaScript/APIs/intro_tutorial)|
+| JavaScript | Project |[Weather App](https://traineebam.github.io/TheOdinProject/Full_Stack_JavaScript/projects/weather_app)|
 
 ***
 
