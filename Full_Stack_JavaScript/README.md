@@ -1467,3 +1467,70 @@ use: [loader: 'file-loader'],</code></li>
 >Alternatively you can utilise the <code>try/catch</code> block inside your async function.
 
 ***
+
+</details>
+
+***
+
+<details>
+<summary><h3>A Very Brief Intro to CS</h3></summary>
+
+***
+
+<h4>What is an Algorithm?</h4>
+
+>An algorithm is a set of instructions that are used to solve a problem.
+
+***
+
+<h4>What is the importance of algorithms in web development?</h4>
+
+>Algorithms play a crucial role in web development, particularly when dealing with large datasets or complex transformations.<br>
+>They serve as step-by-step procedures that enable efficient data processing, ensuring that web applications can handle and manipulate information effectively.<br>
+>Algorithms are essential for tasks such as sorting, searching, and filtering data, contributing to improved performance and user experience.<br>
+>Additionally, they help optimize various processes, ensuring that web developers can create responsive and scalable applications to meet the demands of modern web environments.
+
+***
+
+<h4>What is pseudocode?</h4>
+
+>Pseudocode is an english-like way to state an algorithm.
+
+***
+
+</details>
+
+***
+
+<details>
+<summary><h3>Recursive Methods</h3></summary>
+
+***
+
+<h4>How would you briefly define a recursive function?</h4>
+
+>A recursive function is a function that calls itself.
+
+***
+
+<h4>What is the point of recursion? Is it more efficient than using a plain loop?</h4>
+
+>The point of recursion is to enhance conciseness and ease of understanding with certain types of problems.<br>
+>They are not always more efficient than using a plain loop and this is dictated by the nature of the problem being solved.
+
+***
+
+<h4>What are the 2 essential parts in a recursive function?</h4>
+
+><ol>
+><li>The base case: When triggered this will terminate the recursive process.</li>
+><li>The recursive case: When triggered this will facilitate recursion.</li>
+></ol>
+
+***
+
+<h4>Why is “stack overflow” relevant to a recursive problem?</h4>
+
+>"Stack overflow" is relevant to a recursive problem because by their nature, they involve repeated function calls, and if not managed properly will consume all available memory used for function call management (stack overflow).
+
+***
