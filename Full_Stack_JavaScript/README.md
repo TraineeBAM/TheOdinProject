@@ -1546,24 +1546,60 @@ use: [loader: 'file-loader'],</code></li>
 
 <h4>What is Big O?</h4>
 
->Big O provides a consistent measurement for the efficiency of an algorithm .
+>Big O provides a consistent measurement for the efficiency of an algorithm relative to the size of the input.
 
 ***
 
 <h4>What are the Big O Notations?</h4>
 
->
+><ul>
+><li>O(1) - Constant Complexity</li>
+><li>O(log N) - Logarithmic Complexity</li>
+><li>O(N) - Linear Complexity</li>
+><li>O(N log N) - N x log N Complexity</li>
+><li>O(n²) - Quadratic Complexity</li>
+><li>O(n³) - Cubic Complexity</li>
+><li>O(2ⁿ) - Exponential Complexity</li>
+><li>O(N!) - Factorial Complexity</li>
+></ul>
 
 ***
 
 <h4>Why use Big O?</h4>
 
->
+>We should use Big O to ensure that our algorithm will scale in all outcomes and perform as required.
 
 ***
 
 <h4>What is Big Omega and why isn’t it as useful?</h4>
 
->
+>Big Omega measures the best case scenario for an algorithms efficiency and isn't as useful because it does not tell us how the algorithm will scale.
+
+***
+
+</details>
+
+***
+
+<details>
+<summary><h3>Space Complexity</h3></summary>
+
+***
+
+<h4>What is space complexity?</h4>
+
+>Space complexity is the total space used by an algorithm relative to the size of the input.
+
+***
+
+<h4>How do we measure space complexity?</h4>
+
+>Space complexity is measured in the same way as Time complexity (by considering all steps that need to be taken during the algorithms execution).
+
+***
+
+<h4>What are the main considerations we should take into account when optimising code?</h4>
+
+>When optimising code, the main considerations should be readability followed by efficiency (but only if there is a clear impact on performance).
 
 ***
