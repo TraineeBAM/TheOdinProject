@@ -1534,3 +1534,36 @@ use: [loader: 'file-loader'],</code></li>
 >"Stack overflow" is relevant to a recursive problem because by their nature, they involve repeated function calls, and if not managed properly will consume all available memory used for function call management (stack overflow).
 
 ***
+
+</details>
+
+***
+
+<details>
+<summary><h3>Time Complexity</h3></summary>
+
+***
+
+<h4>What is Big O?</h4>
+
+>Big O provides a consistent measurement for the efficiency of an algorithm .
+
+***
+
+<h4>What are the Big O Notations?</h4>
+
+>
+
+***
+
+<h4>Why use Big O?</h4>
+
+>
+
+***
+
+<h4>What is Big Omega and why isn’t it as useful?</h4>
+
+>
+
+***
