@@ -1603,3 +1603,50 @@ use: [loader: 'file-loader'],</code></li>
 >When optimising code, the main considerations should be readability followed by efficiency (but only if there is a clear impact on performance).
 
 ***
+
+</details>
+
+***
+
+<details>
+<summary><h3>Space Complexity</h3></summary>
+
+***
+
+<h4>What is the difference between a stack and a queue?</h4>
+
+>The difference between a stack and a que is that elements in a stack are added to the top and also removed from the top (like a stack of books), whereas elements in a que are added to the top and removed from the bottom (like people in a queue waiting to be served).
+
+***
+
+<h4>What are the enqueue and dequeue properties?</h4>
+
+>Enqueue is when you "start waiting".
+>Dequeue is when its your turn to be served.
+
+***
+
+<h4>What is a linked list? What is a node?</h4>
+
+>A linked list is a linear collection of data elements of any type. These data elements are what are referred to as 'nodes'.<br>
+>Each node has a value and points to the next node in the linked list.
+
+***
+
+<h4>Which recursive problem-solving method/algorithm design principle does binary search implement?</h4>
+
+>Binary search implements the "divide and conquer" design principle where the array is divided into two halves repeatedly until the target element is found of the search space is exhausted.
+
+***
+
+<h4>What abstract data type would you use to defer/store nodes in a breadth-first tree traversal?</h4>
+
+>To store nodes in a breadth-first tree transversal you would use a data structure known as a "queue" which follows the FIFO (First In First Out) principle.
+
+***
+
+<h4>What abstract data type would you use to defer/store nodes in a depth-first tree traversal?</h4>
+
+>For a depth-first tree transversal you would use a data structure known as "stack" which follows the LIFO (Last In First Out) principle.
+
+***
