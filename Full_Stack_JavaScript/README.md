@@ -1674,6 +1674,45 @@ use: [loader: 'file-loader'],</code></li>
 
 <h4>What are some different ways to rewrite history?</h4>
 
->
+><ol>
+><li>Changing the last commit: </code>$ git commit -amend</code></li>
+><li>Changing multiple commit messages: <code>$git rebase -i root</code></li>
+><li>Reordering commits</li>
+><li>Squashing commits</li>
+><li>Splitting commits</li>
+><li>Deleting commits</li>
+></ol>
+
+***
+
+</details>
+
+***
+
+<details>
+<summary><h3>Working with Remotes</h3></summary>
+
+***
+
+<h4>What is a safe way to push history changes to a remote repository?</h4>
+
+>A safe way to push history changes to a remote repository is <code>git push --force-with-lease</code>.<br>
+>This is because if the branch you're attempting to push to has been updated you will receive an error to notify you.
+
+***
+
+<h4>What are the dangers of history-changing operations?</h4>
+
+>The dangers of history-changing operations mainly occur when collaborating with others. This is because the work of others can be irreversibly destroyed.
+
+***
+
+<h4>What are best practices of history-changing operations?</h4>
+
+><ul>
+><li>Ensure if working on a team project that rewriting history is safe and others are aware of your intent.</li>
+><li>Ideally only use these commands on branches you are working on by yourself.</li>
+><li>Don't push after every single commit, changing published history should be avoided where possible.</li>
+></ul>
 
 ***
