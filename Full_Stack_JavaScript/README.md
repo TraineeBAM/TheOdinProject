@@ -1650,3 +1650,30 @@ use: [loader: 'file-loader'],</code></li>
 >For a depth-first tree transversal you would use a data structure known as "stack" which follows the LIFO (Last In First Out) principle.
 
 ***
+
+</details>
+
+***
+
+<details>
+<summary><h3>A Deeper Look at Git</h3></summary>
+
+***
+
+<h4>Explain what it means for branches to be pointers.</h4>
+
+>For branches to be pointers means that the connections between nodes in a tree structure are implemented using pointers, which are references or links indicating how the nodes are related to each other.
+
+***
+
+<h4>How can you amend your last commit?</h4>
+
+>To amend your last commit you would use <code>$ git commit --amend</code>.
+
+***
+
+<h4>What are some different ways to rewrite history?</h4>
+
+>
+
+***
