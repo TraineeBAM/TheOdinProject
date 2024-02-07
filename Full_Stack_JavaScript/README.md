@@ -1743,3 +1743,24 @@ use: [loader: 'file-loader'],</code></li>
 >Immediately before merging your feature branch into main, you should fetch the most updated copy of the main branch by using <code>git fetch upstream</code>.
 
 ***
+
+</details>
+
+***
+
+<details>
+<summary><h3>Testing Basics</h3></summary>
+
+***
+
+<h4>What are the benefits of TDD</h4>
+
+>Some of the benefits of TDD include less bugs, higher quality software, lower cost, less waste and improved productivity.
+
+***
+
+<h4>What are some common jest matchers?</h4>
+
+>Some common jest matchers include truthiness, numbers, strings, arrays/iterables and exceptions.
+
+***
