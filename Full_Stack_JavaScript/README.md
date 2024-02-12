@@ -1765,6 +1765,10 @@ use: [loader: 'file-loader'],</code></li>
 
 ***
 
+</details>
+
+***
+
 <details>
 <summary><h3>More Testing</h3></summary>
 
