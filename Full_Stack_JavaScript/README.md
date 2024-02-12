@@ -2020,3 +2020,33 @@ use: [loader: 'file-loader'],</code></li>
 ></ol>
 
 ***
+
+</details>
+
+***
+
+<details>
+<summary><h3>Accessible Colors</h3></summary>
+
+***
+
+<h4>What is a contrast ratio?</h4>
+
+>Contrast ratio is the difference in brightness between two colors expressed as a ratio.
+
+***
+
+<h4>What are two ways you can check a contrast ratio using your dev tools?</h4>
+
+><ol>
+><li>Select the "element picker" tool in the elements tab and hover over an element.</li>
+><li>If you select an element with text in the elements tab you can click on the color picker tool for "color" property under styles.</li>
+></ol>
+
+***
+
+<h4>What should you avoid when conveying information to users?</h4>
+
+>When conveying information to users you should avoid relying only on color.
+
+***
