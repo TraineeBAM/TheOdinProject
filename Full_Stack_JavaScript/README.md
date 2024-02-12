@@ -1944,3 +1944,24 @@ use: [loader: 'file-loader'],</code></li>
 >You would use transition when dealing with fairly simple changes.
 
 ***
+
+</details>
+
+***
+
+<details>
+<summary><h3>Introduction to web accessibility</h3></summary>
+
+***
+
+<h4>What is web accessibility?</h4>
+
+>Web accessibility means that websites, tools and technologies are designed and developed so that people with disabilities and other circumstantial limitations can use them with as few barriers as possible.
+
+***
+
+<h4>Who truly benefits from accessibility features?</h4>
+
+>All users benefit from accessibility features, these users encompass people with disabilities, older people with changing abilities, people who aren't as tech savvy and people with situational limitations.
+
+***
