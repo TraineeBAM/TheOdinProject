@@ -35,6 +35,9 @@
 | JavaScript | Project |[Pathfinder Form Validation](https://traineebam.github.io/TheOdinProject/Full_Stack_JavaScript/projects/pathfinder_CSV_generator)|
 | JavaScript | Tutorial |[APIs - GIF Generator](https://traineebam.github.io/TheOdinProject/Full_Stack_JavaScript/APIs/intro_tutorial)|
 | JavaScript | Project |[Weather App](https://traineebam.github.io/TheOdinProject/Full_Stack_JavaScript/projects/weather_app)|
+| Advanced HTML & CSS | Animation |[Button Hover](https://traineebam.github.io/TheOdinProject/Full_Stack_JavaScript/animation/01-button-hover)|
+| Advanced HTML & CSS | Animation |[Pop Up](https://traineebam.github.io/TheOdinProject/Full_Stack_JavaScript/animation/02-pop-up)|
+| Advanced HTML & CSS | Animation |[Dropdown Menu](https://traineebam.github.io/TheOdinProject/Full_Stack_JavaScript/animation/03-dropdown-menu)|
 
 ***
 
@@ -1910,5 +1913,34 @@ use: [loader: 'file-loader'],</code></li>
 
 >Keeping an eye on repaints is important in web development because repaints can impact the performance and user experience of a website.<br>
 >Repainting refers to the process of updating the pixels on the screen when changes occur, such as updates to the DOM or style changes.
+
+***
+
+</details>
+
+***
+
+<details>
+<summary><h3>Keyframes</h3></summary>
+
+***
+
+<h4>What are the long and short-hand notations for CSS animations?</h4>
+
+>The long-hand notation for CSS animations is: <code>animation-duration: ; animation-name: ; animation-iteration-count: ; animation-direction: ;</code>.<br>
+>The short-hand notation for CSS animations is: <code>animation: ;</code>.
+
+***
+
+<h4>How do you add keyframes to an animation?</h4>
+
+>You add keyframes to an animation by declaring <code>@keyframes</code> followed by the animation name.
+
+***
+
+<h4>When would you use an animation over a transition (and vice versa)?</h4>
+
+>You would use an animation over a transition when you need more flexibility and complexity than transition is able to offer.<br>
+>You would use transition when dealing with fairly simple changes.
 
 ***
