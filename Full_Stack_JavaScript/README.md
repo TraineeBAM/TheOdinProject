@@ -2050,3 +2050,42 @@ use: [loader: 'file-loader'],</code></li>
 >When conveying information to users you should avoid relying only on color.
 
 ***
+
+</details>
+
+***
+
+<details>
+<summary><h3>Keyboard Navigation</h3></summary>
+
+***
+
+<h4>What are two things that interactive elements must have for keyboard users?</h4>
+
+>
+
+***
+
+<h4>What are focus styles?</h4>
+
+>
+
+***
+
+<h4>Why should you never completely remove focus styles from an element?</h4>
+
+>
+
+***
+
+<h4>What is the tab order?</h4>
+
+>
+
+***
+
+<h4>What is the best way to hide hidden content from assistive technologies?</h4>
+
+>
+
+***
