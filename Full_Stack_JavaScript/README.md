@@ -1965,3 +1965,58 @@ use: [loader: 'file-loader'],</code></li>
 >All users benefit from accessibility features, these users encompass people with disabilities, older people with changing abilities, people who aren't as tech savvy and people with situational limitations.
 
 ***
+
+</details>
+
+***
+
+<details>
+<summary><h3>The Web Content Accessibility Guidelines (WCAG)</h3></summary>
+
+***
+
+<h4>What is the purpose of the Web Content Accessibility Guidelines?</h4>
+
+>The purpose of WCAG is to create a shared standard when it comes to web accessibility.
+
+***
+
+<h4>What are the 4 principles of the WCAG?</h4>
+
+><ol>
+><li>Perceivable: Users must be able to perceive the information or user interfaces being presented.</li>
+><li>Operable: Users must be able to operate any user interfaces or navigation and interfaces cannot require an interaction which the user cannot perform.</li>
+><li>Understandable: Users must be able to understand any information or users interface that is presented to them.</li>
+><li>Robust: Content must be accessible by current assistive technologies and other user agents, and must remain accessible as those technologies advance.</li>
+></ol>
+
+***
+
+</details>
+
+***
+
+<details>
+<summary><h3>Semantic HTML</h3></summary>
+
+***
+
+<h4>Why is semantic HTML important for accessibility?</h4>
+
+>Semantic HTML is important for accessibility because it provides context for the content that it contains.
+
+***
+
+<h4>What are the seven HTML elements that define landmarks on a page?</h4>
+
+><ol>
+><li><code>aside</code></li>
+><li><code>footer</code></li>
+><li><code>form</code></li>
+><li><code>header</code></li>
+><li><code>main</code></li>
+><li><code>nav</code></li>
+><li><code>section</code></li>
+></ol>
+
+***
