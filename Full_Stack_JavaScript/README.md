@@ -1839,3 +1839,36 @@ use: [loader: 'file-loader'],</code></li>
 >You should not test outgoing messages with no side effects because if the message has no side effects then it is invisible to your app and will add no proof.
 
 ***
+
+</details>
+
+***
+
+<details>
+<summary><h3>Transform</h3></summary>
+
+***
+
+<h4>What are the four main functions of the transform property?</h4>
+
+>The four main functions of the transform property are <code>rotate</code>, <code>scale</code>, <code>skew</code> and <code>translate</code>.
+
+***
+
+<h4>Which function can be used to move an object through space on the X, Y, or Z axis?</h4>
+
+>You can use the <code>translate</code> function to move an object through space on the X, Y, or Z axis.
+
+***
+
+<h4>Which function can be used to make an object larger or smaller on the X, Y, or Z axis?</h4>
+
+>To make an object larger or smaller on the X, Y or Z axis you can use the <code>scale</code> function.
+
+***
+
+<h4>What additional function is required for 3D transforms?</h4>
+
+>For 3D transforms you also need to include <code>perspective</code>. This sets the distances from the user to the z = 0 plane and must be declared first.
+
+***
