@@ -2062,30 +2062,31 @@ use: [loader: 'file-loader'],</code></li>
 
 <h4>What are two things that interactive elements must have for keyboard users?</h4>
 
->
+>Two things that interactive elements must have for keyboard users are that they are focusable and have event handling for keyboards.
 
 ***
 
 <h4>What are focus styles?</h4>
 
->
+>Focus styles are the styles that apply to an element when it is being focused (typically an outline or border).
 
 ***
 
 <h4>Why should you never completely remove focus styles from an element?</h4>
 
->
+>You should never completely remove focus styles from an element because not having any visual indication of what element has focus makes a page very difficult to navigate and operate for keyboard users.
 
 ***
 
 <h4>What is the tab order?</h4>
 
->
+>Tab order is the order in which elements on the page are focused when pressing the Tab key.<br>
+>By default this is the same order as the order of elements listed in the HTML file.
 
 ***
 
 <h4>What is the best way to hide hidden content from assistive technologies?</h4>
 
->
+>The best way to hide hidden content from assistive technologies is by giving the container for the hidden content either a <code>display: none</code> or <code>visibility: hidden</code> CSS property.
 
 ***
