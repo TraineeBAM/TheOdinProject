@@ -1764,3 +1764,74 @@ use: [loader: 'file-loader'],</code></li>
 >Some common jest matchers include truthiness, numbers, strings, arrays/iterables and exceptions.
 
 ***
+
+<details>
+<summary><h3>More Testing</h3></summary>
+
+***
+
+<h4>What is tightly coupled code?</h4>
+
+>Tightly coupled code refers to functions that heavily reference external functions or variables.
+
+***
+
+<h4>What are the two requirements for a function to be pure?</h4>
+
+><ol>
+><li>If the same arguments are passed in, the same result is always returned. It must only depend on its input arguments.</li>
+><li>The function does not produce any observable side effects such as network requests, input and output devices, or data mutation.</li>
+></ol>
+
+***
+
+<h4>What are side effects and why is it important to identify them when testing a function?</h4>
+
+>An observable side effect is any interaction with the outside world from within a function. For a function to remain pure, they must not contain any side effects.
+
+***
+
+<h4>What are two solutions to the tightly coupled code problem?</h4>
+
+><ol>
+><li>Remove dependencies from the code.</li>
+><li>Mocking</li>
+></ol>
+
+***
+
+<h4>What is mocking?</h4>
+
+>Mocking is writing 'fake' versions of a function that always behave exactly how you want.
+
+***
+
+<h4>When would you use a mock function?</h4>
+
+>You would use a mock function whenever you have an input-grabbing function.
+
+***
+
+<h4>How should you test incoming query messages?</h4>
+
+>You should test incoming query messages by testing the expected behavior and outcomes based on the incoming query messages.
+
+***
+
+<h4>Why should you not test implementation?</h4>
+
+>You should test the interface instead of the implementation because if you can test only the interface it means you can change the implementation without breaking the test.
+
+***
+
+<h4>Should you test private methods?</h4>
+
+>You should not test private methods. Do not make assertions about their result and do not expect to send them.
+
+***
+
+<h4>Why should you not test outgoing messages with no side effects?</h4>
+
+>You should not test outgoing messages with no side effects because if the message has no side effects then it is invisible to your app and will add no proof.
+
+***
