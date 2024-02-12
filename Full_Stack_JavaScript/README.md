@@ -1872,3 +1872,43 @@ use: [loader: 'file-loader'],</code></li>
 >For 3D transforms you also need to include <code>perspective</code>. This sets the distances from the user to the z = 0 plane and must be declared first.
 
 ***
+
+</details>
+
+***
+
+<details>
+<summary><h3>Transitions</h3></summary>
+
+***
+
+<h4>Are all CSS properties animatable?</h4>
+
+>All CSS properties are animatable unless otherwise specified (as it wouldn't make sense to animate them).
+
+***
+
+<h4>What are the long and short-hand notations for transitions?</h4>
+
+>The long hand notation for transitions is: <code>transition-property: ; transition-duration: ; transition-timing-function: ; transition-delay: ;</code>.<br>
+>The short hand notation for transitions is: <code>transition: ;</code>.
+
+***
+
+<h4>What is the stacking context?</h4>
+
+>The stacking context refers to the stacking order of elements on a web page. A stacking context is formed in the following situations:<br>
+><ul>
+><li>Root Stacking Context: The root element of the document forms the initial stacking context.</li>
+><li>Elements with a Z-Index other than 'auto' and 'position' other than 'static'.</li>
+><li>CSS 'transform', 'filter', 'clip-path', or 'opacity' Property.</li>
+><ul>
+
+***
+
+<h4>Why do you need to keep an eye on repaints?</h4>
+
+>Keeping an eye on repaints is important in web development because repaints can impact the performance and user experience of a website.<br>
+>Repainting refers to the process of updating the pixels on the screen when changes occur, such as updates to the DOM or style changes.
+
+***
