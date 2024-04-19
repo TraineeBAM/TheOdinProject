@@ -2123,3 +2123,122 @@ use: [loader: 'file-loader'],</code></li>
 > It is a good time to grow a hash table when the "load factor" is reached. This is typically between 0.75 and 1 (75-100%) of the maximum capacity.
 
 ***
+
+</details>
+
+***
+
+<details>
+<summary><h3>Meaningful Text</h3></summary>
+
+***
+
+<h4>What are three rules you should follow in order to provide meaningful links?</h4>
+
+> <ol>
+> <li>Text content of <code>a</code> element should indicate where the link redirects.</li>
+> <li>If the link will open or download a file, include text that indicates file type and size.</li>
+> <li>If the link will open in a a new tab or window then indicate this in some way.</li>
+> </ol>
+
+***
+
+<h4>What information should you inform users of in order to provide meaningful error messages in forms?</h4>
+
+> Ideally you want to inform the user what input caused the error and if possible, how they can fix it.<br>
+> e.g. "Error: Password requires 8 characters, password input only 6 characters"
+
+***
+
+<h4>When should you use the empty string/null value for the alt attribute?</h4>
+
+> You should use an empty string/null value for the alt attribute when it is not important for the assistive technology to be aware of the image.
+
+***
+
+</details>
+
+***
+
+<details>
+<summary><h3>WAI-ARIA</h3></summary>
+
+***
+
+<h4>What purpose does WAI-ARIA serve?</h4>
+
+> The purpose of WAI-ARIA is to define a way to make web content more accessible when native HTML is unable to do so.
+
+***
+
+<h4>What are the four things ARIA can’t do?</h4>
+
+> <ol>
+> <li>Modify an elements appearance,</li>
+> <li>Modify an elements behavior,</li>
+> <li>Add focusability,</li>
+> <li>Add keyboard event handing.</li>
+> </ol>
+
+***
+
+<h4>What are the five rules of ARIA?</h4>
+
+> <ol>
+> <li>Always use native HTML elements and attributes over ARIA when possible.</li>
+> <li>Never change native semantics, unless you have no other choice.</li>
+> <li>All interactive ARIA controls must be usable with a keyboard.</li>
+> <li>Never use <code>role='presentation'</code> or <code>aria-hidden='true'</code> on focusable elements.</li>
+> <li>All interactive elements must have an accessible name.</li>
+> </ol>
+
+***
+
+<h4>What is the accessibility tree?</h4>
+
+> The accessibility tree is related to the DOM but only contains accessibility related information that will be used by assistive technologies.
+
+***
+
+<h4>What are the differences between the three ARIA labels?</h4>
+
+> <ol>
+> <li><code>aria-label</code>: Overrides any native label of an element and modifies its name property in the accessibility tree.</li>
+> <li><code>aria-labelledby</code>: Overrides both the native label and the <code>aria-label</code> attribute and changes an elements accessible name to a concatenated string of the text contents or <code>alt</code> attributes of the labelling elements whose <code>id</code> are passed in.</li>
+> <li><code>aria-describedby</code>: Modifies the description property in the accessibility tree.</li>
+> </ol>
+
+***
+
+<h4>What does the aria-hidden attribute do?</h4>
+
+> The <code>aria-hidden</code> attribute hides certain elements from the accessibility tree.
+
+***
+
+</details>
+
+***
+
+<details>
+<summary><h3>Accessibility Auditing</h3></summary>
+
+***
+
+<h4>What are some of the various accessibility features available in your browsers dev tools?</h4>
+
+> <ul>
+> <li>View an elements position in the accessibility tree</li>
+> <li>Explore the full page accessibility tree</li>
+> <li>View an elements ARIA attributes</li>
+> <li>View the source order of elements on screen</li>
+> <li>View an element's computed accessibility properties</li>
+> </ul>
+
+***
+
+<h4>Which third-party accessibility auditing tool is available in the Chrome DevTools by default?</h4>
+
+> Lighthouse for Chrome.
+
+***
