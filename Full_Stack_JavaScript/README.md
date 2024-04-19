@@ -2090,3 +2090,36 @@ use: [loader: 'file-loader'],</code></li>
 >The best way to hide hidden content from assistive technologies is by giving the container for the hidden content either a <code>display: none</code> or <code>visibility: hidden</code> CSS property.
 
 ***
+
+</details>
+
+***
+
+<details>
+<summary><h3>HashMap Data Structure</h3></summary>
+
+***
+
+<h4>What does it mean to hash?</h4>
+
+> To hash means to take an input and generate a corresponding output. When hashing, the same input will always generate the same output and this process IS NOT reversible.
+
+***
+
+<h4>What are buckets?</h4>
+
+> Buckets are storage for elements (basically an array). The hash function returns a number that corresponds to the index of the array at which we store the key value pair.
+
+***
+
+<h4>What is a collision?</h4>
+
+> A collision occurs when two different keys generate the exact same hash code.
+
+***
+
+<h4>When is it a good time to grow our table?</h4>
+
+> It is a good time to grow a hash table when the "load factor" is reached. This is typically between 0.75 and 1 (75-100%) of the maximum capacity.
+
+***
