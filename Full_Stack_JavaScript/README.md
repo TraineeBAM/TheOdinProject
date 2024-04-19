@@ -2242,3 +2242,60 @@ use: [loader: 'file-loader'],</code></li>
 > Lighthouse for Chrome.
 
 ***
+
+</details>
+
+***
+
+<details>
+<summary><h3>Responsive Design</h3></summary>
+
+***
+
+<h4>What is responsive design?</h4>
+
+> Responsive design is a set of techniques that are used to ensure a website works on any size screen.
+
+***
+
+<h4>Why should you avoid fixed width and/or height?</h4>
+
+> Using a fixed width and/or height removes the ability for content to be responsive.
+
+***
+
+<h4>In what situations might it be appropriate to use fixed width or height?</h4>
+
+> Situations where is could be appropriate to use fixed width or height include headers, footers, small icons and sidebars.
+
+***
+
+<h4>Why should you avoid percentages?</h4>
+
+> You should avoid percentages because when responding to changes in screen size the margins will also change.
+
+***
+
+<h4>What is the main difference between object-fit and background-size?</h4>
+
+> <code>object-fit</code> is for <code>img</code> tags, whereas <code>background-size</code> only works with background images.
+
+***
+
+<h4>How can you define a width and a height on an img without distorting it?</h4>
+
+> If you give an image flexible width and set height to auto then the image should not distort.
+
+***
+
+<h4>Why would you want to provide different images at different screen resolutions?</h4>
+
+> It allows you to better control how your image will be displayed at different resolutions.
+
+***
+
+<h4>When would you want to use an img with a srcset vs a picture?</h4>
+
+> If you are only concerned about serving differently-sized versions of the same image to a user then you would use srcset.
+
+***
