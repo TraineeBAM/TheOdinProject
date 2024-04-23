@@ -2299,3 +2299,75 @@ use: [loader: 'file-loader'],</code></li>
 > If you are only concerned about serving differently-sized versions of the same image to a user then you would use srcset.
 
 ***
+
+</details>
+
+***
+
+<details>
+<summary><h3>Introduction to React</h3></summary>
+
+***
+
+<h4>What is the purpose of React?</h4>
+
+> The purpose of React is to make development easier by providing pre-written code that can be reused/reimplemented in our own codebase to achieve complex tasks.
+
+***
+
+<h4>What are the benefits of using React?</h4>
+
+> Some advantages or React include that it is declarative, simple, SEO friendly, fast, efficient, easy to learn and backed by a strong community.
+
+***
+
+</details>
+
+***
+
+<details>
+<summary><h3>Setting up a React Environment</h3></summary>
+
+***
+
+<h4>What are some of the ways we can start a new React project?</h4>
+
+>Some ways that we can start a new React project include attaching a set of <code>script</code>tags which serve React from a CDN, to robust toolchains and frameworks such as Vite's React Config, Gatsby and NextJS.
+
+***
+
+<h4>Why should we initially be using pre-made toolchains instead of making our own?</h4>
+
+>We should use pre-made toolchains (initially) instead of making our own due to the complexity of writing our own where we would need to configure Package Management, Module bundling, Compilation and React itself (at least).
+
+***
+
+<h4>What is Vite and why would we use it?</h4>
+
+>Vite describes itself as "next generation frontend tooling" and we would use it because it caters to the React Ecosystem while also leveraging the latest technologies to provide a great developer experience.
+
+***
+
+<h4>What command can we run to scaffold a new React project using Vite?</h4>
+
+>To scaffold a new React program using Vite, we can run the following command <code>npm create vite@latest name-of-project -- --template react</code>
+
+***
+
+<h4>What is in the public folder?</h4>
+
+>The public folder is where all the static assets related to the app will go (e.g. images, icons, and information files for the browser).
+
+***
+
+<h4>What is in the src folder?</h4>
+
+>The src folder contains the code that runs the app where the main.jsx file serves as the entry point for the application.
+
+***
+
+<h4>Why are the React Developer Tools useful?</h4>
+
+>React Developer Tools are useful for tracking and making live changes to the moving parts inside the app which helps with understanding and debugging code.
+
+***
