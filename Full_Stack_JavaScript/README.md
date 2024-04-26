@@ -2371,3 +2371,70 @@ use: [loader: 'file-loader'],</code></li>
 >React Developer Tools are useful for tracking and making live changes to the moving parts inside the app which helps with understanding and debugging code.
 
 ***
+
+</details>
+
+***
+
+<details>
+<summary><h3>React Components</h3></summary>
+
+***
+
+<h4>What does a React element look like?</h4>
+
+>An independent, reusable chunk that is referred to as a component.
+
+***
+
+<h4>How would you create a functional component?</h4>
+
+>You create a functional component by defining a function inside a .jsx file. It is important to note that <strong>React components must be capitalized.</strong><br>
+>e.g. <code>function Greeting()</code> followed by the function.
+
+***
+
+<h4>How do you export and then import a component?</h4>
+
+>You export the component at the bottom of your .jsx file and then import it inside your main.jsx.
+
+***
+
+</details>
+
+***
+
+<details>
+<summary><h3>What is JSX</h3></summary>
+
+***
+
+<h4>What is JSX?</h4>
+
+>JSX is JavaScript XML and lets you write HTML-like markup inside a JS file.
+
+***
+
+<h4>Why do we use JSX?</h4>
+
+>JSX allows React to separate concerns by containing both rendering logic and contents in the same place (a component).<br>
+>Additionally, it is typically more intuitive and allows React to show more meaningful error and warning messages.
+
+***
+
+<h4>What are the three rules of JSX?</h4>
+
+><ol>
+><li>Return a single root element: If multiple elements need to be returned you can wrap them inside a <code>div</code> or a React fragment <code><> </></code>.</li>
+><li>Close all tags: In HTML, some tags are self closing, in JSX however, all tags must be explicitly closed.</li>
+><li>CamelCase <strong>MOST</strong> things: JSX turns into JS, and attributes of elements become keys of JS objects. Due to this, you can't use dashes or reserved words such as <code>class</code>. Instead of <code>stroke-width</code> you'd use <code>strokeWidth</code> and instead of <code>class</code> you'd use <code>className</code></li>
+></ol>
+
+***
+
+<h4>How do you reference a dynamic value inside of your JSX?</h4>
+
+>To reference a dynamic value inside of JSX you wrap it in curly braces: <code>{}</code>.<br>
+>This allows you to inject dynamic content.
+
+***
