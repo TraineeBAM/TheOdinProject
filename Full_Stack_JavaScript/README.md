@@ -2438,3 +2438,40 @@ use: [loader: 'file-loader'],</code></li>
 >This allows you to inject dynamic content.
 
 ***
+
+</details>
+
+***
+
+<details>
+<summary><h3>Rendering Techniques</h3></summary>
+
+***
+
+<h4>How do you render a list of elements/components in JSX?</h4>
+
+> To render a list of elements/components in JXS you can use the following methods:<br>
+> <ul>
+> <li>Using <code>Array.map()</code></li>
+> <li>Using <code>JSX Fragments</code></li>
+> <li>Using Conditional Rendering</li>
+> </ul>
+
+***
+
+<h4>What are the ways you could render UI conditionally?</h4>
+
+> To render UI conditionally you could use the following methods:<br>
+><ul>
+><li>Use the ternary operator</li>
+><li>Using the && operator</li>
+><li>Using <code>if</code><code>if/else</code>, and <code>switch</code></li>
+></ul>
+
+***
+
+<h4>How would you conditionally return JSX?</h4>
+
+> You can conditionally return JSX using the same methods used to render UI conditionally.
+
+***
