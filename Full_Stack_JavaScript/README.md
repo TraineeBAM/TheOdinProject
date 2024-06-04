@@ -2546,6 +2546,8 @@
 
 </details>
 
+---
+
 <details>
 <summary><h3>Passing Data Between Components</h3></summary>
 
@@ -2578,5 +2580,49 @@
 > <li>A reference to this function is passed through as the value for the prop on the component.</li>
 > <li>The function is received in the component and is called on a click event.</li>
 > </ol>
+
+---
+
+</details>
+
+---
+
+<details>
+<summary><h3>Introduction to State</h3></summary>
+
+---
+
+<h4>What is state?</h4>
+
+> State is a component's memory and is how the component "remembers" things about itself.
+
+---
+
+<h4>What is the useState hook and how would you use it?</h4>
+
+> The <code>useState</code> hook is a built-in hook that allows you to define state in a functional component.<br>
+> It takes an initial value as a parameter and returns an array with two elements that can be destructured to get:
+>
+> <ol>
+> <li>The current state value</li>
+> <li>A function to update the state value</li>
+> </ol>
+> E.g. <code>const [backgroundColor, setBackgroundColor] = useState(initialColor);</code>
+
+---
+
+<h4>What happens to a component when one of its states is changed?</h4>
+
+> When one of a components states is changed it is rerendered in the virtual DOM tree and subsequently updated on the actual DOM.
+
+---
+
+<h4>What are some of the rules of hooks?</h4>
+
+> <ul>
+> <li>All hooks can be recognised by the <code>use</code> prefix (e.g. <code>useState</code>).</li>
+> <li>Hooks can only be called from the top level of a functional component.</li>
+> <li>Hooks can't be called from inside loops or conditions.</li>
+> </ul>
 
 ---
