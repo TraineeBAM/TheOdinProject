@@ -2553,24 +2553,30 @@
 
 <h4>How does data flow between React components? From child to parent? From parent to child? Both?</h4>
 
->
+> In React, data flow is unidirectional(one way) and is facilitated by the use of props (short for properties).<br>
+> Any changes made to this data will only affect child components using the data.
 
 ---
 
 <h4>Why do we use props in React?</h4>
 
->
+> We use props to account for variations in components and reduce code duplication.
 
 ---
 
 <h4>How do we define default properties on a React component? What are some benefits in doing so?</h4>
 
->
+> Default properties are defined on React components by assigning them with <code>.defaultProps</code>.<br>
+> The benefit of this is reduced code and duplication as now we only need to define the props if they differ from the default values.
 
 ---
 
 <h4>How can we pass functions as props?</h4>
 
->
+> <ol>
+> <li>The function is defined in the parent component.</li>
+> <li>A reference to this function is passed through as the value for the prop on the component.</li>
+> <li>The function is received in the component and is called on a click event.</li>
+> </ol>
 
 ---
