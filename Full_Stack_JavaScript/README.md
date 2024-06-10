@@ -2626,3 +2626,49 @@
 > </ul>
 
 ---
+
+</details>
+
+---
+
+<details>
+<summary><h3>More on State</h3></summary>
+
+---
+
+<h4>What should you keep in mind while declaring state?</h4>
+
+> When declaring state we should keep in mind not to put values that can be calculated using existing values, state, and/or props.
+
+---
+
+<h4>Why should we always use setState to update our state?</h4>
+
+> State should be treated like it is immutable because if it is mutated it can lead to unpredictable results.
+
+---
+
+<h4>What does “state as a snapshot” mean?</h4>
+
+> "State as a snapshot" refers to the fact that state will remain the same throughout the current render of a component.
+
+---
+
+<h4>What’s the difference between passing a value vs a callback to the setState function?</h4>
+
+> When passing a value to the setState function that value <strong>replaces</strong> the current state.<br>
+> When passing a callback to the setState function, the latest state is passed in as an argument to the callback.
+
+---
+
+<h4>Why should we always provide a new Object to setState?</h4>
+
+> A new Object should always be provided to setState because if we don't, there is no guarantee that the page will be re-rendered.
+
+---
+
+<h4>Why would you want to control a component?</h4>
+
+> Controlling components is extremely useful when it comes to user input as it ensures the most up to date value is always displayed.
+
+---
