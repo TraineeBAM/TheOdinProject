@@ -1,11 +1,16 @@
 // import { useState } from 'react'
+import UserOutput from "./components/UserOutput"
+import UserInput from "./components/UserInput"
+import "./App.css"
+
 
 function App() {
 
   return (
-    <>
-      <h1>Testing123</h1>
-    </>
+    <div className="master-container">
+      <UserInput />
+      <UserOutput />
+    </div>
   )
 }
 
